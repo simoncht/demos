@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Van Wyhe Heating & AC — Honest, Fast HVAC in North County San Diego</title>
+  <meta name="description" content="Family-run heating & air conditioning serving Vista, Oceanside, Carlsbad & North County. AC, furnace, heat pumps, tune-ups. 5-star rated. Free quotes." />
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#15212e; --slate:#475569; --blue:#1f6feb; --blue-d:#1657c4; --heat:#e8743b;
+      --bg:#f5f8fc; --sand:#eef3f9; --line:#e2e8f0; --white:#fff;
+      --sans:"Inter",system-ui,-apple-system,sans-serif; --shadow:0 16px 44px -22px rgba(21,33,46,.4);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{line-height:1.1;letter-spacing:-.02em;font-weight:800}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.5rem;border-radius:12px;font-weight:700;font-size:.95rem;cursor:pointer;border:2px solid transparent;transition:.2s}
+    .btn-call{background:var(--heat);color:#fff}.btn-call:hover{background:#d15f29;transform:translateY(-1px)}
+    .btn-quote{background:var(--blue);color:#fff}.btn-quote:hover{background:var(--blue-d);transform:translateY(-1px)}
+    .btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}.btn-ghost:hover{border-color:var(--blue)}
+    .eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700}
+    .reveal{transition:.6s ease}
+    html.js .reveal{opacity:0;transform:translateY(16px)}
+    html.js .reveal.in{opacity:1;transform:none}
+    .disclaimer{background:var(--ink);color:#c7d2dd;font-size:.78rem;text-align:center;padding:.5rem 1rem}.disclaimer b{color:#fff}
+    #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:.85rem 1.4rem;border-radius:999px;font-weight:600;font-size:.92rem;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.3s;z-index:100}
+    #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+    header{position:sticky;top:0;z-index:50;background:rgba(245,248,252,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:1rem}
+    .brand{font-weight:800;font-size:1.1rem;letter-spacing:-.02em}.brand span{color:var(--blue)}
+    .brand small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--slate)}
+    .nav-links{display:flex;gap:1.6rem;align-items:center}.nav-links a{font-size:.92rem;color:var(--slate);font-weight:500}.nav-links a:hover{color:var(--ink)}
+    .nav-cta{display:flex;gap:.6rem}
+    .menu-btn{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer}
+
+    .hero{padding:72px 0 64px;background:radial-gradient(1100px 460px at 80% -10%,#e3edfb,transparent 60%),radial-gradient(800px 360px at 0% 120%,#fbe9df,transparent 55%)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+    .stars{color:var(--heat);font-weight:700}
+    .hero h1{font-size:clamp(2.3rem,5vw,3.5rem);margin:.6rem 0 1rem}
+    .hero p.lead{font-size:1.12rem;color:var(--slate);max-width:40ch}
+    .hero-cta{display:flex;gap:12px;margin-top:1.8rem;flex-wrap:wrap}
+    .card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+    .quotebox{padding:28px}
+    .quotebox h3{font-size:1.2rem;margin-bottom:.3rem}
+    .quotebox p.sub{color:var(--slate);font-size:.9rem;margin-bottom:14px}
+    .field{margin-bottom:12px}label{display:block;font-size:.8rem;font-weight:600;margin-bottom:.3rem}
+    input,select,textarea{width:100%;padding:.7rem .8rem;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.95rem;background:var(--sand)}
+    input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .ok{display:none;background:#e7f0ff;border:1px solid var(--blue);color:var(--blue-d);border-radius:10px;padding:14px;font-size:.9rem;margin-top:10px}
+
+    .trust{background:var(--ink);color:#cdd8e3}
+    .trust .wrap{display:flex;flex-wrap:wrap;gap:14px 34px;justify-content:center;padding:18px 24px;font-size:.92rem;font-weight:500}
+    .trust b{color:#fff}
+
+    section.pad{padding:78px 0}
+    .head{max-width:46ch;margin-bottom:40px}.head h2{font-size:clamp(1.8rem,3.5vw,2.4rem);margin:.5rem 0}.head p{color:var(--slate)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .svc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;transition:.2s}.svc:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .svc .ic{width:42px;height:42px;border-radius:11px;background:var(--sand);display:grid;place-items:center;color:var(--blue);font-size:1.2rem;margin-bottom:12px}
+    .svc h3{font-size:1.05rem;font-weight:700;margin-bottom:.3rem}.svc p{font-size:.9rem;color:var(--slate)}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .shot{margin:0}.shot img{display:block;width:100%;aspect-ratio:4/3;border-radius:14px;border:1px solid var(--line);object-fit:cover}
+    .shot figcaption{margin-top:10px;font-weight:600;font-size:.9rem;text-align:center;color:var(--ink)}
+    .gallery .extra{display:none}.gallery.expanded .extra{display:block}
+    @media(max-width:860px){.gallery{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.gallery{grid-template-columns:1fr}}
+
+    .why{background:var(--sand)}.why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+    .why h2{font-size:clamp(1.8rem,3.5vw,2.4rem)}.why p{color:var(--slate);margin-top:1rem}
+    .points{list-style:none;margin-top:1.4rem}.points li{padding:.5rem 0 .5rem 2rem;position:relative;font-weight:500}
+    .points li::before{content:"✓";position:absolute;left:0;color:#fff;background:var(--blue);width:1.4rem;height:1.4rem;border-radius:50%;display:grid;place-items:center;font-size:.8rem}
+
+    .area-band{background:var(--blue);color:#fff;text-align:center}.area-band .wrap{padding:34px 24px}
+    .area-band .chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:14px}
+    .chip{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:.4rem .9rem;border-radius:999px;font-size:.85rem}
+
+    .loc{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .loc-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}.loc-card h3{margin-bottom:.5rem}.loc-card p{color:var(--slate);font-size:.95rem}
+    footer{background:var(--ink);color:#a9b8c7;padding:40px 0;font-size:.88rem}
+    .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}.foot .brand{color:#fff}
+    .foot-dis{max-width:64ch;font-size:.8rem;margin-top:18px;color:#8497a8}
+
+    @media(max-width:860px){.hero-grid,.why .wrap,.loc{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.nav-links{display:none}.menu-btn{display:block}.nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--bg);padding:18px 24px;border-bottom:1px solid var(--line)}}
+    @media(max-width:560px){.grid,.two{grid-template-columns:1fr}}
+  </style>
+</head>
+<body id="top">
+  <div class="disclaimer"><b>Concept demo</b> — an unaffiliated example site built to show what's possible. Not the official site of Van Wyhe Heating &amp; AC.</div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">Van <span>Wyhe</span> Heating &amp; AC<small>North County San Diego · est. family-run</small></a>
+      <nav class="nav-links" id="nav"><a href="#services">Services</a><a href="#why">Why us</a><a href="#reviews">Reviews</a><a href="#area">Service area</a><a href="#quote">Get a quote</a></nav>
+      <div class="nav-cta"><a class="btn btn-call" href="tel:+17606376315">📞 (760) 637-6315</a></div>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero"><div class="wrap hero-grid">
+      <div>
+        <div class="stars">★★★★★ <span style="color:var(--slate);font-weight:500">5.0 · 25 Google reviews · North County</span></div>
+        <h1>Honest, fast HVAC for North County.</h1>
+        <p class="lead">Family-run heating &amp; air conditioning out of Vista — straight-talking quotes (often lower than the big guys), clean installs, and we stand behind the work.</p>
+        <div class="hero-cta">
+          <a class="btn btn-call" href="tel:+17606376315">📞 Call (760) 637-6315</a>
+        </div>
+      </div>
+      <form class="card quotebox" id="quoteForm" novalidate>
+        <h3>Request a free quote</h3>
+        <p class="sub">Tell us what's going on — we'll get back fast.</p>
+        <div class="field"><label>What do you need?</label>
+          <select required><option value="">Choose…</option><option>AC repair</option><option>AC installation</option><option>Furnace repair</option><option>Furnace installation</option><option>Heat pump</option><option>Thermostat</option><option>Maintenance / tune-up</option><option>Not sure — take a look</option></select></div>
+        <div class="two">
+          <div class="field"><label>Name</label><input type="text" required placeholder="Your name"></div>
+          <div class="field"><label>Phone</label><input type="tel" required placeholder="(760) ___-____"></div>
+        </div>
+        <div class="two">
+          <div class="field"><label>Email <span style="color:var(--slate);font-weight:400">(optional)</span></label><input type="email" placeholder="you@email.com"></div>
+          <div class="field"><label>City / ZIP</label><input type="text" placeholder="Oceanside, 92058"></div>
+        </div>
+        <div class="field"><label>Anything else?</label><textarea rows="2" placeholder="e.g. AC not cooling, unit is ~12 yrs old"></textarea></div>
+        <button type="submit" class="btn btn-quote" style="width:100%;justify-content:center">Get my free quote</button>
+        <div class="ok" id="ok">Thanks — your request is in. <em>(Concept demo, so nothing was sent.)</em> On the live site, Dan would call you back fast with a free quote.</div>
+      </form>
+    </div></section>
+
+    <div class="trust"><div class="wrap">
+      <span><b>★ 5.0</b> rated</span><span><b>Family-run</b>, owner-operated</span><span><b>Free</b> quotes</span><span><b>Serving</b> Vista · Oceanside · Carlsbad · North County</span><span><b>Mon–Fri</b> 8–4</span>
+    </div></div>
+
+    <section class="pad wrap" id="services">
+      <div class="head reveal"><div class="eyebrow">Services</div><h2>Heating &amp; cooling, done right</h2><p>From a quick repair to a full energy-efficient system — residential HVAC across North County.</p></div>
+      <div class="grid">
+        <div class="svc reveal"><div class="ic">❄</div><h3>AC Repair</h3><p>Not cooling? Fast diagnosis and an honest fix — no upsell.</p></div>
+        <div class="svc reveal"><div class="ic">⊞</div><h3>AC Installation</h3><p>New energy-efficient systems, sized right, quoted fair.</p></div>
+        <div class="svc reveal"><div class="ic">🔥</div><h3>Furnace Repair</h3><p>Heat out? We get it running and keep you safe.</p></div>
+        <div class="svc reveal"><div class="ic">♨</div><h3>Furnace Installation</h3><p>Reliable, efficient heating built to last.</p></div>
+        <div class="svc reveal"><div class="ic">⇄</div><h3>Heat Pumps</h3><p>Modern all-in-one heating &amp; cooling — big efficiency wins.</p></div>
+        <div class="svc reveal"><div class="ic">◐</div><h3>Thermostats</h3><p>Smart thermostat install + setup for comfort and savings.</p></div>
+        <div class="svc reveal"><div class="ic">🛠</div><h3>Maintenance &amp; Tune-ups</h3><p>Seasonal service to prevent breakdowns and extend system life.</p></div>
+        <div class="svc reveal"><div class="ic">?</div><h3>Not sure?</h3><p>We'll take a look and tell you straight — repair vs. replace.</p></div>
+      </div>
+    </section>
+
+    <section class="pad wrap" id="work">
+      <div class="head reveal"><div class="eyebrow">Our work</div><h2>Recent installs &amp; repairs</h2><p>Real jobs across North County — energy-efficient AC swaps, furnace work, and ductwork done right.</p></div>
+      <div class="gallery" id="gallery">
+        <figure class="shot reveal"><img src="work1.jpg" loading="lazy" alt="Dual AC condenser system replacement in a side yard"><figcaption>Dual-condenser AC system swap on a tidy side-yard pad</figcaption></figure>
+        <figure class="shot reveal"><img src="work3.jpg" loading="lazy" alt="Garage furnace replacement with new flue venting"><figcaption>Garage furnace replacement with new B-vent flue routing</figcaption></figure>
+        <figure class="shot reveal"><img src="work5.jpg" loading="lazy" alt="Attic furnace with new insulated ductwork"><figcaption>Attic furnace swap with new insulated flex ductwork</figcaption></figure>
+        <figure class="shot reveal"><img src="work2.jpg" loading="lazy" alt="High-efficiency heat pump install with disconnect"><figcaption>High-efficiency heat-pump install with new electrical disconnect</figcaption></figure>
+        <figure class="shot reveal"><img src="work9.jpg" loading="lazy" alt="New AC condenser installed beside a patio"><figcaption>Clean single AC condenser install beside the patio</figcaption></figure>
+        <figure class="shot reveal"><img src="work7.jpg" loading="lazy" alt="Ductless mini-split ceiling cassette in framing"><figcaption>Ductless mini-split ceiling cassette in new-construction framing</figcaption></figure>
+        <figure class="shot reveal extra"><img src="work4.jpg" loading="lazy" alt="Furnace and water heater garage install"><figcaption>Furnace and water-heater install in a garage setup</figcaption></figure>
+        <figure class="shot reveal extra"><img src="work8.jpg" loading="lazy" alt="Dual ductless heat pump condensers with privacy screen"><figcaption>Dual ductless heat-pump condensers behind a privacy screen</figcaption></figure>
+        <figure class="shot reveal extra"><img src="work6.jpg" loading="lazy" alt="Wall furnace replacement in an older home"><figcaption>Wall furnace replacement for an older-home heating system</figcaption></figure>
+      </div>
+      <div style="text-align:center;margin-top:24px"><button class="btn btn-ghost" id="showAll">Show all 9 photos →</button></div>
+    </section>
+
+    <section class="why pad" id="why"><div class="wrap">
+      <div class="reveal" style="text-align:center">
+        <img src="vanwyhe.webp" alt="Dan, owner and lead technician of Van Wyhe Heating & AC" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" style="width:100%;max-width:440px;aspect-ratio:4/3;object-fit:cover;object-position:center top;border-radius:18px;box-shadow:var(--shadow)">
+        <div style="display:none;max-width:440px;aspect-ratio:4/3;margin:0 auto;border-radius:18px;background:var(--sand);place-items:center;color:var(--slate);font-size:.9rem;text-align:center;padding:1rem">📷 Owner photo goes here — drop <code>dan.jpg</code> into the site folder</div>
+        <p style="font-weight:700;margin-top:14px">Dan — owner &amp; lead technician</p>
+      </div>
+      <div class="reveal"><div class="eyebrow">Why Van Wyhe</div><h2>The honest HVAC guy your neighbors recommend.</h2>
+        <p>Van Wyhe is family-run and owner-operated by Dan — so you deal with the person doing the work, not a call center. Customers keep coming back for one reason: straight answers and fair prices.</p>
+        <ul class="points" style="margin-top:1.4rem">
+          <li>Quotes that are often well below the big franchises</li>
+          <li>Clean, energy-efficient installs done right the first time</li>
+          <li>We stand behind the work — issues fixed at no extra charge</li>
+          <li>Fast response and clear communication, start to finish</li>
+          <li>5.0★ from North County homeowners</li>
+        </ul></div>
+    </div></section>
+
+    <section class="pad wrap" id="reviews">
+      <div class="head reveal" style="max-width:none;text-align:center">
+        <div class="eyebrow">Reviews</div>
+        <h2 style="margin:.4rem 0"><span style="color:var(--heat)">★★★★★</span> 5.0 — 25 Google reviews</h2>
+        <p>What North County homeowners say about Dan.</p>
+        <p style="margin-top:12px"><a class="btn btn-quote" href="https://maps.google.com/?cid=7405586947741353404" target="_blank" rel="noopener">★ Read all 25 reviews on Google →</a></p>
+      </div>
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="svc reveal"><div style="color:var(--heat);font-weight:700">★★★★★</div><p style="margin:.6rem 0;color:var(--ink)">"We installed a new AC unit with Van Wyhe — Dan is amazing at what he does. He gave us a quote on an energy-efficient unit well below the others we received."</p><p style="font-size:.85rem;color:var(--slate);font-weight:600">— Alexandra D. · Google review</p></div>
+        <div class="svc reveal"><div style="color:var(--heat);font-weight:700">★★★★★</div><p style="margin:.6rem 0;color:var(--ink)">"I was looking for an HONEST A/C tech, and it felt like finding a needle in a haystack — but luckily I found Dan."</p><p style="font-size:.85rem;color:var(--slate);font-weight:600">— L. · Google review</p></div>
+        <div class="svc reveal"><div style="color:var(--heat);font-weight:700">★★★★★</div><p style="margin:.6rem 0;color:var(--ink)">"Dan was great from start to finish. He didn't push us on buying EVERYTHING new when all that was wrong was a broken furnace."</p><p style="font-size:.85rem;color:var(--slate);font-weight:600">— Tom F. · Google review</p></div>
+      </div>
+      <p style="text-align:center;color:var(--slate);font-size:.8rem;font-style:italic;margin-top:18px">Real Google reviews, shown for the concept; the live site embeds Google's official auto-updating reviews widget.</p>
+    </section>
+
+    <section class="area-band" id="area"><div class="wrap reveal">
+      <div class="eyebrow" style="color:#cfe0ff">Service area</div>
+      <h2 style="color:#fff;font-size:clamp(1.6rem,3vw,2.1rem);margin-top:.4rem">Serving Vista &amp; North County San Diego</h2>
+      <div class="chips"><span class="chip">Vista</span><span class="chip">Oceanside</span><span class="chip">Carlsbad</span><span class="chip">San Marcos</span><span class="chip">Escondido</span><span class="chip">Bonsall</span><span class="chip">+ nearby</span></div>
+      <iframe src="https://maps.google.com/maps?q=Vista,+California&z=10&output=embed" width="100%" height="340" style="border:0;border-radius:16px;margin-top:24px;max-width:840px;box-shadow:var(--shadow)" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Van Wyhe Heating & AC service area — North County San Diego"></iframe>
+    </div></section>
+
+    <section class="pad wrap" id="contact">
+      <div class="head reveal"><div class="eyebrow">Reach us</div><h2>Hours &amp; contact</h2></div>
+      <div class="loc">
+        <div class="loc-card reveal"><h3>Call or request a quote</h3><p><strong>(760) 637-6315</strong><br>Based in Vista, CA · serving North County<br>Mon–Fri 8:00 AM – 4:00 PM</p><p style="margin-top:14px"><a class="btn btn-call" href="tel:+17606376315">📞 Call now</a> <a class="btn btn-ghost" href="#quote">Get a quote</a></p></div>
+        <div class="loc-card reveal"><h3><span style="color:var(--heat)">★</span> 5.0 on Google</h3><p>25 reviews from North County homeowners.<br><a href="https://maps.google.com/?cid=7405586947741353404" target="_blank" rel="noopener" style="color:var(--blue);font-weight:600">Read them on Google →</a></p><p style="margin-top:12px"><a class="btn btn-ghost" href="#reviews">See reviews</a></p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">
+    <div class="foot"><div class="brand">Van Wyhe Heating &amp; AC</div><nav style="display:flex;gap:1.4rem"><a href="#services">Services</a><a href="#area">Area</a><a href="#quote">Quote</a><a href="tel:+17606376315">Call</a></nav></div>
+    <p class="foot-dis"><strong>Concept demo — unaffiliated.</strong> This is an independent example built to show what a modern site could do for Van Wyhe Heating &amp; AC. It is not affiliated with or operated by the business. Services, hours, and phone are drawn from public listings; imagery is omitted.</p>
+  </div></footer>
+
+  <div id="toast"></div>
+  <script>
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
+    document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    document.getElementById('quoteForm').addEventListener('submit',e=>{e.preventDefault();if(!e.target.checkValidity()){e.target.reportValidity();return}document.getElementById('ok').style.display='block';e.target.querySelector('button[type=submit]').style.display='none';document.getElementById('ok').scrollIntoView({behavior:'smooth',block:'center'})});
+    // Call buttons: dial on mobile (tel:), and always show a confirmation toast (so desktop does something too)
+    document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>{const t=document.getElementById('toast');t.textContent='📞 Calling (760) 637-6315 — or tap to dial on your phone';t.classList.add('show');clearTimeout(window._tt);window._tt=setTimeout(()=>t.classList.remove('show'),3500)}));
+    // Gallery: reveal the extra photos
+    const sa=document.getElementById('showAll');if(sa)sa.addEventListener('click',()=>{document.getElementById('gallery').classList.add('expanded');sa.style.display='none'});
+  </script>
+</body>
+</html>
