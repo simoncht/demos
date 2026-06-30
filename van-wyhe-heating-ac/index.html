@@ -79,6 +79,15 @@
     .points{list-style:none;margin-top:1.4rem}.points li{padding:.5rem 0 .5rem 2rem;position:relative;font-weight:500}
     .points li::before{content:"✓";position:absolute;left:0;color:#fff;background:var(--blue);width:1.4rem;height:1.4rem;border-radius:50%;display:grid;place-items:center;font-size:.8rem}
 
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .step{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+    .step img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+    .step .body{padding:16px 18px 20px}
+    .step .num{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--blue);color:#fff;font-size:.8rem;font-weight:700;margin-bottom:8px}
+    .step h3{font-size:1rem;margin-bottom:.35rem}.step p{font-size:.88rem;color:var(--slate)}
+    @media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.steps{grid-template-columns:1fr}}
+
     .area-band{background:var(--blue);color:#fff;text-align:center}.area-band .wrap{padding:34px 24px}
     .area-band .chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:14px}
     .chip{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:.4rem .9rem;border-radius:999px;font-size:.85rem}
@@ -184,6 +193,16 @@
         </ul></div>
     </div></section>
 
+    <section class="pad wrap" id="visit">
+      <div class="head reveal" style="max-width:54ch"><div class="eyebrow">What to expect</div><h2>What a visit looks like</h2><p>Honest, on time, and tidy — here's how a typical Van Wyhe visit goes.</p></div>
+      <div class="steps">
+        <div class="step reveal"><img src="gemini1.jpeg" loading="lazy" alt="Friendly technician arriving at a customer's front door"><div class="body"><span class="num">1</span><h3>Straight, honest quote</h3><p>We show up on time and give you a fair quote — often well below the big franchises.</p></div></div>
+        <div class="step reveal"><img src="gemini2.jpeg" loading="lazy" alt="Technician inspecting a home HVAC vent with a flashlight"><div class="body"><span class="num">2</span><h3>Find the real problem</h3><p>We diagnose what's actually wrong and tell you straight — repair vs. replace, no upsell.</p></div></div>
+        <div class="step reveal"><img src="work1.jpg" loading="lazy" alt="Energy-efficient dual AC condenser system installed at a North County home"><div class="body"><span class="num">3</span><h3>Clean, efficient install</h3><p>Energy-efficient systems installed right the first time — neat, to code, and built to last.</p></div></div>
+        <div class="step reveal"><img src="gemini4.jpeg" loading="lazy" alt="Technician explaining a smart thermostat to a homeowner"><div class="body"><span class="num">4</span><h3>We stand behind it</h3><p>We walk you through the work and back it up — any issue fixed at no extra charge.</p></div></div>
+      </div>
+    </section>
+
     <section class="pad wrap" id="reviews">
       <div class="head reveal" style="max-width:none;text-align:center">
         <div class="eyebrow">Reviews</div>
@@ -217,7 +236,7 @@
 
   <footer><div class="wrap">
     <div class="foot"><div class="brand">Van Wyhe Heating &amp; AC</div><nav style="display:flex;gap:1.4rem"><a href="#services">Services</a><a href="#area">Area</a><a href="#quote">Quote</a><a href="tel:+17606376315">Call</a></nav></div>
-    <p class="foot-dis"><strong>Concept demo — unaffiliated.</strong> This is an independent example built to show what a modern site could do for Van Wyhe Heating &amp; AC. It is not affiliated with or operated by the business. Services, hours, and phone are drawn from public listings; imagery is omitted.</p>
+    <p class="foot-dis"><strong>Concept demo — unaffiliated.</strong> This is an independent example built to show what a modern site could do for Van Wyhe Heating &amp; AC. It is not affiliated with or operated by the business. Services, hours, and phone are drawn from public listings; photos are the business's own (from its Google listing) plus AI-generated illustrations of a typical visit.</p>
   </div></footer>
 
   <div id="toast"></div>
