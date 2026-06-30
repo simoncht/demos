@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Cali Breeze HVAC — Honest AC &amp; Heating in Fallbrook &amp; North San Diego County</title>
+  <meta name="description" content="Honest, 5-star HVAC in Fallbrook & North San Diego County. AC & heating install, repair, replacement & maintenance. Financing available. Free quote — (760) 643-8184." />
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#0f2233; --slate:#4a5a6a; --blue:#0369a1; --blue-d:#075985; --sky:#0ea5e9; --heat:#d83a34;
+      --bg:#f5f9fc; --sand:#e9f1f8; --line:#d8e6f0; --white:#fff;
+      --sans:"Inter",system-ui,-apple-system,sans-serif; --shadow:0 16px 44px -22px rgba(15,34,51,.42);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{line-height:1.12;letter-spacing:-.02em;font-weight:800}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.5rem;border-radius:12px;font-weight:700;font-size:.95rem;cursor:pointer;border:2px solid transparent;transition:.2s;white-space:nowrap}
+    .btn-call{background:var(--heat);color:#fff}.btn-call:hover{background:#bf2e28;transform:translateY(-1px)}
+    .btn-quote{background:var(--blue);color:#fff}.btn-quote:hover{background:var(--blue-d);transform:translateY(-1px)}
+    .btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}.btn-ghost:hover{border-color:var(--blue)}
+    .eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700}
+    .reveal{transition:.6s ease}
+    html.js .reveal{opacity:0;transform:translateY(16px)}
+    html.js .reveal.in{opacity:1;transform:none}
+    .disclaimer{background:#c0392b;color:#fff;font-size:.89rem;text-align:center;padding:.55rem 1rem;line-height:1.45}.disclaimer b{color:#fff;font-weight:700}.disclaimer a{color:#fff;text-decoration:underline;text-underline-offset:2px;white-space:nowrap;opacity:.9}.disclaimer a:hover{opacity:1}
+    #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:.85rem 1.4rem;border-radius:999px;font-weight:600;font-size:.92rem;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.3s;z-index:100}
+    #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+    header{position:sticky;top:0;z-index:50;background:rgba(245,249,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:1rem}
+    .brand{font-weight:800;font-size:1.1rem;letter-spacing:-.02em}.brand span{color:var(--blue)}.brand i{color:var(--heat);font-style:normal}
+    .brand small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--slate)}
+    .nav-links{display:flex;gap:1.5rem;align-items:center}.nav-links a{font-size:.92rem;color:var(--slate);font-weight:500}.nav-links a:hover{color:var(--ink)}
+    .nav-cta{display:flex;gap:.6rem}.call-short{display:none}
+    .menu-btn{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer}
+
+    .hero{padding:70px 0 60px;background:radial-gradient(1100px 460px at 82% -10%,#d6ecfb,transparent 60%),radial-gradient(760px 340px at 0% 120%,#fde3e1,transparent 55%)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+    .stars{color:#f5a623;font-weight:700}
+    .hero h1{font-size:clamp(2.2rem,4.7vw,3.4rem);margin:.6rem 0 1rem}
+    .hero p.lead{font-size:1.12rem;color:var(--slate);max-width:42ch}
+    .hero-cta{display:flex;gap:12px;margin-top:1.8rem;flex-wrap:wrap}
+    .card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+    .quotebox{padding:26px}
+    .quotebox h3{font-size:1.2rem;margin-bottom:.3rem}
+    .quotebox p.sub{color:var(--slate);font-size:.9rem;margin-bottom:14px}
+    .field{margin-bottom:12px}label{display:block;font-size:.8rem;font-weight:600;margin-bottom:.3rem}
+    input,select,textarea{width:100%;padding:.7rem .8rem;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.95rem;background:var(--sand)}
+    input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .consent{display:flex;gap:.5rem;align-items:flex-start;font-size:.78rem;color:var(--slate);font-weight:400}.consent input{width:auto;margin-top:.2rem}
+    .ok{display:none;background:#e3f0fb;border:1px solid var(--blue);color:var(--blue-d);border-radius:10px;padding:14px;font-size:.9rem;margin-top:10px}
+
+    .trust{background:var(--ink);color:#cdd8e3}
+    .trust .wrap{display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:center;padding:18px 24px;font-size:.92rem;font-weight:500}
+    .trust b{color:#fff}
+
+    section.pad{padding-top:78px;padding-bottom:78px}
+    .head{max-width:48ch;margin-bottom:38px}.head h2{font-size:clamp(1.8rem,3.5vw,2.4rem);margin:.5rem 0}.head p{color:var(--slate)}
+    .svc-group + .svc-group{margin-top:36px}
+    .svc-group h3.gh{font-size:1.15rem;color:var(--blue);margin-bottom:16px}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .svc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;transition:.2s}.svc:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .svc .ic{width:40px;height:40px;border-radius:11px;background:var(--sand);display:grid;place-items:center;color:var(--blue);font-size:1.15rem;margin-bottom:11px}
+    .svc h4{font-size:1rem;font-weight:700;margin-bottom:.25rem}.svc p{font-size:.88rem;color:var(--slate)}
+
+    .why{background:var(--sand)}.why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+    .why h2{font-size:clamp(1.8rem,3.5vw,2.4rem)}.why p{color:var(--slate);margin-top:1rem}
+    .pledge{background:#fff;border-left:4px solid var(--heat);border-radius:0 12px 12px 0;padding:16px 20px;margin-top:1.2rem;font-weight:600}
+    .points{list-style:none;margin-top:1.4rem;display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1.4rem}.points li{padding:.4rem 0 .4rem 2rem;position:relative;font-weight:500;font-size:.95rem}
+    .points li::before{content:"✓";position:absolute;left:0;color:#fff;background:var(--blue);width:1.4rem;height:1.4rem;border-radius:50%;display:grid;place-items:center;font-size:.8rem}
+    .whyimg{width:100%;border-radius:16px;border:1px solid var(--line);box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover}
+
+    .brands .wrap{padding:30px 24px;text-align:center}.brands .row{display:flex;flex-wrap:wrap;gap:12px 26px;justify-content:center;margin-top:14px}
+    .brands .b{font-weight:700;color:var(--slate);font-size:1.02rem;opacity:.85}
+
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .shot{margin:0}.shot img{display:block;width:100%;aspect-ratio:4/3;border-radius:14px;border:1px solid var(--line);object-fit:cover}
+    .shot figcaption{margin-top:9px;font-weight:600;font-size:.88rem;text-align:center;color:var(--ink)}
+
+    .finance{background:linear-gradient(120deg,var(--blue),var(--blue-d));color:#fff;text-align:center}.finance .wrap{padding:46px 24px}
+    .finance h2{color:#fff;font-size:clamp(1.6rem,3vw,2.1rem)}.finance p{opacity:.92;max-width:54ch;margin:.7rem auto 1.3rem}
+    .finance .btn-ghost{background:#fff;border-color:#fff}
+
+    .rev{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .rev .c{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+    .rev .c p.q{margin:.5rem 0;color:var(--ink)}.rev .c p.n{font-size:.85rem;color:var(--slate);font-weight:600}
+
+    .area-band{background:var(--ink);color:#fff;text-align:center}.area-band .wrap{padding:34px 24px}
+    .area-band .chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:14px}
+    .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:.4rem .9rem;border-radius:999px;font-size:.85rem}
+
+    .faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+    .faq summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";color:var(--blue);font-weight:700;font-size:1.3rem;transition:.2s}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq .a{padding:0 20px 18px;color:var(--slate);font-size:.95rem}
+
+    .loc{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .loc-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}.loc-card h3{margin-bottom:.5rem}.loc-card p{color:var(--slate);font-size:.95rem}
+    footer{background:#0b1a27;color:#9fb2c2;padding:46px 0 38px;font-size:.88rem}
+    .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+    footer h4{color:#fff;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.8rem}
+    footer a{display:block;color:#9fb2c2;padding:.2rem 0}footer a:hover{color:#fff}
+    .foot-dis{max-width:70ch;font-size:.8rem;margin-top:28px;color:#7891a5;border-top:1px solid #1c2f3f;padding-top:18px}
+
+    @media(max-width:880px){.hero-grid,.why .wrap,.loc,.foot-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.rev{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.nav-links{display:none}.menu-btn{display:block}.nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--bg);padding:18px 24px;border-bottom:1px solid var(--line)}.call-full{display:none}.call-short{display:inline}.nav-cta .btn{padding:.55rem .85rem;font-size:.9rem}}
+    @media(max-width:560px){.grid,.two,.gallery,.points{grid-template-columns:1fr}}
+  </style>
+</head>
+<body id="top">
+  <div class="disclaimer"><b>Concept demo</b> — an unaffiliated example site built to show what's possible. Not the official site of Cali Breeze HVAC. <a href="https://simonchia.com" target="_blank" rel="noopener">Built by Simon Chia ↗</a></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">Cali <span>Breeze</span> <i>HVAC</i><small>Fallbrook · North San Diego County</small></a>
+      <nav class="nav-links" id="nav"><a href="#services">Services</a><a href="#why">Why us</a><a href="#reviews">Reviews</a><a href="#area">Service area</a><a href="#faq">FAQ</a><a href="#quote">Get a quote</a></nav>
+      <div class="nav-cta"><a class="btn btn-call" href="tel:+17606438184"><span class="call-full">📞 (760) 643-8184</span><span class="call-short">📞 Call</span></a></div>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero"><div class="wrap hero-grid">
+      <div>
+        <div class="stars">★★★★★ <span style="color:var(--slate);font-weight:500">5.0 · 190 Google reviews · Fallbrook &amp; North County</span></div>
+        <h1>Honest AC &amp; heating for Fallbrook &amp; North County.</h1>
+        <p class="lead">Cali Breeze installs, repairs, and maintains your home's comfort across North San Diego County — fast, accurate diagnostics, transparent pricing, and certified techs who tell you straight. Financing available.</p>
+        <div class="hero-cta">
+          <a class="btn btn-call" href="tel:+17606438184">📞 Call (760) 643-8184</a>
+          <a class="btn btn-ghost" href="#quote">Request a free quote</a>
+        </div>
+      </div>
+      <form class="card quotebox" id="quoteForm" novalidate>
+        <h3>Request your estimate</h3>
+        <p class="sub">Tell us what's going on — we'll get back fast.</p>
+        <div class="two">
+          <div class="field"><label>First name</label><input type="text" required placeholder="First"></div>
+          <div class="field"><label>Last name</label><input type="text" required placeholder="Last"></div>
+        </div>
+        <div class="two">
+          <div class="field"><label>Phone</label><input type="tel" required placeholder="(760) ___-____"></div>
+          <div class="field"><label>Email</label><input type="email" placeholder="you@email.com"></div>
+        </div>
+        <div class="field"><label>What do you need?</label>
+          <select required><option value="">Choose…</option><option>AC repair</option><option>AC installation</option><option>AC replacement</option><option>AC maintenance</option><option>Heater repair</option><option>Heater replacement</option><option>Heater maintenance</option><option>Furnace service</option><option>Not sure — take a look</option></select></div>
+        <div class="field"><label>Anything else?</label><textarea rows="2" placeholder="e.g. AC running but not cooling; unit is ~12 yrs old"></textarea></div>
+        <label class="consent"><input type="checkbox" required> I agree to be contacted about my request.</label>
+        <button type="submit" class="btn btn-quote" style="width:100%;justify-content:center;margin-top:10px">Get my free estimate</button>
+        <div class="ok" id="ok">Thanks — your request is in. <em>(Concept demo, so nothing was sent.)</em> On the live site, Cali Breeze would call you back fast with a free estimate.</div>
+      </form>
+    </div></section>
+
+    <div class="trust"><div class="wrap">
+      <span><b>★ 5.0</b> · 190 reviews</span><span><b>Financing</b> available</span><span><b>Certified</b> technicians</span><span><b>Serving</b> Fallbrook &amp; North County</span><span><b>Mon–Sat</b> 8–5</span>
+    </div></div>
+
+    <section class="pad wrap" id="services">
+      <div class="head reveal"><div class="eyebrow">Services</div><h2>What HVAC services do you need?</h2><p>Complete air conditioning and heating for Fallbrook and all of North San Diego County — install, repair, replace, and maintain.</p></div>
+
+      <div class="svc-group reveal">
+        <h3 class="gh">❄ Air Conditioning</h3>
+        <div class="grid">
+          <div class="svc"><div class="ic">⊞</div><h4>AC Installation</h4><p>New, right-sized systems quoted fair and installed clean.</p></div>
+          <div class="svc"><div class="ic">🔧</div><h4>AC Repair</h4><p>Not cooling? Fast, accurate diagnosis and an honest fix.</p></div>
+          <div class="svc"><div class="ic">⇄</div><h4>AC Replacement</h4><p>When it's truly time — efficient upgrades, no scare tactics.</p></div>
+          <div class="svc"><div class="ic">🛠</div><h4>AC Maintenance</h4><p>Tune-ups that prevent breakdowns and lower your bill.</p></div>
+        </div>
+      </div>
+
+      <div class="svc-group reveal">
+        <h3 class="gh">🔥 Heating</h3>
+        <div class="grid">
+          <div class="svc"><div class="ic">🔧</div><h4>Heater Repair</h4><p>Heat out? We get it running and keep you safe.</p></div>
+          <div class="svc"><div class="ic">⇄</div><h4>Heater Replacement</h4><p>Reliable, efficient heating built to last.</p></div>
+          <div class="svc"><div class="ic">🛠</div><h4>Heater Maintenance</h4><p>Seasonal service to extend system life.</p></div>
+          <div class="svc"><div class="ic">♨</div><h4>Furnace Service</h4><p>Furnace repair, replacement, and safety checks.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why pad" id="why"><div class="wrap">
+      <div class="reveal">
+        <img class="whyimg" src="van.jpg" loading="lazy" alt="The Cali Breeze HVAC service van — local, North County">
+      </div>
+      <div class="reveal"><div class="eyebrow">Why Cali Breeze</div><h2>The honest HVAC team North County trusts.</h2>
+        <p>Certified, local, and straight with you. Our customers keep coming back because we diagnose the real problem and quote it fair.</p>
+        <div class="pledge">"We fix what can be fixed — and we'll tell you straight if a repair beats a replacement. No scare tactics, no selling you a system you don't need."</div>
+        <ul class="points">
+          <li>Fast, accurate diagnostics</li>
+          <li>Certified technicians</li>
+          <li>Transparent pricing</li>
+          <li>Energy-efficient options</li>
+          <li>Local &amp; trusted team</li>
+          <li>Financing available</li>
+        </ul>
+      </div>
+    </div></section>
+
+    <section class="brands"><div class="wrap reveal">
+      <div class="eyebrow">Brands we install &amp; service</div>
+      <div class="row"><span class="b">Carrier</span><span class="b">Trane</span><span class="b">Lennox</span><span class="b">Rheem</span><span class="b">Goodman</span><span class="b">Day &amp; Night</span><span class="b">Bryant</span><span class="b">Mitsubishi Electric</span></div>
+    </div></section>
+
+    <section class="pad wrap" id="work">
+      <div class="head reveal"><div class="eyebrow">Our work</div><h2>Recent installs &amp; repairs</h2><p>Real jobs across Fallbrook &amp; North County — AC, heating, and maintenance.</p></div>
+      <div class="gallery">
+        <figure class="shot reveal"><img src="work1.jpg" loading="lazy" alt="Ductless mini-split AC system installed at a North County home"><figcaption>Ductless mini-split AC install</figcaption></figure>
+        <figure class="shot reveal"><img src="work2.jpg" loading="lazy" alt="High-efficiency furnace and air handler installed in a closet"><figcaption>Furnace &amp; air-handler install</figcaption></figure>
+        <figure class="shot reveal"><img src="work3.jpg" loading="lazy" alt="Gas furnace installation"><figcaption>Gas furnace installation</figcaption></figure>
+        <figure class="shot reveal"><img src="work4.jpg" loading="lazy" alt="Dirty AC condenser coil before a maintenance cleaning"><figcaption>Before: a coil cleaning &amp; tune-up</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="pad wrap" id="reviews">
+      <div class="head reveal" style="max-width:none;text-align:center">
+        <div class="eyebrow">Reviews</div>
+        <h2 style="margin:.4rem 0"><span style="color:#f5a623">★★★★★</span> 5.0 — 190 Google reviews</h2>
+        <p>Hear it from North County homeowners.</p>
+        <p style="margin-top:12px"><a class="btn btn-quote" href="https://maps.google.com/?cid=14519553089271068382" target="_blank" rel="noopener">★ Read the reviews on Google →</a></p>
+      </div>
+      <div class="rev">
+        <div class="c reveal"><div style="color:#f5a623;font-weight:700">★★★★★</div><p class="q">"Davie was on time, professional, personable, and transparent. He quickly diagnosed our air-conditioning issues and resolved them."</p><p class="n">— Gary B. · Google review</p></div>
+        <div class="c reveal"><div style="color:#f5a623;font-weight:700">★★★★★</div><p class="q">"About 5 different companies came by before them — all bad news, all telling me to replace both AC units. Cali Breeze was a completely different experience."</p><p class="n">— Sandra W. · Google review</p></div>
+        <div class="c reveal"><div style="color:#f5a623;font-weight:700">★★★★★</div><p class="q">"We've had multiple wonderful experiences with Cali Breeze. Ricky is awesome, skilled, and very courteous — we can count on them, and that matters."</p><p class="n">— Sasha M. · Google review</p></div>
+      </div>
+      <p style="text-align:center;color:var(--slate);font-size:.8rem;font-style:italic;margin-top:18px">Real Google reviews, shown for the concept; the live site embeds Google's official auto-updating reviews widget.</p>
+    </section>
+
+    <section class="finance"><div class="wrap reveal">
+      <div class="eyebrow" style="color:#cfe7fb">Financing</div>
+      <h2>Comfort now, pay over time.</h2>
+      <p>A new system shouldn't wait for a heat wave. We offer financing options so you can get the AC or heating you need with comfortable monthly payments.</p>
+      <a class="btn btn-ghost" href="#quote">Ask about financing</a>
+    </div></section>
+
+    <section class="area-band" id="area"><div class="wrap reveal">
+      <div class="eyebrow" style="color:#cfe7fb">Service area</div>
+      <h2 style="color:#fff;font-size:clamp(1.6rem,3vw,2.1rem);margin-top:.4rem">Serving Fallbrook &amp; North San Diego County</h2>
+      <div class="chips"><span class="chip">Fallbrook</span><span class="chip">Bonsall</span><span class="chip">Vista</span><span class="chip">Oceanside</span><span class="chip">San Marcos</span><span class="chip">Escondido</span><span class="chip">Temecula</span><span class="chip">+ nearby</span></div>
+      <iframe src="https://maps.google.com/maps?q=Fallbrook,+California&z=10&output=embed" width="100%" height="320" style="border:0;border-radius:16px;margin-top:24px;max-width:840px;box-shadow:var(--shadow)" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Cali Breeze HVAC service area — Fallbrook & North San Diego County"></iframe>
+    </div></section>
+
+    <section class="pad wrap faq" id="faq">
+      <div class="head reveal" style="max-width:60ch"><div class="eyebrow">FAQ</div><h2>Frequently asked questions</h2></div>
+      <div class="reveal">
+        <details><summary>Why is my air conditioner running but not cooling?</summary><div class="a">Usually it's low refrigerant, a dirty filter or coil, or a failing capacitor or compressor. We diagnose the actual cause before quoting — so you only pay to fix what's wrong.</div></details>
+        <details><summary>How do I know if my HVAC system needs repair or replacement?</summary><div class="a">It comes down to age (10–15 yrs), the repair cost versus the system's value, and efficiency. We'll give you an honest recommendation — and we won't push a replacement you don't need.</div></details>
+        <details><summary>How often should HVAC maintenance be performed?</summary><div class="a">Twice a year is ideal — AC in spring, heating in fall. Regular tune-ups prevent breakdowns, keep efficiency up, and extend the life of your system.</div></details>
+        <details><summary>What areas does Cali Breeze serve?</summary><div class="a">Fallbrook and all of North San Diego County — Bonsall, Vista, Oceanside, San Marcos, Escondido, and nearby communities (including parts of South Riverside).</div></details>
+        <details><summary>What's the most expensive AC part to repair?</summary><div class="a">The compressor (and the evaporator coil) are the priciest. If one fails on an older unit, we'll be straight with you about whether a repair or a full replacement is the smarter spend.</div></details>
+        <details><summary>How much does it cost to fix an AC in California?</summary><div class="a">It ranges widely with the issue and the unit. We give a clear, upfront quote before any work — no surprises.</div></details>
+        <details><summary>How can I lower my air-conditioning bill in California?</summary><div class="a">Routine maintenance, a smart thermostat, sealing leaky ducts, and a high-efficiency unit all help. We're happy to point out the cheapest wins first.</div></details>
+      </div>
+    </section>
+
+    <section class="pad wrap" id="contact">
+      <div class="head reveal"><div class="eyebrow">Reach us</div><h2>Hours &amp; contact</h2></div>
+      <div class="loc">
+        <div class="loc-card reveal"><h3>Call or request an estimate</h3><p><strong>(760) 643-8184</strong><br>calibreezehvac@gmail.com<br>Fallbrook, CA · serving North County<br>Mon–Sat 8:00 AM – 5:00 PM · Sun closed</p><p style="margin-top:14px"><a class="btn btn-call" href="tel:+17606438184">📞 Call now</a> <a class="btn btn-ghost" href="#quote">Get a quote</a></p></div>
+        <div class="loc-card reveal"><h3><span style="color:#f5a623">★</span> 5.0 on Google</h3><p>190 reviews from Fallbrook &amp; North County homeowners.<br><a href="https://maps.google.com/?cid=14519553089271068382" target="_blank" rel="noopener" style="color:var(--blue);font-weight:600">Read them on Google →</a></p><p style="margin-top:12px"><a class="btn btn-ghost" href="#reviews">See reviews</a> <a class="btn btn-ghost" href="https://www.yelp.com/biz/cali-breeze-heating-and-air" target="_blank" rel="noopener">Yelp</a></p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="color:#fff">Cali <span style="color:#7ec8f0">Breeze</span> <i style="color:#ff6b63;font-style:normal">HVAC</i></div>
+        <p style="margin-top:.6rem;max-width:34ch">Honest, 5-star air conditioning &amp; heating for Fallbrook and all of North San Diego County.</p>
+        <p style="margin-top:.6rem"><a href="tel:+17606438184" style="display:inline;color:#fff;font-weight:700">(760) 643-8184</a></p>
+      </div>
+      <div><h4>HVAC Services</h4><a href="#services">AC repair &amp; install</a><a href="#services">AC replacement</a><a href="#services">Heating &amp; furnace</a><a href="#services">Maintenance</a></div>
+      <div><h4>Quick Links</h4><a href="#why">Why Cali Breeze</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#quote">Free estimate</a><a href="#area">Service areas</a></div>
+    </div>
+    <p class="foot-dis"><strong>Concept demo — unaffiliated.</strong> This is an independent example built to show what a modern site could do for Cali Breeze HVAC. It is not affiliated with or operated by the business. Services, hours, and contact details are drawn from public listings; photos are the business's own, from its public Google listing.</p>
+  </div></footer>
+
+  <div id="toast"></div>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HVACBusiness","name":"Cali Breeze Heating and Air Conditioning","telephone":"+1-760-643-8184","email":"calibreezehvac@gmail.com","url":"https://demo.simonchia.com/cali-breeze-hvac/","image":"https://demo.simonchia.com/cali-breeze-hvac/work1.jpg","address":{"@type":"PostalAddress","streetAddress":"868 E Alvarado St","addressLocality":"Fallbrook","addressRegion":"CA","postalCode":"92028","addressCountry":"US"},"areaServed":"North San Diego County","openingHours":"Mo-Sa 08:00-17:00","priceRange":"$$","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"190"}}</script>
+  <script>
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
+    document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    document.getElementById('quoteForm').addEventListener('submit',e=>{e.preventDefault();if(!e.target.checkValidity()){e.target.reportValidity();return}document.getElementById('ok').style.display='block';e.target.querySelector('button[type=submit]').style.display='none';document.getElementById('ok').scrollIntoView({behavior:'smooth',block:'center'})});
+    document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>{const t=document.getElementById('toast');t.textContent='📞 Calling (760) 643-8184 — or tap to dial on your phone';t.classList.add('show');clearTimeout(window._tt);window._tt=setTimeout(()=>t.classList.remove('show'),3500)}));
+  </script>
+</body>
+</html>
