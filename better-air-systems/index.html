@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Better Air Systems — 24/7 HVAC in North County San Diego (20+ Years)</title>
+  <meta name="description" content="Owner-operated HVAC serving North County San Diego & South Riverside for 20+ years. AC, heating, water heaters, commercial. Licensed #977738. 24/7. Call (760) 410-8373." />
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#152033; --slate:#475569; --blue:#1e3a8a; --blue-d:#172e6b; --heat:#e8743b;
+      --bg:#f6f8fc; --sand:#eef2f9; --line:#e2e8f0; --white:#fff;
+      --sans:"Inter",system-ui,-apple-system,sans-serif; --shadow:0 16px 44px -22px rgba(21,33,46,.42);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{line-height:1.1;letter-spacing:-.02em;font-weight:800}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.5rem;border-radius:12px;font-weight:700;font-size:.95rem;cursor:pointer;border:2px solid transparent;transition:.2s;white-space:nowrap}
+    .btn-call{background:var(--heat);color:#fff}.btn-call:hover{background:#d15f29;transform:translateY(-1px)}
+    .btn-quote{background:var(--blue);color:#fff}.btn-quote:hover{background:var(--blue-d);transform:translateY(-1px)}
+    .btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}.btn-ghost:hover{border-color:var(--blue)}
+    .eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700}
+    .reveal{transition:.6s ease}
+    html.js .reveal{opacity:0;transform:translateY(16px)}
+    html.js .reveal.in{opacity:1;transform:none}
+    .disclaimer{background:#c0392b;color:#fff;font-size:.89rem;text-align:center;padding:.55rem 1rem;line-height:1.45}.disclaimer b{color:#fff;font-weight:700}.disclaimer a{color:#fff;text-decoration:underline;text-underline-offset:2px;white-space:nowrap;opacity:.9}.disclaimer a:hover{opacity:1}
+    #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:.85rem 1.4rem;border-radius:999px;font-weight:600;font-size:.92rem;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.3s;z-index:100}
+    #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+    header{position:sticky;top:0;z-index:50;background:rgba(246,248,252,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:1rem}
+    .brand{font-weight:800;font-size:1.1rem;letter-spacing:-.02em}.brand span{color:var(--blue)}
+    .brand small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--slate)}
+    .nav-links{display:flex;gap:1.6rem;align-items:center}.nav-links a{font-size:.92rem;color:var(--slate);font-weight:500}.nav-links a:hover{color:var(--ink)}
+    .nav-cta{display:flex;gap:.6rem}.call-short{display:none}
+    .menu-btn{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer}
+
+    .hero{padding:72px 0 64px;background:radial-gradient(1100px 460px at 80% -10%,#dbe4f7,transparent 60%),radial-gradient(800px 360px at 0% 120%,#fbe9df,transparent 55%)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+    .stars{color:var(--heat);font-weight:700}
+    .hero h1{font-size:clamp(2.3rem,5vw,3.5rem);margin:.6rem 0 1rem}
+    .hero p.lead{font-size:1.12rem;color:var(--slate);max-width:42ch}
+    .hero-cta{display:flex;gap:12px;margin-top:1.8rem;flex-wrap:wrap}
+    .card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+    .quotebox{padding:28px}
+    .quotebox h3{font-size:1.2rem;margin-bottom:.3rem}
+    .quotebox p.sub{color:var(--slate);font-size:.9rem;margin-bottom:14px}
+    .field{margin-bottom:12px}label{display:block;font-size:.8rem;font-weight:600;margin-bottom:.3rem}
+    input,select,textarea{width:100%;padding:.7rem .8rem;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.95rem;background:var(--sand)}
+    input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .ok{display:none;background:#e7edfb;border:1px solid var(--blue);color:var(--blue-d);border-radius:10px;padding:14px;font-size:.9rem;margin-top:10px}
+
+    .trust{background:var(--ink);color:#cdd8e3}
+    .trust .wrap{display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:center;padding:18px 24px;font-size:.92rem;font-weight:500}
+    .trust b{color:#fff}
+
+    section.pad{padding-top:78px;padding-bottom:78px}
+    .head{max-width:46ch;margin-bottom:40px}.head h2{font-size:clamp(1.8rem,3.5vw,2.4rem);margin:.5rem 0}.head p{color:var(--slate)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .svc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;transition:.2s}.svc:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .svc .ic{width:42px;height:42px;border-radius:11px;background:var(--sand);display:grid;place-items:center;color:var(--blue);font-size:1.2rem;margin-bottom:12px}
+    .svc h3{font-size:1.05rem;font-weight:700;margin-bottom:.3rem}.svc p{font-size:.9rem;color:var(--slate)}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .shot{margin:0}.shot img{display:block;width:100%;aspect-ratio:4/3;border-radius:14px;border:1px solid var(--line);object-fit:cover}
+    .shot figcaption{margin-top:10px;font-weight:600;font-size:.9rem;text-align:center;color:var(--ink)}
+    @media(max-width:860px){.gallery{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.gallery{grid-template-columns:1fr}}
+
+    .why{background:var(--sand)}
+    .why h2{font-size:clamp(1.8rem,3.5vw,2.4rem)}.why p{color:var(--slate)}
+    .points{list-style:none;margin-top:1.4rem}.points li{padding:.5rem 0 .5rem 2rem;position:relative;font-weight:500}
+    .points li::before{content:"✓";position:absolute;left:0;color:#fff;background:var(--blue);width:1.4rem;height:1.4rem;border-radius:50%;display:grid;place-items:center;font-size:.8rem}
+
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .step{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+    .step img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+    .step .body{padding:16px 18px 20px}
+    .step .num{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--blue);color:#fff;font-size:.8rem;font-weight:700;margin-bottom:8px}
+    .step h3{font-size:1rem;margin-bottom:.35rem}.step p{font-size:.88rem;color:var(--slate)}
+    @media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.steps{grid-template-columns:1fr}}
+
+    .area-band{background:var(--blue);color:#fff;text-align:center}.area-band .wrap{padding:34px 24px}
+    .area-band .chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:14px}
+    .chip{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:.4rem .9rem;border-radius:999px;font-size:.85rem}
+
+    .loc{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .loc-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}.loc-card h3{margin-bottom:.5rem}.loc-card p{color:var(--slate);font-size:.95rem}
+    footer{background:var(--ink);color:#a9b8c7;padding:40px 0;font-size:.88rem}
+    .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}.foot .brand{color:#fff}
+    .foot-dis{max-width:64ch;font-size:.8rem;margin-top:18px;color:#8497a8}
+
+    @media(max-width:860px){.hero-grid,.loc{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.nav-links{display:none}.menu-btn{display:block}.nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--bg);padding:18px 24px;border-bottom:1px solid var(--line)}.call-full{display:none}.call-short{display:inline}.nav-cta .btn{padding:.55rem .85rem;font-size:.9rem}}
+    @media(max-width:560px){.grid,.two{grid-template-columns:1fr}}
+  </style>
+</head>
+<body id="top">
+  <div class="disclaimer"><b>Concept demo</b> — an unaffiliated example site built to show what's possible. Not the official site of Better Air Systems. <a href="https://simonchia.com" target="_blank" rel="noopener">Built by Simon Chia ↗</a></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">Better <span>Air</span> Systems<small>North County San Diego · Lic #977738 · 24/7</small></a>
+      <nav class="nav-links" id="nav"><a href="#services">Services</a><a href="#why">Why us</a><a href="#reviews">Reviews</a><a href="#area">Service area</a><a href="#quote">Get a quote</a></nav>
+      <div class="nav-cta"><a class="btn btn-call" href="tel:+17604108373"><span class="call-full">📞 (760) 410-8373</span><span class="call-short">📞 Call</span></a></div>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero"><div class="wrap hero-grid">
+      <div>
+        <div class="stars">★★★★★ <span style="color:var(--slate);font-weight:500">5.0 · 12 Google reviews · 20+ years in North County</span></div>
+        <h1>Around-the-clock HVAC you can count on.</h1>
+        <p class="lead">Better Air Systems is owner-operated by Mike — fast, honest AC, heating, and water-heater service across North County San Diego &amp; South Riverside, <strong>24 hours a day</strong>. Routine tune-up or a holiday-weekend breakdown, you get the same fair price.</p>
+        <div class="hero-cta">
+          <a class="btn btn-call" href="tel:+17604108373">📞 Call (760) 410-8373</a>
+        </div>
+      </div>
+      <form class="card quotebox" id="quoteForm" novalidate>
+        <h3>Request a free quote</h3>
+        <p class="sub">Tell us what's going on — we'll get back fast.</p>
+        <div class="field"><label>What do you need?</label>
+          <select required><option value="">Choose…</option><option>AC repair</option><option>AC installation</option><option>Heating / furnace</option><option>Water heater</option><option>Maintenance / tune-up</option><option>Emergency — no heat / no AC</option><option>Commercial HVAC</option><option>Not sure — take a look</option></select></div>
+        <div class="two">
+          <div class="field"><label>Name</label><input type="text" required placeholder="Your name"></div>
+          <div class="field"><label>Phone</label><input type="tel" required placeholder="(760) ___-____"></div>
+        </div>
+        <div class="two">
+          <div class="field"><label>Email <span style="color:var(--slate);font-weight:400">(optional)</span></label><input type="email" placeholder="you@email.com"></div>
+          <div class="field"><label>City / ZIP</label><input type="text" placeholder="Carlsbad, 92008"></div>
+        </div>
+        <div class="field"><label>Anything else?</label><textarea rows="2" placeholder="e.g. AC stopped cooling last night — is this an emergency visit?"></textarea></div>
+        <button type="submit" class="btn btn-quote" style="width:100%;justify-content:center">Get my free quote</button>
+        <div class="ok" id="ok">Thanks — your request is in. <em>(Concept demo, so nothing was sent.)</em> On the live site, Mike would call you back fast with a free quote.</div>
+      </form>
+    </div></section>
+
+    <div class="trust"><div class="wrap">
+      <span><b>★ 5.0</b> · 12 reviews</span><span><b>20+ years</b> in business</span><span><b>Licensed</b> #977738</span><span><b>24/7</b> emergency</span><span><b>Serving</b> North County SD + S. Riverside</span>
+    </div></div>
+
+    <section class="pad wrap" id="services">
+      <div class="head reveal"><div class="eyebrow">Services</div><h2>AC, heating &amp; more — done right, day or night</h2><p>Residential and light-commercial HVAC across North County San Diego &amp; South Riverside.</p></div>
+      <div class="grid">
+        <div class="svc reveal"><div class="ic">❄</div><h3>AC Repair</h3><p>Not cooling? Fast, honest diagnosis — often same day.</p></div>
+        <div class="svc reveal"><div class="ic">⊞</div><h3>AC Installation</h3><p>Right-sized systems with airflow designed to actually perform.</p></div>
+        <div class="svc reveal"><div class="ic">🔥</div><h3>Heating &amp; Furnace</h3><p>Furnace and heating repair to keep you warm and safe.</p></div>
+        <div class="svc reveal"><div class="ic">♨</div><h3>Water Heaters</h3><p>Repair and replacement, done clean and to code.</p></div>
+        <div class="svc reveal"><div class="ic">🛠</div><h3>Maintenance &amp; Tune-ups</h3><p>Seasonal service to prevent breakdowns and extend system life.</p></div>
+        <div class="svc reveal"><div class="ic">⏰</div><h3>24/7 Emergency</h3><p>After hours, weekends, holidays — we actually answer.</p></div>
+        <div class="svc reveal"><div class="ic">🏢</div><h3>Commercial HVAC</h3><p>Rooftop units and light-commercial work, crane jobs included.</p></div>
+        <div class="svc reveal"><div class="ic">?</div><h3>Not sure?</h3><p>We'll take a look and tell you straight — repair vs. replace.</p></div>
+      </div>
+    </section>
+
+    <section class="pad wrap" id="work">
+      <div class="head reveal"><div class="eyebrow">Our work</div><h2>Recent work across North County</h2><p>A few real jobs — AC repair, installs, water heaters, and commercial.</p></div>
+      <div class="gallery">
+        <figure class="shot reveal"><img src="work1.jpg" loading="lazy" alt="AC condenser diagnosed and repaired on site"><figcaption>AC condenser diagnosed and repaired on-site</figcaption></figure>
+        <figure class="shot reveal"><img src="work2.jpg" loading="lazy" alt="New high-efficiency water heater installation"><figcaption>High-efficiency water-heater install</figcaption></figure>
+        <figure class="shot reveal"><img src="work3.jpg" loading="lazy" alt="Commercial rooftop HVAC unit set with a crane"><figcaption>Commercial rooftop unit set with a crane</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="why pad" id="why"><div class="wrap" style="display:block;text-align:center">
+      <div class="reveal" style="max-width:760px;margin:0 auto">
+        <div class="eyebrow">Why Better Air</div>
+        <h2>20 years of honest, around-the-clock HVAC.</h2>
+        <p style="max-width:62ch;margin:1rem auto 0">Better Air Systems is owner-operated by Mike — the name customers ask for. Licensed (#977738) and serving North County San Diego &amp; South Riverside for over 20 years, with the same straight answers and fair pricing whether it's a routine tune-up or a 90-degree holiday-weekend emergency.</p>
+        <ul class="points" style="display:inline-block;text-align:left;margin-top:1.6rem">
+          <li>Over 20 years in business — licensed #977738</li>
+          <li>True 24/7 — we answer after hours, weekends &amp; holidays</li>
+          <li>Owner-operated: you deal with Mike, not a call center</li>
+          <li>Honest, reasonable pricing — no surprise "emergency" gouging</li>
+          <li>AC, heating, water heaters &amp; commercial — 5.0★ on Google</li>
+        </ul>
+      </div>
+    </div></section>
+
+    <section class="pad wrap" id="visit">
+      <div class="head reveal" style="max-width:54ch"><div class="eyebrow">What to expect</div><h2>What a visit looks like</h2><p>Fast, honest, and around-the-clock — here's how a typical Better Air visit goes.</p></div>
+      <div class="steps">
+        <div class="step reveal"><img src="gemini1.jpeg" loading="lazy" alt="Friendly technician arriving at a customer's front door"><div class="body"><span class="num">1</span><h3>We answer — day or night</h3><p>Call anytime, even nights, weekends &amp; holidays, and we get you scheduled fast.</p></div></div>
+        <div class="step reveal"><img src="gemini2.jpeg" loading="lazy" alt="Technician inspecting a home HVAC system with a flashlight"><div class="body"><span class="num">2</span><h3>Find the real problem</h3><p>Mike and the team diagnose what's actually wrong — straight answers, no guesswork.</p></div></div>
+        <div class="step reveal"><img src="gemini3.jpeg" loading="lazy" alt="Technician carefully working on a home's HVAC system"><div class="body"><span class="num">3</span><h3>Fix it right</h3><p>Repairs and installs done properly, with fair, up-front pricing.</p></div></div>
+        <div class="step reveal"><img src="gemini4.jpeg" loading="lazy" alt="Technician explaining a thermostat to a homeowner"><div class="body"><span class="num">4</span><h3>Explain &amp; stand behind it</h3><p>We walk you through the work — and no surprise "emergency" charges.</p></div></div>
+      </div>
+    </section>
+
+    <section class="pad wrap" id="reviews">
+      <div class="head reveal" style="max-width:none;text-align:center">
+        <div class="eyebrow">Reviews</div>
+        <h2 style="margin:.4rem 0"><span style="color:var(--heat)">★★★★★</span> 5.0 — 12 Google reviews</h2>
+        <p>What North County homeowners say about Mike &amp; the team.</p>
+        <p style="margin-top:12px"><a class="btn btn-quote" href="https://maps.google.com/?cid=14281641909916670177" target="_blank" rel="noopener">★ Read the reviews on Google →</a></p>
+      </div>
+      <div class="grid">
+        <div class="svc reveal"><div style="color:var(--heat);font-weight:700">★★★★★</div><p style="margin:.6rem 0;color:var(--ink)">"Need AC repair? Mike is the man! I called yesterday afternoon and he had me on the schedule this morning. Mike and Nick found the problems, fixed every issue, and the cost was reasonable."</p><p style="font-size:.85rem;color:var(--slate);font-weight:600">— Carlos D. · Google review</p></div>
+        <div class="svc reveal"><div style="color:var(--heat);font-weight:700">★★★★★</div><p style="margin:.6rem 0;color:var(--ink)">"Mike goes above and beyond. I called at 6:30pm on a Friday — he'd just finished a big job and was headed home, and he still took care of us. I don't write reviews often, but he earned it."</p><p style="font-size:.85rem;color:var(--slate);font-weight:600">— Kelson P. · Google review</p></div>
+        <div class="svc reveal"><div style="color:var(--heat);font-weight:700">★★★★★</div><p style="margin:.6rem 0;color:var(--ink)">"Mike and Chris installed a completely new AC unit and redesigned the intake and output to get the most out of the system. Excellent work from start to finish."</p><p style="font-size:.85rem;color:var(--slate);font-weight:600">— Big T. · Google review</p></div>
+      </div>
+      <p style="text-align:center;color:var(--slate);font-size:.8rem;font-style:italic;margin-top:18px">Real Google reviews, shown for the concept; the live site embeds Google's official auto-updating reviews widget.</p>
+    </section>
+
+    <section class="area-band" id="area"><div class="wrap reveal">
+      <div class="eyebrow" style="color:#cdd9f7">Service area</div>
+      <h2 style="color:#fff;font-size:clamp(1.6rem,3vw,2.1rem);margin-top:.4rem">Serving North County San Diego &amp; South Riverside</h2>
+      <div class="chips"><span class="chip">Carlsbad</span><span class="chip">Oceanside</span><span class="chip">Vista</span><span class="chip">San Marcos</span><span class="chip">Encinitas</span><span class="chip">Escondido</span><span class="chip">Fallbrook</span><span class="chip">Temecula</span><span class="chip">Murrieta</span><span class="chip">+ nearby</span></div>
+      <iframe src="https://maps.google.com/maps?q=Carlsbad,+California&z=9&output=embed" width="100%" height="340" style="border:0;border-radius:16px;margin-top:24px;max-width:840px;box-shadow:var(--shadow)" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Better Air Systems service area — North County San Diego & South Riverside"></iframe>
+    </div></section>
+
+    <section class="pad wrap" id="contact">
+      <div class="head reveal"><div class="eyebrow">Reach us</div><h2>Hours &amp; contact</h2></div>
+      <div class="loc">
+        <div class="loc-card reveal"><h3>Call or request a quote</h3><p><strong>(760) 410-8373</strong><br>Owner-operated by Mike · North County SD + S. Riverside<br><strong>Open 24/7</strong> — including nights, weekends &amp; holidays</p><p style="margin-top:14px"><a class="btn btn-call" href="tel:+17604108373">📞 Call now</a> <a class="btn btn-ghost" href="#quote">Get a quote</a></p></div>
+        <div class="loc-card reveal"><h3><span style="color:var(--heat)">★</span> 5.0 on Google</h3><p>12 reviews · Licensed #977738 · 20+ years in business.<br><a href="https://maps.google.com/?cid=14281641909916670177" target="_blank" rel="noopener" style="color:var(--blue);font-weight:600">Read them on Google →</a></p><p style="margin-top:12px"><a class="btn btn-ghost" href="#reviews">See reviews</a></p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">
+    <div class="foot"><div class="brand">Better Air Systems</div><nav style="display:flex;gap:1.4rem"><a href="#services">Services</a><a href="#area">Area</a><a href="#quote">Quote</a><a href="tel:+17604108373">Call</a></nav></div>
+    <p class="foot-dis"><strong>Concept demo — unaffiliated.</strong> This is an independent example built to show what a modern site could do for Better Air Systems. It is not affiliated with or operated by the business. Services, hours, license, and phone are drawn from public listings; photos include the business's own Google-listing photos plus AI-generated illustrations of a typical visit.</p>
+  </div></footer>
+
+  <div id="toast"></div>
+  <script>
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
+    document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    document.getElementById('quoteForm').addEventListener('submit',e=>{e.preventDefault();if(!e.target.checkValidity()){e.target.reportValidity();return}document.getElementById('ok').style.display='block';e.target.querySelector('button[type=submit]').style.display='none';document.getElementById('ok').scrollIntoView({behavior:'smooth',block:'center'})});
+    document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>{const t=document.getElementById('toast');t.textContent='📞 Calling (760) 410-8373 — or tap to dial on your phone';t.classList.add('show');clearTimeout(window._tt);window._tt=setTimeout(()=>t.classList.remove('show'),3500)}));
+  </script>
+</body>
+</html>
