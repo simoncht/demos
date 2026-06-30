@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>About Cali Breeze HVAC — 15+ Years of Honest Comfort in North County</title>
+  <meta name="description" content="Cali Breeze HVAC: licensed, insured, locally operated — 15+ years and 1,000+ jobs keeping Fallbrook & North San Diego County comfortable. Honest pricing, 24/7 emergency service." />
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#0f2233; --slate:#4a5a6a; --blue:#0369a1; --blue-d:#075985; --heat:#d83a34;
+      --bg:#f5f9fc; --sand:#e9f1f8; --line:#d8e6f0; --white:#fff;
+      --sans:"Inter",system-ui,-apple-system,sans-serif; --shadow:0 16px 44px -22px rgba(15,34,51,.42);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{line-height:1.12;letter-spacing:-.02em;font-weight:800}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.95rem 1.6rem;border-radius:12px;font-weight:700;font-size:.98rem;cursor:pointer;border:2px solid transparent;transition:.2s;white-space:nowrap}
+    .btn-call{background:var(--heat);color:#fff}.btn-call:hover{background:#bf2e28;transform:translateY(-1px)}
+    .btn-quote{background:var(--blue);color:#fff}.btn-quote:hover{background:var(--blue-d);transform:translateY(-1px)}
+    .btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}.btn-ghost:hover{border-color:var(--blue)}
+    .btn-lg{padding:1.05rem 2rem;font-size:1.05rem}
+    .eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700}
+    .reveal{transition:.6s ease}
+    html.js .reveal{opacity:0;transform:translateY(16px)}
+    html.js .reveal.in{opacity:1;transform:none}
+    .disclaimer{background:#c0392b;color:#fff;font-size:.89rem;text-align:center;padding:.55rem 1rem;line-height:1.45}.disclaimer b{color:#fff;font-weight:700}.disclaimer a{color:#fff;text-decoration:underline;text-underline-offset:2px;white-space:nowrap;opacity:.9}.disclaimer a:hover{opacity:1}
+    #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:.85rem 1.4rem;border-radius:999px;font-weight:600;font-size:.92rem;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.3s;z-index:100}
+    #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+    header{position:sticky;top:0;z-index:50;background:rgba(245,249,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:1rem}
+    .brand{font-weight:800;font-size:1.1rem;letter-spacing:-.02em}.brand span{color:var(--blue)}.brand i{color:var(--heat);font-style:normal}
+    .brand small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--slate)}
+    .nav-links{display:flex;gap:1.5rem;align-items:center}.nav-links a{font-size:.92rem;color:var(--slate);font-weight:500}.nav-links a:hover,.nav-links a.active{color:var(--ink)}.nav-links a.active{font-weight:700}
+    .nav-cta{display:flex;gap:.6rem}.call-short{display:none}
+    .menu-btn{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer}
+
+    /* HERO */
+    .hero{padding:74px 0 56px;background:radial-gradient(1100px 480px at 80% -10%,#d6ecfb,transparent 60%),radial-gradient(760px 340px at 0% 120%,#fde3e1,transparent 55%)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:46px;align-items:center}
+    .hero h1{font-size:clamp(2.3rem,5vw,3.6rem);margin:.5rem 0 1rem}
+    .hero p.lead{font-size:1.14rem;color:var(--slate);max-width:46ch}
+    .hero-cta{display:flex;gap:12px;margin-top:1.9rem;flex-wrap:wrap}
+    .hero-img{width:100%;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover}
+
+    /* STATS band (bold) */
+    .stats{background:linear-gradient(120deg,var(--blue),var(--blue-d));color:#fff}
+    .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:38px 24px;text-align:center}
+    .stat .n{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800;letter-spacing:-.02em}
+    .stat .l{font-size:.85rem;opacity:.9;margin-top:.2rem;font-weight:500}
+
+    section.pad{padding-top:74px;padding-bottom:74px}
+    .head{max-width:54ch;margin-bottom:34px}.head h2{font-size:clamp(1.8rem,3.5vw,2.4rem);margin:.5rem 0}.head p{color:var(--slate)}
+    .story{max-width:62ch}.story p{color:var(--slate);font-size:1.05rem;margin-top:1rem}
+    .pledge{background:#fff;border-left:4px solid var(--heat);border-radius:0 12px 12px 0;padding:18px 22px;margin-top:1.5rem;box-shadow:var(--shadow);font-weight:600;font-size:1.05rem}
+
+    .vcards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .vc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}.vc .ic{width:42px;height:42px;border-radius:11px;background:var(--sand);display:grid;place-items:center;color:var(--blue);font-size:1.2rem;margin-bottom:12px}
+    .vc h3{font-size:1.05rem;margin-bottom:.3rem}.vc p{font-size:.9rem;color:var(--slate)}
+
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+    .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;position:relative}
+    .step .num{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;margin-bottom:12px}
+    .step h3{font-size:1rem;margin-bottom:.3rem}.step p{font-size:.9rem;color:var(--slate)}
+
+    .why{background:var(--sand)}
+    .rev{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .rev .c{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}.rev .c p.q{margin:.5rem 0;color:var(--ink)}.rev .c p.n{font-size:.85rem;color:var(--slate);font-weight:600}
+
+    /* CTA band (prominent) */
+    .cta{background:var(--ink);color:#fff;text-align:center}.cta .wrap{padding:60px 24px}
+    .cta h2{color:#fff;font-size:clamp(1.8rem,3.6vw,2.6rem)}.cta p{opacity:.9;max-width:52ch;margin:.8rem auto 1.6rem;font-size:1.08rem}
+    .cta .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+    .cta .btn-ghost{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}.cta .btn-ghost:hover{border-color:#fff}
+
+    footer{background:#0b1a27;color:#9fb2c2;padding:42px 0 36px;font-size:.88rem}
+    .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}.foot .brand{color:#fff}
+    .foot a{color:#9fb2c2}.foot a:hover{color:#fff}
+    .foot-dis{max-width:70ch;font-size:.8rem;margin-top:22px;color:#7891a5;border-top:1px solid #1c2f3f;padding-top:18px}
+
+    @media(max-width:880px){.hero-grid{grid-template-columns:1fr}.stats .wrap{grid-template-columns:1fr 1fr}.vcards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.rev{grid-template-columns:1fr}.nav-links{display:none}.menu-btn{display:block}.nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--bg);padding:18px 24px;border-bottom:1px solid var(--line)}.call-full{display:none}.call-short{display:inline}.nav-cta .btn{padding:.55rem .85rem;font-size:.9rem}}
+    @media(max-width:560px){.vcards,.steps{grid-template-columns:1fr}}
+  </style>
+</head>
+<body id="top">
+  <div class="disclaimer"><b>Concept demo</b> — an unaffiliated example built to show what's possible. Not the official site of Cali Breeze HVAC. <a href="https://simonchia.com" target="_blank" rel="noopener">Built by Simon Chia ↗</a></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html">Cali <span>Breeze</span> <i>HVAC</i><small>Fallbrook · North San Diego County</small></a>
+      <nav class="nav-links" id="nav"><a href="index.html#services">Services</a><a href="about.html" class="active">About</a><a href="index.html#reviews">Reviews</a><a href="index.html#area">Service area</a><a href="index.html#quote">Get a quote</a></nav>
+      <div class="nav-cta"><a class="btn btn-call" href="tel:+17606438184"><span class="call-full">📞 (760) 643-8184</span><span class="call-short">📞 Call</span></a></div>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero"><div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">About Cali Breeze</div>
+        <h1>15 years keeping North County comfortable.</h1>
+        <p class="lead">Cali Breeze is a licensed, insured, locally operated HVAC team serving Fallbrook and North San Diego County. Over 1,000 jobs, residential and commercial — installs, repairs, and maintenance done with honest pricing and quality workmanship.</p>
+        <div class="hero-cta">
+          <a class="btn btn-call btn-lg" href="tel:+17606438184">📞 Call (760) 643-8184</a>
+          <a class="btn btn-ghost btn-lg" href="index.html#quote">Request a free estimate</a>
+        </div>
+      </div>
+      <img class="hero-img" src="van.jpg" loading="lazy" alt="The Cali Breeze HVAC service van — local, North County San Diego">
+    </div></section>
+
+    <div class="stats"><div class="wrap">
+      <div class="stat"><div class="n">15+</div><div class="l">Years in business</div></div>
+      <div class="stat"><div class="n">1,000+</div><div class="l">Jobs completed</div></div>
+      <div class="stat"><div class="n">5.0★</div><div class="l">190 Google reviews</div></div>
+      <div class="stat"><div class="n">24/7</div><div class="l">Emergency service</div></div>
+    </div></div>
+
+    <section class="pad wrap" id="story">
+      <div class="head reveal"><div class="eyebrow">Our background</div><h2>Honest comfort, built over 15+ years.</h2></div>
+      <div class="story reveal">
+        <p>For more than fifteen years, Cali Breeze has kept homes and businesses across <strong>Fallbrook, Vista, Oceanside, Carlsbad, Escondido, and Temecula</strong> comfortable through every season. We're licensed, insured, and locally operated — and our certified technicians pair deep industry experience with up-to-date training.</p>
+        <p>We handle it all: energy-efficient AC installations, fast repairs, furnace and heat-pump service, and preventative maintenance — for both residential and commercial properties. The result is high-quality workmanship at competitive pricing, without cutting corners.</p>
+        <div class="pledge">"We diagnose the real problem and quote it fair — and we'll tell you straight when a repair beats a replacement. No scare tactics, no selling you a system you don't need."</div>
+      </div>
+    </section>
+
+    <section class="why pad"><div class="wrap">
+      <div class="head reveal"><div class="eyebrow">What we stand for</div><h2>Why North County trusts Cali Breeze</h2></div>
+      <div class="vcards">
+        <div class="vc reveal"><div class="ic">🎓</div><h3>Expert &amp; certified</h3><p>Certified technicians with broad industry knowledge and current training — done right the first time.</p></div>
+        <div class="vc reveal"><div class="ic">📍</div><h3>Local &amp; community-focused</h3><p>Locally owned and operated, proudly serving North San Diego County homeowners and businesses.</p></div>
+        <div class="vc reveal"><div class="ic">💬</div><h3>Unmatched service</h3><p>Clear communication, quick response times, and transparent pricing — no surprises.</p></div>
+        <div class="vc reveal"><div class="ic">⏰</div><h3>Always ready</h3><p>24/7 emergency cooling &amp; heating support — same-day service if you call before 2 PM.</p></div>
+      </div>
+    </div></section>
+
+    <section class="pad wrap" id="process">
+      <div class="head reveal"><div class="eyebrow">How it works</div><h2>Easy steps to fix or install your HVAC</h2></div>
+      <div class="steps">
+        <div class="step reveal"><div class="num">1</div><h3>Book online or call</h3><p>Fill out the form or call <strong>(760) 643-8184</strong> to schedule your appointment.</p></div>
+        <div class="step reveal"><div class="num">2</div><h3>Discuss your budget</h3><p>A transparent conversation about options and price — so there are no surprises.</p></div>
+        <div class="step reveal"><div class="num">3</div><h3>Get confirmation</h3><p>Your booking details and service schedule, confirmed straight to your inbox.</p></div>
+        <div class="step reveal"><div class="num">4</div><h3>Enjoy the comfort</h3><p>Reliable, high-quality work from our expert team — your satisfaction guaranteed.</p></div>
+      </div>
+    </section>
+
+    <section class="why pad" id="reviews"><div class="wrap">
+      <div class="head reveal" style="max-width:none;text-align:center"><div class="eyebrow">Reviews</div><h2 style="margin:.4rem 0"><span style="color:#f5a623">★★★★★</span> 5.0 — 190 Google reviews</h2><p>Hear it from North County homeowners.</p></div>
+      <div class="rev">
+        <div class="c reveal"><div style="color:#f5a623;font-weight:700">★★★★★</div><p class="q">"Davie was on time, professional, personable, and transparent. He quickly diagnosed our AC issues and resolved them."</p><p class="n">— Gary B. · Google review</p></div>
+        <div class="c reveal"><div style="color:#f5a623;font-weight:700">★★★★★</div><p class="q">"About 5 different companies came by before them — all telling me to replace both AC units. Cali Breeze was a completely different experience."</p><p class="n">— Sandra W. · Google review</p></div>
+        <div class="c reveal"><div style="color:#f5a623;font-weight:700">★★★★★</div><p class="q">"We've had multiple wonderful experiences with Cali Breeze. Ricky is awesome, skilled, and very courteous — we can count on them."</p><p class="n">— Sasha M. · Google review</p></div>
+      </div>
+    </div></section>
+
+    <section class="cta" id="cta"><div class="wrap reveal">
+      <h2>Ready for honest, on-time HVAC?</h2>
+      <p>Same-day service available if you call before 2 PM. Get a free estimate from the North County team that tells you straight.</p>
+      <div class="row">
+        <a class="btn btn-call btn-lg" href="tel:+17606438184">📞 Call (760) 643-8184</a>
+        <a class="btn btn-ghost btn-lg" href="index.html#quote">Request a free estimate</a>
+      </div>
+    </div></section>
+  </main>
+
+  <footer><div class="wrap">
+    <div class="foot"><div class="brand">Cali <span style="color:#7ec8f0">Breeze</span> <i style="color:#ff6b63;font-style:normal">HVAC</i></div>
+      <nav style="display:flex;gap:1.4rem"><a href="index.html#services">Services</a><a href="about.html">About</a><a href="index.html#reviews">Reviews</a><a href="index.html#quote">Quote</a><a href="tel:+17606438184">Call</a></nav></div>
+    <p class="foot-dis"><strong>Concept demo — unaffiliated.</strong> An independent example built to show what a modern site could do for Cali Breeze HVAC. Not affiliated with or operated by the business. Content drawn from the business's public website &amp; listings; photo is the business's own.</p>
+  </div></footer>
+
+  <div id="toast"></div>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","mainEntity":{"@type":"HVACBusiness","name":"Cali Breeze Heating and Air Conditioning","telephone":"+1-760-643-8184","areaServed":"North San Diego County","foundingDate":"2011","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"190"}}}</script>
+  <script>
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
+    document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>{const t=document.getElementById('toast');t.textContent='📞 Calling (760) 643-8184 — or tap to dial on your phone';t.classList.add('show');clearTimeout(window._tt);window._tt=setTimeout(()=>t.classList.remove('show'),3500)}));
+  </script>
+</body>
+</html>
