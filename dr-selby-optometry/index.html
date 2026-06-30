@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Dr Selby Optometry — Eye Exams & Designer Eyewear · Miramar, San Diego</title>
+  <meta name="description" content="Comprehensive eye exams, contact lenses, and designer frames in Miramar, San Diego. 4.7★ rated. Most vision insurance accepted. Book your exam — (858) 566-4110." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>document.documentElement.classList.add('js')</script>
+  <style>
+    :root{
+      --bg:#F6F5F2; --surface:#FFFFFF; --ink:#191B22; --ink-2:#2A2D38; --teal:#0E8A86; --teal-2:#13A39C;
+      --teal-soft:#E5F1F0; --amber:#C8842A; --amber-soft:#F6ECDD; --muted:#5E6168; --line:#E6E3DD;
+      --head:"Sora",system-ui,sans-serif; --sans:"Inter",system-ui,-apple-system,sans-serif;
+      --shadow:0 22px 60px -30px rgba(25,27,34,.45);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.08;letter-spacing:-.02em}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.55rem;border-radius:10px;font-weight:600;font-size:.95rem;font-family:var(--head);cursor:pointer;border:1px solid transparent;transition:.2s}
+    .btn-primary{background:var(--teal);color:#fff}
+    .btn-primary:hover{background:#0b716e;transform:translateY(-1px)}
+    .btn-amber{background:var(--amber);color:#fff}
+    .btn-amber:hover{background:#b0742300;background:#ab7224;transform:translateY(-1px)}
+    .btn-ink{background:var(--ink);color:#fff}
+    .btn-ink:hover{background:#000;transform:translateY(-1px)}
+    .btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}
+    .btn-ghost:hover{border-color:var(--teal);color:var(--teal)}
+    .eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);font-weight:700;font-family:var(--head)}
+    .reveal{transition:.7s ease}
+    html.js .reveal{opacity:0;transform:translateY(18px)}
+    html.js .reveal.in{opacity:1;transform:none}
+
+    .disclaimer{background:var(--ink);color:#C8CAD2;font-size:.78rem;text-align:center;padding:.5rem 1rem}
+    .disclaimer b{color:#fff}
+
+    header{position:sticky;top:0;z-index:50;background:rgba(246,245,242,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+    .brand{font-family:var(--head);font-size:1.18rem;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:.6rem}
+    .brand .mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--teal),var(--amber));display:grid;place-items:center;color:#fff;font-size:1rem}
+    .brand small{display:block;font-family:var(--sans);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+    .nav-links{display:flex;gap:1.7rem;align-items:center}
+    .nav-links a{font-size:.92rem;color:var(--muted);font-weight:500}
+    .nav-links a:hover{color:var(--ink)}
+    .nav-call{font-family:var(--head);font-weight:700;color:var(--teal)!important}
+    .menu-btn{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer;color:var(--ink)}
+
+    .hero{position:relative;padding:88px 0 76px;background:
+      radial-gradient(1100px 460px at 82% -10%, var(--teal-soft), transparent 60%),
+      radial-gradient(820px 380px at -5% 110%, var(--amber-soft), transparent 55%)}
+    .hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:50px;align-items:start}
+    .stars{color:var(--amber);letter-spacing:2px;font-size:1.05rem}
+    .hero h1{font-size:clamp(2.5rem,5.2vw,3.9rem);margin:.7rem 0 .4rem;font-weight:800}
+    .hero h1 .em{color:var(--teal)}
+    .hero p.lead{font-size:1.13rem;color:var(--muted);max-width:40ch;margin-top:.8rem}
+    .hero-cta{display:flex;gap:12px;margin-top:1.9rem;flex-wrap:wrap}
+    .hero-visual{display:flex;flex-direction:column;gap:18px}
+    .media{border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--line)}
+    .media img{display:block;width:100%;height:100%;object-fit:cover}
+    .hero-img{aspect-ratio:5/4}
+    .hero-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:28px}
+    .hero-card h3{font-size:1.12rem;margin-bottom:.2rem}
+    .hero-card .row{display:flex;align-items:center;gap:13px;padding:13px 0;border-bottom:1px solid var(--line)}
+    .hero-card .row:last-child{border-bottom:0}
+    .ico{width:42px;height:42px;flex:0 0 42px;border-radius:11px;background:var(--teal-soft);display:grid;place-items:center;color:var(--teal);font-size:1.1rem}
+
+    .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ink)}
+    .trust .wrap{display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:center;padding:18px 24px;font-size:.9rem;color:#E7F1F0;font-weight:600;font-family:var(--head)}
+    .trust span{display:inline-flex;gap:.5rem;align-items:center}
+    .trust b{color:var(--amber)}
+
+    /* exam offer */
+    .offer{background:linear-gradient(120deg,var(--amber),#b0731f);color:#fff}
+    .offer-in{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:30px 24px;flex-wrap:wrap}
+    .offer-txt h3{font-size:clamp(1.3rem,2.6vw,1.7rem);color:#fff;margin:.3rem 0}
+    .offer-txt h3 span{background:rgba(255,255,255,.2);padding:.05em .3em;border-radius:8px}
+    .offer-txt p{color:#FBEFDD;font-size:.95rem;max-width:56ch}
+    .offer-cta{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+    .offer-cta .btn{background:#fff;color:var(--amber)}
+    .offer-note{font-size:.78rem;color:#FBEFDD}
+
+    section.pad{padding:86px 0}
+    .head{max-width:48ch;margin-bottom:44px}
+    .head h2{font-size:clamp(1.9rem,3.6vw,2.6rem);margin:.5rem 0}
+    .head p{color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;transition:.25s}
+    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#cfe6e4}
+    .card .ico{margin-bottom:15px}
+    .card h3{font-size:1.04rem;margin-bottom:.35rem}
+    .card p{font-size:.9rem;color:var(--muted)}
+
+    /* feature split (eyewear, contacts) */
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .split.rev .split-media{order:2}
+    .split-media{aspect-ratio:4/3}
+    .split h2{font-size:clamp(1.8rem,3.4vw,2.4rem);margin:.5rem 0}
+    .split p{color:var(--muted);margin-bottom:1.2rem}
+    .split ul{list-style:none;margin:0 0 1.5rem}
+    .split li{padding:.4rem 0;color:var(--ink);font-size:.95rem;display:flex;gap:.6rem;align-items:flex-start}
+    .split li::before{content:"●";color:var(--teal);font-size:.7rem;margin-top:.45rem}
+    .eyewear{background:var(--ink);color:#EAEBEF}
+    .eyewear h2{color:#fff}
+    .eyewear p{color:#B9BCC6}
+    .eyewear li{color:#EAEBEF}
+    .eyewear .split-media{border-color:rgba(255,255,255,.12)}
+
+    /* insurance */
+    .ins{background:var(--teal-soft)}
+    .ins .wrap{text-align:center}
+    .ins .logos{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px}
+    .ins .plan{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.6rem 1.3rem;font-family:var(--head);font-weight:700;font-size:.92rem;color:var(--ink)}
+
+    /* reviews */
+    .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .rev{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px}
+    .rev .stars{font-size:.95rem}
+    .rev p{font-size:.94rem;color:var(--ink);margin:.6rem 0 1rem;font-style:italic}
+    .rev .who{font-family:var(--head);font-weight:700;font-size:.9rem}
+    .rev .who span{display:block;font-weight:500;font-family:var(--sans);font-size:.8rem;color:var(--muted);font-style:normal}
+
+    /* cta band */
+    .cta-band{position:relative;padding:98px 0;background-size:cover;background-position:center 30%;color:#fff;text-align:center}
+    .cta-band::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(25,27,34,.74),rgba(14,138,134,.74))}
+    .cta-band .wrap{position:relative;z-index:1}
+    .cta-band h2{color:#fff;font-size:clamp(2rem,4vw,2.8rem)}
+    .cta-band p{color:#E7F1F0;max-width:48ch;margin:1rem auto 1.9rem}
+
+    /* faq */
+    .faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
+    .faq summary{padding:18px 22px;font-family:var(--head);font-weight:700;font-size:1rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";color:var(--teal);font-size:1.4rem;font-weight:600;transition:.2s}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq .ans{padding:0 22px 20px;color:var(--muted);font-size:.94rem}
+
+    /* booking */
+    .booking{background:var(--amber-soft)}
+    .book-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:50px;align-items:center}
+    form{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:32px;box-shadow:var(--shadow)}
+    .field{margin-bottom:14px}
+    label{display:block;font-size:.82rem;font-weight:600;margin-bottom:.35rem;color:var(--ink);font-family:var(--head)}
+    input,select,textarea{width:100%;padding:.72rem .9rem;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:.95rem;background:var(--bg)}
+    input:focus,select:focus,textarea:focus{outline:2px solid var(--teal-2);border-color:var(--teal)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .deposit{font-size:.85rem;color:var(--teal);background:var(--teal-soft);border:1px solid #CFE6E4;border-radius:10px;padding:.7rem .85rem;margin:6px 0 14px}
+    .ok{display:none;background:var(--teal-soft);border:1px solid var(--teal);color:var(--teal);border-radius:12px;padding:16px;font-size:.92rem}
+    .callout{display:flex;align-items:center;gap:14px;margin-top:1.5rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+    .callout .ico{flex:0 0 42px}
+    .callout b{font-family:var(--head);font-size:1.15rem;color:var(--teal)}
+
+    .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+    .loc-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px}
+    .loc-card h3{font-size:1.1rem;margin-bottom:.6rem}
+    .loc-card p{color:var(--muted);font-size:.95rem}
+    footer{background:var(--bg);border-top:1px solid var(--line);padding:42px 0;font-size:.88rem;color:var(--muted)}
+    .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+    .foot-dis{max-width:70ch;font-size:.8rem;margin-top:18px;color:var(--muted)}
+
+    @media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:880px){
+      .hero-grid,.split,.split.rev,.book-grid,.loc-grid{grid-template-columns:1fr}
+      .split.rev .split-media{order:0}
+      .rev-grid{grid-template-columns:1fr}
+      .nav-links{display:none}.menu-btn{display:block}
+      .nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--bg);padding:18px 24px;border-bottom:1px solid var(--line);gap:1rem}
+    }
+    @media(max-width:560px){.grid,.two{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="disclaimer"><b>Concept demo</b> — an unaffiliated redesign concept created to show what's possible. Not Dr Selby Optometry's official website.</div>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><span class="mark">◎</span><span>Dr Selby Optometry<small>Eye Care &amp; Eyewear · Miramar</small></span></a>
+      <nav class="nav-links" id="nav">
+        <a href="#services">Services</a>
+        <a href="#eyewear">Eyewear</a>
+        <a href="#insurance">Insurance</a>
+        <a href="#about">About</a>
+        <a class="nav-call" href="tel:+18585664110">(858) 566-4110</a>
+        <a class="btn btn-primary" href="#booking">Book exam</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="stars">★★★★★ <span style="color:var(--muted);font-size:.9rem">4.7 on Google · 30 reviews</span></div>
+          <h1>See clearly.<br><span class="em">Look your best.</span></h1>
+          <p class="lead">Comprehensive eye exams, expert contact-lens fittings, and a hand-picked collection of designer frames — all in one welcoming Miramar practice.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#booking">Book an eye exam →</a>
+            <a class="btn btn-ghost" href="tel:+18585664110">☎ (858) 566-4110</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="media hero-img"><img src="assets/hero.jpg" alt="Person wearing stylish designer eyeglasses" loading="eager" width="1600" height="1067" /></div>
+          <div class="hero-card">
+            <h3>Why patients choose Dr Selby</h3>
+            <p style="color:var(--muted);font-size:.9rem;margin-bottom:8px">Care and eyewear under one roof</p>
+            <div class="row"><div class="ico">★</div><div><strong>4.7★ from 30 reviews</strong><br><span style="color:var(--muted);font-size:.88rem">One of Miramar's most-loved practices</span></div></div>
+            <div class="row"><div class="ico">◎</div><div><strong>Exams + eyewear together</strong><br><span style="color:var(--muted);font-size:.88rem">Get examined and fitted in one visit</span></div></div>
+            <div class="row"><div class="ico">▦</div><div><strong>Designer frames &amp; sunglasses</strong><br><span style="color:var(--muted);font-size:.88rem">A curated, on-trend selection</span></div></div>
+            <div class="row"><div class="ico">✓</div><div><strong>Most vision insurance welcome</strong><br><span style="color:var(--muted);font-size:.88rem">VSP, EyeMed &amp; more — we'll verify it</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <div class="trust"><div class="wrap">
+      <span><b>★ 4.7</b> Google rating</span>
+      <span><b>◇</b> VSP &amp; EyeMed accepted</span>
+      <span><b>◇</b> Same-week exams</span>
+      <span><b>◇</b> 9516 Miramar Rd, San Diego</span>
+    </div></div>
+
+    <!-- EXAM OFFER -->
+    <section class="offer">
+      <div class="wrap offer-in reveal">
+        <div class="offer-txt">
+          <div class="eyebrow" style="color:#fff">New patient special</div>
+          <h3>Comprehensive eye exam — <span>$89</span> without insurance</h3>
+          <p>A full eye-health and vision exam with the doctor, no insurance needed. Already covered? We'll bill your plan and you may owe even less.</p>
+        </div>
+        <div class="offer-cta">
+          <a class="btn" href="#booking">Book this exam →</a>
+          <span class="offer-note">Mention this offer when you book</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="pad wrap" id="services">
+      <div class="head reveal"><div class="eyebrow">Services</div><h2>Complete eye care for the whole family</h2><p>From your annual checkup to specialized care, everything your eyes need — with the time and attention you deserve.</p></div>
+      <div class="grid">
+        <div class="card reveal"><div class="ico">◉</div><h3>Comprehensive Eye Exams</h3><p>Thorough vision and eye-health exams using modern diagnostic technology.</p></div>
+        <div class="card reveal"><div class="ico">◍</div><h3>Contact Lens Fittings</h3><p>Expert fittings for daily, monthly, multifocal, and hard-to-fit eyes.</p></div>
+        <div class="card reveal"><div class="ico">▦</div><h3>Designer Frames &amp; Sunglasses</h3><p>A curated selection of on-trend frames and prescription sunglasses.</p></div>
+        <div class="card reveal"><div class="ico">☺</div><h3>Kids' &amp; Family Eye Care</h3><p>Gentle, kid-friendly exams to keep growing eyes healthy and learning-ready.</p></div>
+        <div class="card reveal"><div class="ico">💧</div><h3>Dry Eye Treatment</h3><p>Relief plans for gritty, tired, or irritated eyes — including screen strain.</p></div>
+        <div class="card reveal"><div class="ico">⊕</div><h3>Medical &amp; Diabetic Exams</h3><p>Screening and management for glaucoma, diabetic eye disease, and more.</p></div>
+        <div class="card reveal"><div class="ico">⚠</div><h3>Urgent &amp; Red-Eye Care</h3><p>Same-day help for irritation, infections, foreign objects, and injuries.</p></div>
+        <div class="card reveal"><div class="ico">◆</div><h3>Lenses &amp; Coatings</h3><p>Blue-light, anti-glare, transitions, and high-index lens options.</p></div>
+      </div>
+    </section>
+
+    <!-- EYEWEAR HIGHLIGHT -->
+    <section class="eyewear pad" id="eyewear">
+      <div class="wrap split">
+        <div class="media split-media reveal"><img src="assets/frames.jpg" alt="Wall of designer eyeglass frames in a modern optical boutique" loading="lazy" width="1600" height="1067" /></div>
+        <div class="reveal">
+          <div class="eyebrow">The eyewear gallery</div>
+          <h2>Frames you'll actually love wearing</h2>
+          <p>Eyewear is the first thing people notice. Our opticians help you find frames that fit your face, your style, and your prescription — not whatever's left on the shelf.</p>
+          <ul>
+            <li>Curated designer &amp; boutique brands for every budget</li>
+            <li>Prescription sunglasses &amp; blue-light lenses</li>
+            <li>Honest styling help from real opticians</li>
+            <li>Adjustments &amp; repairs, even on frames you didn't buy here</li>
+          </ul>
+          <a class="btn btn-primary" href="#booking">Book a styling visit →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS / REORDER -->
+    <section class="pad wrap" id="contacts">
+      <div class="split rev">
+        <div class="media split-media reveal"><img src="assets/contacts.jpg" alt="Soft contact lens on a fingertip beside a lens case" loading="lazy" width="1600" height="1067" /></div>
+        <div class="reveal">
+          <div class="eyebrow">Contact lenses</div>
+          <h2>Reorder your contacts in minutes</h2>
+          <p>Already a patient with a current prescription? Skip the phone tag — send your reorder and we'll confirm pickup or shipping. New to contacts? We'll fit you first so they're comfortable all day.</p>
+          <ul>
+            <li>Fast reorders on your existing prescription</li>
+            <li>Daily, bi-weekly, monthly &amp; specialty lenses</li>
+            <li>Fittings for astigmatism, multifocal &amp; dry eyes</li>
+          </ul>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#booking">Reorder contacts →</a>
+            <a class="btn btn-ghost" href="tel:+18585664110">☎ Call the office</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSURANCE -->
+    <section class="ins pad" id="insurance">
+      <div class="wrap reveal">
+        <div class="eyebrow">Insurance &amp; payment</div>
+        <h2 style="font-size:clamp(1.8rem,3.4vw,2.4rem);margin:.5rem 0">Most vision plans welcome</h2>
+        <p style="color:var(--muted);max-width:52ch;margin:0 auto">Not sure what your plan covers? Tell us who you're insured with and we'll verify your benefits before your visit — no guesswork.</p>
+        <div class="logos">
+          <span class="plan">VSP</span><span class="plan">EyeMed</span><span class="plan">Spectera</span><span class="plan">MetLife</span><span class="plan">Medicare</span><span class="plan">+ most major plans</span>
+        </div>
+        <p style="font-size:.8rem;color:var(--muted);margin-top:18px;font-style:italic">Sample plan list for the concept — confirm accepted plans with the office.</p>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="pad wrap" id="reviews">
+      <div class="head reveal"><div class="eyebrow">Patient reviews</div><h2>4.7 stars from your Miramar neighbors</h2><p>Thirty reviews and counting — here's the kind of visit people come back for.</p></div>
+      <div class="rev-grid">
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"Dr. Selby took the time to actually explain my eyes. Best exam I've had, and they helped me pick frames I love."</p><div class="who">Verified patient<span>Google review</span></div></div>
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"Friendly, no pressure, and they worked with my VSP plan so the whole thing was easy. Highly recommend."</p><div class="who">Verified patient<span>Google review</span></div></div>
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"Took my whole family here. Great with my kids and super patient with my contact-lens fitting. Found our eye doctor."</p><div class="who">Verified patient<span>Google review</span></div></div>
+      </div>
+      <p style="font-size:.8rem;color:var(--muted);text-align:center;margin-top:18px;font-style:italic">Representative quotes shown for the concept demo. On the live site these pull from the practice's verified 4.7★ Google reviews.</p>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" style="background-image:url(assets/lifestyle.jpg)">
+      <div class="wrap reveal">
+        <div class="eyebrow" style="color:#9FE0DC">Clear vision, effortless style</div>
+        <h2>Your best vision is one visit away</h2>
+        <p>Whether it's been a year or five, a quick exam can sharpen your sight, protect your eye health, and refresh your look.</p>
+        <a class="btn btn-amber" href="#booking">Book your eye exam →</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="pad wrap" id="about">
+      <div class="split">
+        <div class="media split-media reveal"><img src="assets/exam.jpg" alt="Optometrist performing a comprehensive eye exam" loading="lazy" width="1600" height="1068" /></div>
+        <div class="reveal">
+          <div class="eyebrow">About the practice</div>
+          <h2>An independent eye-care practice on Miramar Road</h2>
+          <p>Dr Selby Optometry is a locally owned practice where you're a patient, not a number. We pair careful, unhurried exams with a genuine love of great eyewear — so you leave seeing better and looking like yourself.</p>
+          <p>From first eye exams for the kids to managing dry eye and diabetic care for grandparents, we look after Miramar families across every stage of life. Contact-lens patients are cared for through our in-house team (Thu Nguyen, OD).</p>
+          <div class="hero-cta">
+            <a class="btn btn-ink" href="#booking">Book your visit →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="ins pad" id="faq" style="background:var(--bg)">
+      <div class="wrap" style="max-width:800px">
+        <div class="head reveal" style="margin:0 auto 42px;text-align:center"><div class="eyebrow">Good to know</div><h2>Frequently asked questions</h2></div>
+        <div class="faq reveal">
+          <details><summary>Do you take my vision insurance?</summary><div class="ans">We accept VSP, EyeMed, and most major vision and medical plans. Tell us your provider when you book and we'll verify your benefits before your visit, so there are no surprises.</div></details>
+          <details><summary>How often should I get an eye exam?</summary><div class="ans">Most adults benefit from a comprehensive exam every 1–2 years, and annually if you wear contacts, have diabetes, or are over 60. Kids should be checked before starting school and regularly after.</div></details>
+          <details><summary>Can I get my exam and new glasses in one visit?</summary><div class="ans">Usually, yes. After your exam you can browse frames and our opticians will help you choose and order the same day. Many lens options are available quickly.</div></details>
+          <details><summary>Do I need an appointment, or do you take walk-ins?</summary><div class="ans">We recommend booking so the doctor can give you unhurried time, but we do our best to help walk-ins and urgent red-eye visits — just call ahead.</div></details>
+          <details><summary>What should I bring to my exam?</summary><div class="ans">Bring your insurance card (if using), your current glasses or contact boxes, and a list of any medications. Plan for about 30–45 minutes.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking pad" id="booking">
+      <div class="wrap book-grid">
+        <div class="reveal">
+          <div class="eyebrow">Book a visit</div>
+          <h2 style="font-size:clamp(1.9rem,3.6vw,2.6rem);margin:.5rem 0">Ready to see clearly?</h2>
+          <p style="color:var(--muted)">Request your eye exam or contact reorder below and we'll confirm your time — usually the same day. Prefer to talk to a person? Give us a call.</p>
+          <ul style="list-style:none;margin-top:1.4rem;color:var(--muted);font-size:.95rem">
+            <li style="padding:.4rem 0">✓ Same-week exam appointments</li>
+            <li style="padding:.4rem 0">✓ New patients &amp; families welcome</li>
+            <li style="padding:.4rem 0">✓ We'll verify your vision insurance</li>
+          </ul>
+          <a class="callout" href="tel:+18585664110">
+            <span class="ico">☎</span>
+            <span>Call the office<br><b>(858) 566-4110</b></span>
+          </a>
+        </div>
+        <form id="bookForm" novalidate>
+          <div class="field"><label>What do you need?</label>
+            <select required><option value="">Choose…</option><option>Comprehensive eye exam</option><option>Contact lens exam / fitting</option><option>Reorder contacts (existing Rx)</option><option>Frame styling / new glasses</option><option>Kids' / family exam</option><option>Dry eye visit</option><option>Urgent / red-eye care</option><option>Not sure — need guidance</option></select>
+          </div>
+          <div class="two">
+            <div class="field"><label>Preferred date</label><input type="date" required /></div>
+            <div class="field"><label>Time of day</label><select required><option value="">Any</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+          </div>
+          <div class="two">
+            <div class="field"><label>Name</label><input type="text" required placeholder="Your name" /></div>
+            <div class="field"><label>Phone</label><input type="tel" required placeholder="(xxx) xxx-xxxx" /></div>
+          </div>
+          <div class="field"><label>Email</label><input type="email" required placeholder="you@email.com" /></div>
+          <div class="field"><label>Vision insurance (optional)</label><input type="text" placeholder="e.g. VSP, EyeMed — we'll verify it" /></div>
+          <div class="deposit">🔒 New patients can optionally pre-pay the $89 exam via <strong>Stripe</strong> to lock in a same-week slot — applied to your visit, fully refundable.</div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Request appointment</button>
+          <div class="ok" id="ok">Thank you — your request is in. <em>(This is a concept demo, so nothing was actually sent.)</em> On the live site, you'd receive a confirmation by text/email and could optionally secure your slot via Stripe.</div>
+        </form>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="pad wrap" id="location">
+      <div class="head reveal"><div class="eyebrow">Visit us</div><h2>Right on Miramar Road</h2></div>
+      <div class="loc-grid">
+        <div class="loc-card reveal">
+          <h3>Location</h3>
+          <p>9516 Miramar Rd<br>San Diego, CA 92126</p>
+          <p style="margin-top:14px"><a class="btn btn-ghost" href="https://maps.google.com/?q=9516+Miramar+Rd+San+Diego+CA+92126" target="_blank" rel="noopener">Get directions →</a></p>
+        </div>
+        <div class="loc-card reveal">
+          <h3>Hours</h3>
+          <p>Monday – Friday · 9am – 6pm<br>Saturday · 9am – 2pm<br>Sunday · closed</p>
+          <p style="margin-top:14px;font-size:.8rem;font-style:italic">Sample hours — confirm with the office.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <div class="brand"><span class="mark">◎</span><span>Dr Selby Optometry<small>Eye Care &amp; Eyewear · Miramar</small></span></div>
+        <nav style="display:flex;gap:1.4rem;flex-wrap:wrap"><a href="#services">Services</a><a href="#eyewear">Eyewear</a><a href="#insurance">Insurance</a><a href="#booking">Book</a><a href="tel:+18585664110">(858) 566-4110</a></nav>
+      </div>
+      <p class="foot-dis"><strong>Concept demo — unaffiliated.</strong> This page is an independent redesign concept built to illustrate possibilities. It is not affiliated with, endorsed by, or the official website of Dr Selby Optometry. Photography is licensed royalty-free stock (Pexels), reviews shown are representative, and pricing/hours/insurance details are placeholders to be confirmed by the practice.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
+    document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    document.getElementById('bookForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      if(!e.target.checkValidity()){e.target.reportValidity();return;}
+      document.getElementById('ok').style.display='block';
+      e.target.querySelector('button[type=submit]').style.display='none';
+      document.getElementById('ok').scrollIntoView({behavior:'smooth',block:'center'});
+    });
+  </script>
+</body>
+</html>
