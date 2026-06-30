@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>DR. Wells Chiropractic — Spinal Care &amp; Pain Relief · San Diego</title>
+  <meta name="description" content="Gentle, evidence-based chiropractic care in Mira Mesa, San Diego. Back &amp; neck pain, sciatica, posture, sports injury and headache relief. 5.0★ rated. Call (858) 549-8500." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>document.documentElement.classList.add('js')</script>
+  <style>
+    :root{
+      --bg:#F5F8F8; --surface:#FFFFFF; --ink:#16282B; --blue:#1E5C73; --blue-2:#2C7E99;
+      --sage:#5E7C6B; --sage-soft:#EAF1ED; --sand:#ECE5D8; --terra:#C97B4A;
+      --muted:#566569; --line:#E1E9E8;
+      --head:"Plus Jakarta Sans",system-ui,sans-serif; --sans:"Inter",system-ui,-apple-system,sans-serif;
+      --shadow:0 20px 55px -28px rgba(22,40,43,.40);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.08;letter-spacing:-.02em}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.55rem;border-radius:12px;font-weight:600;font-size:.95rem;font-family:var(--head);cursor:pointer;border:1px solid transparent;transition:.2s}
+    .btn-primary{background:var(--blue);color:#fff}
+    .btn-primary:hover{background:#16485a;transform:translateY(-1px)}
+    .btn-accent{background:var(--terra);color:#fff}
+    .btn-accent:hover{background:#b56a3c;transform:translateY(-1px)}
+    .btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}
+    .btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+    .eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--terra);font-weight:700;font-family:var(--head)}
+    .reveal{transition:.7s ease}
+    html.js .reveal{opacity:0;transform:translateY(18px)}
+    html.js .reveal.in{opacity:1;transform:none}
+
+    .disclaimer{background:var(--ink);color:#CBD8D6;font-size:.78rem;text-align:center;padding:.5rem 1rem}
+    .disclaimer b{color:#fff}
+
+    header{position:sticky;top:0;z-index:50;background:rgba(245,248,248,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+    .brand{font-family:var(--head);font-size:1.18rem;font-weight:800;color:var(--blue);display:flex;align-items:center;gap:.6rem}
+    .brand .mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--sage));display:grid;place-items:center;color:#fff;font-size:1.05rem}
+    .brand small{display:block;font-family:var(--sans);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+    .nav-links{display:flex;gap:1.9rem;align-items:center}
+    .nav-links a{font-size:.92rem;color:var(--muted);font-weight:500}
+    .nav-links a:hover{color:var(--ink)}
+    .nav-call{font-family:var(--head);font-weight:700;color:var(--blue)!important}
+    .menu-btn{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer;color:var(--ink)}
+
+    .hero{position:relative;padding:88px 0 76px;background:
+      radial-gradient(1100px 460px at 80% -10%, var(--sage-soft), transparent 60%),
+      radial-gradient(820px 380px at -5% 110%, #EAF0F2, transparent 55%)}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:start}
+    .stars{color:var(--terra);letter-spacing:2px;font-size:1.05rem}
+    .hero h1{font-size:clamp(2.5rem,5.2vw,3.8rem);margin:.7rem 0 .4rem;font-weight:800}
+    .rotor{color:var(--blue);position:relative;display:inline-block;min-width:5ch}
+    .hero p.lead{font-size:1.13rem;color:var(--muted);max-width:40ch;margin-top:.8rem}
+    .hero-cta{display:flex;gap:12px;margin-top:1.9rem;flex-wrap:wrap}
+    .hero-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:30px}
+    .hero-card h3{font-size:1.12rem;margin-bottom:.2rem}
+    .hero-card .row{display:flex;align-items:center;gap:13px;padding:14px 0;border-bottom:1px solid var(--line)}
+    .hero-card .row:last-child{border-bottom:0}
+    .ico{width:42px;height:42px;flex:0 0 42px;border-radius:11px;background:var(--sage-soft);display:grid;place-items:center;color:var(--blue);font-size:1.1rem}
+
+    .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--sand)}
+    .trust .wrap{display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:center;padding:18px 24px;font-size:.9rem;color:var(--blue);font-weight:600;font-family:var(--head)}
+    .trust span{display:inline-flex;gap:.5rem;align-items:center}
+
+    section.pad{padding:86px 0}
+    .head{max-width:46ch;margin-bottom:44px}
+    .head h2{font-size:clamp(1.9rem,3.6vw,2.6rem);margin:.5rem 0}
+    .head p{color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px;transition:.25s}
+    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#cfe0db}
+    .card .ico{margin-bottom:15px}
+    .card h3{font-size:1.1rem;margin-bottom:.35rem}
+    .card p{font-size:.92rem;color:var(--muted)}
+
+    /* steps */
+    .steps{background:var(--sage-soft)}
+    .step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .step{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px;position:relative}
+    .step .n{font-family:var(--head);font-weight:800;font-size:.9rem;color:#fff;background:var(--blue);width:34px;height:34px;border-radius:9px;display:grid;place-items:center;margin-bottom:16px}
+    .step h3{font-size:1.08rem;margin-bottom:.4rem}
+    .step p{font-size:.92rem;color:var(--muted)}
+
+    .about{background:var(--blue);color:#E8F0F0}
+    .about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .about h2{color:#fff;font-size:clamp(1.9rem,3.6vw,2.6rem)}
+    .about p{color:#C6D8DA;margin-top:1rem}
+    .creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.7rem}
+    .chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);padding:.5rem .9rem;border-radius:999px;font-size:.82rem;font-family:var(--head);font-weight:600}
+    .statbox{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .statbox .s b{font-family:var(--head);font-size:2.1rem;color:#fff;display:block;font-weight:800}
+    .statbox .s span{font-size:.85rem;color:#Bcd2d4}
+
+    /* reviews */
+    .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .rev{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px}
+    .rev .stars{font-size:.95rem}
+    .rev p{font-size:.94rem;color:var(--ink);margin:.6rem 0 1rem;font-style:italic}
+    .rev .who{font-family:var(--head);font-weight:700;font-size:.9rem}
+    .rev .who span{display:block;font-weight:500;font-family:var(--sans);font-size:.8rem;color:var(--muted);font-style:normal}
+
+    /* faq */
+    .faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:0;margin-bottom:12px;overflow:hidden}
+    .faq summary{padding:18px 22px;font-family:var(--head);font-weight:700;font-size:1rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";color:var(--blue);font-size:1.4rem;font-weight:600;transition:.2s}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq .ans{padding:0 22px 20px;color:var(--muted);font-size:.94rem}
+
+    /* booking */
+    .booking{background:var(--sand)}
+    .book-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:50px;align-items:center}
+    form{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:32px;box-shadow:var(--shadow)}
+    .field{margin-bottom:14px}
+    label{display:block;font-size:.82rem;font-weight:600;margin-bottom:.35rem;color:var(--ink);font-family:var(--head)}
+    input,select,textarea{width:100%;padding:.72rem .9rem;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:.95rem;background:var(--bg)}
+    input:focus,select:focus,textarea:focus{outline:2px solid var(--blue-2);border-color:var(--blue)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .deposit{font-size:.85rem;color:var(--blue);background:var(--sage-soft);border:1px solid #CFE0DB;border-radius:10px;padding:.7rem .85rem;margin:6px 0 14px}
+    .ok{display:none;background:var(--sage-soft);border:1px solid var(--sage);color:var(--blue);border-radius:12px;padding:16px;font-size:.92rem}
+    .callout{display:flex;align-items:center;gap:14px;margin-top:1.5rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+    .callout .ico{flex:0 0 42px}
+    .callout b{font-family:var(--head);font-size:1.15rem;color:var(--blue)}
+
+    .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+    .loc-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px}
+    .loc-card h3{font-size:1.1rem;margin-bottom:.6rem}
+    .loc-card p{color:var(--muted);font-size:.95rem}
+    footer{background:var(--bg);border-top:1px solid var(--line);padding:42px 0;font-size:.88rem;color:var(--muted)}
+    .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+    .foot-dis{max-width:68ch;font-size:.8rem;margin-top:18px;color:var(--muted)}
+
+    /* imagery */
+    .media{border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--sand)}
+    .media img{display:block;width:100%;height:100%;object-fit:cover}
+    .hero-visual{display:flex;flex-direction:column;gap:18px}
+    .hero-visual .hero-img{aspect-ratio:5/4}
+    .about-col{display:flex;flex-direction:column;gap:20px}
+    .band{aspect-ratio:21/7}
+    .cta-band{position:relative;padding:98px 0;background-size:cover;background-position:center 35%;color:#fff;text-align:center}
+    .cta-band::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(22,40,43,.72),rgba(30,92,115,.80))}
+    .cta-band .wrap{position:relative;z-index:1}
+    .cta-band h2{color:#fff;font-size:clamp(2rem,4vw,2.8rem)}
+    .cta-band p{color:#E4EEEE;max-width:48ch;margin:1rem auto 1.9rem}
+
+    /* new-patient offer band */
+    .offer{background:linear-gradient(120deg,var(--terra),#b5683b);color:#fff}
+    .offer-in{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:30px 24px;flex-wrap:wrap}
+    .offer-txt h3{font-size:clamp(1.3rem,2.6vw,1.7rem);color:#fff;margin:.3rem 0}
+    .offer-txt h3 span{background:rgba(255,255,255,.2);padding:.05em .3em;border-radius:8px}
+    .offer-txt p{color:#FCEFE7;font-size:.95rem;max-width:54ch}
+    .offer-cta{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+    .offer-cta .btn{background:#fff;color:var(--terra)}
+    .offer-cta .btn:hover{background:#fff;transform:translateY(-1px)}
+    .offer-note{font-size:.78rem;color:#FCEFE7}
+
+    /* auto-accident / personal injury */
+    .pi{background:var(--blue);color:#E8F0F0;border-radius:22px;padding:36px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;box-shadow:var(--shadow)}
+    .pi-ico{font-size:2.2rem;width:72px;height:72px;flex:0 0 72px;border-radius:16px;background:rgba(255,255,255,.1);display:grid;place-items:center}
+    .pi-txt h3{color:#fff;font-size:clamp(1.3rem,2.6vw,1.7rem);margin:.3rem 0}
+    .pi-txt p{color:#C6D8DA;font-size:.95rem}
+    .pi-cta{display:flex;flex-direction:column;gap:10px}
+    .pi-cta .btn{white-space:nowrap}
+    .pi-cta .btn-ghost{border-color:rgba(255,255,255,.32);color:#fff;background:transparent}
+    .pi-cta .btn-ghost:hover{border-color:#fff;color:#fff}
+
+    @media(max-width:880px){
+      .band{aspect-ratio:16/9}
+      .pi{grid-template-columns:1fr;text-align:left}
+      .pi-cta{flex-direction:row;flex-wrap:wrap}
+      .hero-grid,.about .wrap,.book-grid,.loc-grid{grid-template-columns:1fr}
+      .grid,.step-grid,.rev-grid{grid-template-columns:1fr 1fr}
+      .nav-links{display:none}.menu-btn{display:block}
+      .nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--bg);padding:18px 24px;border-bottom:1px solid var(--line);gap:1rem}
+    }
+    @media(max-width:560px){.grid,.step-grid,.rev-grid,.two{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="disclaimer"><b>Concept demo</b> — an unaffiliated redesign concept created to show what's possible. Not DR. Wells Chiropractic's official website.</div>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><span class="mark">✚</span><span>DR. Wells Chiropractic<small>Spinal Care · Mira Mesa, San Diego</small></span></a>
+      <nav class="nav-links" id="nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#process">First Visit</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-call" href="tel:+18585498500">(858) 549-8500</a>
+        <a class="btn btn-primary" href="#booking">Book now</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="stars">★★★★★ <span style="color:var(--muted);font-size:.9rem">5.0 on Google · 14 reviews</span></div>
+          <h1>Find your <span class="rotor" id="rotor">relief</span>.</h1>
+          <p class="lead">Gentle, evidence-based chiropractic care in Mira Mesa — for back &amp; neck pain, sciatica, posture, and getting back to the things you love, without the ache.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#booking">Book an appointment →</a>
+            <a class="btn btn-ghost" href="tel:+18585498500">☎ (858) 549-8500</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+        <div class="media hero-img"><img src="assets/hero.jpg" alt="Calm, modern chiropractic treatment room" loading="eager" width="1600" height="1068" /></div>
+        <div class="hero-card">
+          <h3>Why patients choose Dr. Wells</h3>
+          <p style="color:var(--muted);font-size:.9rem;margin-bottom:8px">What makes the care different</p>
+          <div class="row"><div class="ico">★</div><div><strong>Perfect 5.0 rating</strong><br><span style="color:var(--muted);font-size:.88rem">Every Google review, 5 stars</span></div></div>
+          <div class="row"><div class="ico">⌖</div><div><strong>Personalized treatment plans</strong><br><span style="color:var(--muted);font-size:.88rem">Care built around your goals, not a script</span></div></div>
+          <div class="row"><div class="ico">⚘</div><div><strong>Gentle, modern techniques</strong><br><span style="color:var(--muted);font-size:.88rem">Adjustment styles to fit your comfort level</span></div></div>
+          <div class="row"><div class="ico">✓</div><div><strong>Most insurance welcome</strong><br><span style="color:var(--muted);font-size:.88rem">We'll help you understand your coverage</span></div></div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <div class="trust"><div class="wrap">
+      <span>★★★★★ 5.0 Google rating</span>
+      <span>◇ Same-week appointments</span>
+      <span>◇ Most insurance accepted</span>
+      <span>◇ 9550 Black Mountain Rd, San Diego</span>
+    </div></div>
+
+    <!-- NEW PATIENT OFFER -->
+    <section class="offer">
+      <div class="wrap offer-in reveal">
+        <div class="offer-txt">
+          <div class="eyebrow" style="color:#fff">New patient special</div>
+          <h3>Your first visit — exam + consultation for <span>$49</span></h3>
+          <p>A full assessment, your personalized care plan, and time to ask questions. No pressure, no obligation — just a clear picture of how we can help.</p>
+        </div>
+        <div class="offer-cta">
+          <a class="btn" href="#booking">Claim this offer →</a>
+          <span class="offer-note">Mention this offer when you book</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="pad wrap" id="services">
+      <div class="head reveal"><div class="eyebrow">Services</div><h2>Care for what's keeping you down</h2><p>From acute pain to long-term wellness, every plan starts with finding the real cause — not just chasing the symptom.</p></div>
+      <div class="grid">
+        <div class="card reveal"><div class="ico">⟐</div><h3>Spinal Adjustment</h3><p>Precise, gentle adjustments to restore alignment, mobility, and nervous-system function.</p></div>
+        <div class="card reveal"><div class="ico">⤓</div><h3>Back &amp; Neck Pain</h3><p>Targeted relief for the aches that make sitting, sleeping, and working harder than they should be.</p></div>
+        <div class="card reveal"><div class="ico">⚡</div><h3>Sciatica &amp; Disc Relief</h3><p>Decompression and adjustment to calm radiating leg pain and nerve irritation.</p></div>
+        <div class="card reveal"><div class="ico">⌂</div><h3>Posture Correction</h3><p>Undo the toll of desk work and screens with a plan to rebuild healthy posture.</p></div>
+        <div class="card reveal"><div class="ico">🏃</div><h3>Sports &amp; Injury</h3><p>Recover faster and move better — care for active bodies and weekend athletes alike.</p></div>
+        <div class="card reveal"><div class="ico">◓</div><h3>Headache &amp; Migraine</h3><p>Address the neck and spinal tension that so often drives recurring headaches.</p></div>
+        <div class="card reveal"><div class="ico">⊛</div><h3>Auto &amp; Whiplash</h3><p>Post-accident care to assess, document, and treat soft-tissue and spinal injury.</p></div>
+        <div class="card reveal"><div class="ico">❀</div><h3>Prenatal Chiropractic</h3><p>Gentle, comfortable support for the changing demands of pregnancy.</p></div>
+        <div class="card reveal"><div class="ico">♡</div><h3>Wellness &amp; Maintenance</h3><p>Stay ahead of pain with ongoing care that keeps you moving and feeling your best.</p></div>
+      </div>
+    </section>
+
+    <!-- AUTO ACCIDENT / PERSONAL INJURY -->
+    <section class="wrap" style="padding-bottom:20px" id="auto-accident">
+      <div class="pi reveal">
+        <div class="pi-ico">🚗</div>
+        <div class="pi-txt">
+          <div class="eyebrow" style="color:#9FD0C4">Auto accident &amp; injury</div>
+          <h3>In a car accident? Don't wait to get checked.</h3>
+          <p>Even minor collisions can cause whiplash and spinal injury that surface days later. We provide same-day evaluations, document your injuries for your claim, and can bill your auto-insurance directly — so you can focus on healing, not paperwork.</p>
+        </div>
+        <div class="pi-cta">
+          <a class="btn btn-accent" href="tel:+18585498500">☎ Same-day eval</a>
+          <a class="btn btn-ghost" href="#booking">Request online →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIRST VISIT / PROCESS -->
+    <section class="steps pad" id="process">
+      <div class="wrap">
+        <div class="head reveal"><div class="eyebrow">Your first visit</div><h2>Simple, comfortable, no surprises</h2><p>Nervous about seeing a chiropractor for the first time? Here's exactly how it goes.</p></div>
+        <div class="media band reveal" style="margin-bottom:28px"><img src="assets/consult.jpg" alt="Reviewing your spine imaging and care plan together" loading="lazy" width="1600" height="1067" /></div>
+        <div class="step-grid">
+          <div class="step reveal"><div class="n">1</div><h3>Listen &amp; assess</h3><p>We start with your story — what hurts, when it started, and your goals — followed by a thorough exam.</p></div>
+          <div class="step reveal"><div class="n">2</div><h3>Your care plan</h3><p>You get a clear, honest explanation of what's going on and a plan tailored to you — no pressure, no jargon.</p></div>
+          <div class="step reveal"><div class="n">3</div><h3>Feel the difference</h3><p>Gentle treatment begins, and we track your progress visit by visit so you can feel real improvement.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about pad" id="about">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="eyebrow" style="color:#9FD0C4">About the practice</div>
+          <h2>Chiropractic care that treats you like a person.</h2>
+          <p>DR. Wells Chiropractic is an independent, locally owned practice in Mira Mesa, San Diego. The approach is simple: take the time to understand what's actually wrong, explain it in plain language, and build a treatment plan around your life — whether that's getting out of pain, recovering from an injury, or simply moving and feeling better.</p>
+          <p>Patients consistently describe the care as gentle, attentive, and genuinely effective — which is why every single Google review is five stars.</p>
+          <div class="creds">
+            <span class="chip">Spinal adjustment</span>
+            <span class="chip">Sciatica &amp; disc care</span>
+            <span class="chip">Posture &amp; ergonomics</span>
+            <span class="chip">Sports injury</span>
+            <span class="chip">Auto / whiplash</span>
+            <span class="chip">Prenatal</span>
+          </div>
+        </div>
+        <div class="reveal about-col">
+          <div class="media" style="aspect-ratio:4/3"><img src="assets/adjustment.jpg" alt="Gentle hands-on chiropractic adjustment" loading="lazy" width="1600" height="1067" /></div>
+          <div class="statbox">
+            <div class="s"><b>5.0★</b><span>Average Google rating</span></div>
+            <div class="s"><b>100%</b><span>5-star reviews</span></div>
+            <div class="s"><b>Same-wk</b><span>Appointments available</span></div>
+            <div class="s"><b>Mira Mesa</b><span>92126, San Diego</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="pad wrap" id="reviews">
+      <div class="head reveal"><div class="eyebrow">Patient reviews</div><h2>A perfect 5.0, review after review</h2><p>Real patients, real relief. Here's the kind of care people come back for.</p></div>
+      <div class="rev-grid">
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"I came in barely able to turn my neck and left feeling like a different person. Dr. Wells actually listens and explains everything."</p><div class="who">Verified patient<span>Google review</span></div></div>
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"Months of lower-back and sciatica pain, and I finally found relief here. Gentle, professional, and genuinely caring."</p><div class="who">Verified patient<span>Google review</span></div></div>
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"Best chiropractor I've been to in San Diego. No upselling, no pressure — just a clear plan that worked."</p><div class="who">Verified patient<span>Google review</span></div></div>
+      </div>
+      <p style="font-size:.8rem;color:var(--muted);text-align:center;margin-top:18px;font-style:italic">Representative quotes shown for the concept demo. On the live site these pull from the practice's verified 5.0★ Google reviews.</p>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" style="background-image:url(assets/active.jpg)">
+      <div class="wrap reveal">
+        <div class="eyebrow" style="color:#9FD0C4">Move freely again</div>
+        <h2>Get back to the things you love</h2>
+        <p>Whether it's lifting your kids, sitting through a workday, or your morning run — let's get you out of pain and back in motion.</p>
+        <a class="btn btn-accent" href="#booking">Book your visit →</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="steps pad" id="faq">
+      <div class="wrap" style="max-width:780px">
+        <div class="head reveal" style="margin:0 auto 42px;text-align:center"><div class="eyebrow">Good to know</div><h2>Frequently asked questions</h2></div>
+        <div class="faq reveal">
+          <details><summary>Do you take my insurance?</summary><div class="ans">Most major insurance plans are welcome, and we'll help you understand exactly what your coverage includes before treatment begins. We also offer straightforward self-pay options.</div></details>
+          <details><summary>Does an adjustment hurt?</summary><div class="ans">For most people, no. Adjustments are gentle, and Dr. Wells tailors the technique to your comfort level — including low-force methods if you prefer. Many patients feel relief right away.</div></details>
+          <details><summary>What should I bring to my first visit?</summary><div class="ans">Just your ID and insurance card (if using insurance), and wear comfortable clothing. Plan for about 45–60 minutes so we can do a proper exam and build your plan.</div></details>
+          <details><summary>How many visits will I need?</summary><div class="ans">It depends on what's going on — some issues resolve in a few visits, others benefit from ongoing care. You'll always get an honest recommendation and never any pressure.</div></details>
+          <details><summary>Can chiropractic help with my headaches or sciatica?</summary><div class="ans">Often, yes. Tension headaches and sciatica frequently stem from spinal and nerve irritation that responds well to chiropractic care. We'll assess your specific case at your first visit.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking pad" id="booking">
+      <div class="wrap book-grid">
+        <div class="reveal">
+          <div class="media" style="aspect-ratio:16/9;margin-bottom:24px"><img src="assets/spine.jpg" alt="Relief from neck and back pain" loading="lazy" width="1600" height="1067" /></div>
+          <div class="eyebrow">Book a visit</div>
+          <h2 style="font-size:clamp(1.9rem,3.6vw,2.6rem);margin:.5rem 0">Ready to feel better?</h2>
+          <p style="color:var(--muted)">Request an appointment below and we'll confirm your time — usually the same day. Prefer to talk to a person? Just give us a call.</p>
+          <ul style="list-style:none;margin-top:1.4rem;color:var(--muted);font-size:.95rem">
+            <li style="padding:.4rem 0">✓ Same-week appointments available</li>
+            <li style="padding:.4rem 0">✓ New patients welcome</li>
+            <li style="padding:.4rem 0">✓ We'll verify your insurance for you</li>
+          </ul>
+          <a class="callout" href="tel:+18585498500">
+            <span class="ico">☎</span>
+            <span>Call the office<br><b>(858) 549-8500</b></span>
+          </a>
+        </div>
+        <form id="bookForm" novalidate>
+          <div class="field"><label>What can we help with?</label>
+            <select required><option value="">Choose a service…</option><option>Back or neck pain</option><option>Sciatica / disc</option><option>Posture correction</option><option>Sports injury</option><option>Headache / migraine</option><option>Auto accident / whiplash</option><option>Prenatal care</option><option>Wellness / maintenance</option><option>Not sure — need guidance</option></select>
+          </div>
+          <div class="two">
+            <div class="field"><label>Preferred date</label><input type="date" required /></div>
+            <div class="field"><label>Time of day</label><select required><option value="">Any</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+          </div>
+          <div class="two">
+            <div class="field"><label>Name</label><input type="text" required placeholder="Your name" /></div>
+            <div class="field"><label>Phone</label><input type="tel" required placeholder="(xxx) xxx-xxxx" /></div>
+          </div>
+          <div class="field"><label>Email</label><input type="email" required placeholder="you@email.com" /></div>
+          <div class="field"><label>New patient?</label><select><option>Yes — first visit</option><option>No — returning patient</option></select></div>
+          <label style="display:flex;gap:.55rem;align-items:flex-start;font-weight:500;font-size:.88rem;margin:4px 0 14px;cursor:pointer"><input type="checkbox" checked style="width:auto;margin-top:3px" /> Apply my <strong>&nbsp;$49 new-patient exam offer</strong></label>
+          <div class="deposit">🔒 New patients can optionally pre-pay the exam fee via <strong>Stripe</strong> to lock in a same-week slot — applied to your visit, fully refundable.</div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Request appointment</button>
+          <div class="ok" id="ok">Thank you — your request is in. <em>(This is a concept demo, so nothing was actually sent.)</em> On the live site, you'd receive a confirmation by text/email and could optionally secure your slot via Stripe.</div>
+        </form>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="pad wrap" id="location">
+      <div class="head reveal"><div class="eyebrow">Visit the office</div><h2>Conveniently in Mira Mesa</h2></div>
+      <div class="media band reveal" style="margin-bottom:28px"><img src="assets/clinic.jpg" alt="Bright, modern clinic interior" loading="lazy" width="1600" height="1089" /></div>
+      <div class="loc-grid">
+        <div class="loc-card reveal">
+          <h3>Location</h3>
+          <p>9550 Black Mountain Rd<br>San Diego, CA 92126</p>
+          <p style="margin-top:14px"><a class="btn btn-ghost" href="https://maps.google.com/?q=9550+Black+Mountain+Rd+San+Diego+CA+92126" target="_blank" rel="noopener">Get directions →</a></p>
+        </div>
+        <div class="loc-card reveal">
+          <h3>Hours</h3>
+          <p>Monday – Friday · 9am – 6pm<br>Saturday · by appointment<br>Sunday · closed</p>
+          <p style="margin-top:14px;font-size:.8rem;font-style:italic">Sample hours — confirm with the office.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <div class="brand"><span class="mark">✚</span><span>DR. Wells Chiropractic<small>Spinal Care · Mira Mesa, San Diego</small></span></div>
+        <nav style="display:flex;gap:1.4rem;flex-wrap:wrap"><a href="#services">Services</a><a href="#process">First Visit</a><a href="#faq">FAQ</a><a href="#booking">Book</a><a href="tel:+18585498500">(858) 549-8500</a></nav>
+      </div>
+      <p class="foot-dis"><strong>Concept demo — unaffiliated.</strong> This page is an independent redesign concept built to illustrate possibilities. It is not affiliated with, endorsed by, or the official website of DR. Wells Chiropractic. Photography is licensed royalty-free stock (Pexels/Unsplash), reviews shown are representative, and hours/insurance details are placeholders to be confirmed by the practice.</p>
+    </div>
+  </footer>
+
+  <script>
+    // mobile menu
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
+    document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+    // scroll reveal
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    // hero word rotator (Spineo-style)
+    const words=["relief","movement","freedom","comfort"];let wi=0;const rotor=document.getElementById('rotor');
+    setInterval(()=>{wi=(wi+1)%words.length;rotor.style.opacity=0;setTimeout(()=>{rotor.textContent=words[wi];rotor.style.opacity=1;},220);},2200);
+    rotor.style.transition="opacity .22s ease";
+    // booking demo
+    document.getElementById('bookForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      if(!e.target.checkValidity()){e.target.reportValidity();return;}
+      document.getElementById('ok').style.display='block';
+      e.target.querySelector('button[type=submit]').style.display='none';
+      document.getElementById('ok').scrollIntoView({behavior:'smooth',block:'center'});
+    });
+  </script>
+</body>
+</html>
