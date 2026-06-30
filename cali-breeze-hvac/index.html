@@ -67,7 +67,7 @@
     .svc-group + .svc-group{margin-top:36px}
     .svc-group h3.gh{font-size:1.15rem;color:var(--blue);margin-bottom:16px}
     .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    .svc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;transition:.2s}.svc:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .svc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;transition:.2s;display:block}.svc:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
     .svc .ic{width:40px;height:40px;border-radius:11px;background:var(--sand);display:grid;place-items:center;color:var(--blue);font-size:1.15rem;margin-bottom:11px}
     .svc h4{font-size:1rem;font-weight:700;margin-bottom:.25rem}.svc p{font-size:.88rem;color:var(--slate)}
 
@@ -121,7 +121,15 @@
   <header>
     <div class="wrap nav">
       <a class="brand" href="#top">Cali <span>Breeze</span> <i>HVAC</i><small>Fallbrook · North San Diego County</small></a>
-      <nav class="nav-links" id="nav"><a href="#services">Services</a><a href="about.html">About</a><a href="#reviews">Reviews</a><a href="#area">Service area</a><a href="#faq">FAQ</a><a href="#quote">Get a quote</a></nav>
+      <nav class="nav-links" id="nav">
+        <a href="services.html">Services</a>
+        <a href="service-areas.html">Service Areas</a>
+        <a href="financing.html">Financing</a>
+        <a href="partners.html">Partners</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
       <div class="nav-cta"><a class="btn btn-call" href="tel:+17606438184"><span class="call-full">📞 (760) 643-8184</span><span class="call-short">📞 Call</span></a></div>
       <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
     </div>
@@ -168,20 +176,20 @@
       <div class="svc-group reveal">
         <h3 class="gh">❄ Air Conditioning</h3>
         <div class="grid">
-          <div class="svc"><div class="ic">⊞</div><h4>AC Installation</h4><p>New, right-sized systems quoted fair and installed clean.</p></div>
-          <div class="svc"><div class="ic">🔧</div><h4>AC Repair</h4><p>Not cooling? Fast, accurate diagnosis and an honest fix.</p></div>
-          <div class="svc"><div class="ic">⇄</div><h4>AC Replacement</h4><p>When it's truly time — efficient upgrades, no scare tactics.</p></div>
-          <div class="svc"><div class="ic">🛠</div><h4>AC Maintenance</h4><p>Tune-ups that prevent breakdowns and lower your bill.</p></div>
+          <a class="svc" href="ac-installation.html"><div class="ic">⊞</div><h4>AC Installation</h4><p>New, right-sized systems quoted fair and installed clean.</p></a>
+          <a class="svc" href="ac-repair.html"><div class="ic">🔧</div><h4>AC Repair</h4><p>Not cooling? Fast, accurate diagnosis and an honest fix.</p></a>
+          <a class="svc" href="ac-installation.html"><div class="ic">⇄</div><h4>AC Replacement</h4><p>When it's truly time — efficient upgrades, no scare tactics.</p></a>
+          <a class="svc" href="ac-maintenance.html"><div class="ic">🛠</div><h4>AC Maintenance</h4><p>Tune-ups that prevent breakdowns and lower your bill.</p></a>
         </div>
       </div>
 
       <div class="svc-group reveal">
         <h3 class="gh">🔥 Heating</h3>
         <div class="grid">
-          <div class="svc"><div class="ic">🔧</div><h4>Heater Repair</h4><p>Heat out? We get it running and keep you safe.</p></div>
-          <div class="svc"><div class="ic">⇄</div><h4>Heater Replacement</h4><p>Reliable, efficient heating built to last.</p></div>
-          <div class="svc"><div class="ic">🛠</div><h4>Heater Maintenance</h4><p>Seasonal service to extend system life.</p></div>
-          <div class="svc"><div class="ic">♨</div><h4>Furnace Service</h4><p>Furnace repair, replacement, and safety checks.</p></div>
+          <a class="svc" href="heating-repair.html"><div class="ic">🔧</div><h4>Heater Repair</h4><p>Heat out? We get it running and keep you safe.</p></a>
+          <a class="svc" href="heating-replacement.html"><div class="ic">⇄</div><h4>Heater Replacement</h4><p>Reliable, efficient heating built to last.</p></a>
+          <a class="svc" href="heating-maintenance.html"><div class="ic">🛠</div><h4>Heater Maintenance</h4><p>Seasonal service to extend system life.</p></a>
+          <a class="svc" href="heating-repair.html"><div class="ic">♨</div><h4>Furnace Service</h4><p>Furnace repair, replacement, and safety checks.</p></a>
         </div>
       </div>
     </section>
@@ -277,8 +285,24 @@
         <p style="margin-top:.6rem;max-width:34ch">Honest, 5-star air conditioning &amp; heating for Fallbrook and all of North San Diego County.</p>
         <p style="margin-top:.6rem"><a href="tel:+17606438184" style="display:inline;color:#fff;font-weight:700">(760) 643-8184</a></p>
       </div>
-      <div><h4>HVAC Services</h4><a href="#services">AC repair &amp; install</a><a href="#services">AC replacement</a><a href="#services">Heating &amp; furnace</a><a href="#services">Maintenance</a></div>
-      <div><h4>Quick Links</h4><a href="#why">Why Cali Breeze</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#quote">Free estimate</a><a href="#area">Service areas</a></div>
+      <div><h4>HVAC Services</h4>
+        <a href="ac-repair.html">AC Repair</a>
+        <a href="ac-installation.html">AC Installation &amp; Replacement</a>
+        <a href="ac-maintenance.html">AC Maintenance</a>
+        <a href="heating-repair.html">Heating &amp; Furnace Repair</a>
+        <a href="heating-replacement.html">Heating Replacement</a>
+        <a href="water-heater.html">Water Heater Services</a>
+      </div>
+      <div><h4>Company</h4>
+        <a href="services.html">All Services</a>
+        <a href="service-areas.html">Service Areas</a>
+        <a href="financing.html">Financing</a>
+        <a href="partners.html">Partners</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
     </div>
     <p class="foot-dis"><strong>Concept demo — unaffiliated.</strong> This is an independent example built to show what a modern site could do for Cali Breeze HVAC. It is not affiliated with or operated by the business. Services, hours, and contact details are drawn from public listings; photos are the business's own, from its public Google listing.</p>
   </div></footer>

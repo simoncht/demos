@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Our Partners | Cali Breeze HVAC</title>
+  <meta name="description" content="Meet the trusted local partners Cali Breeze HVAC works with to keep your whole home comfortable across Fallbrook and North San Diego County." />
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#0f2233; --slate:#4a5a6a; --blue:#0369a1; --blue-d:#075985; --sky:#0ea5e9; --heat:#d83a34;
+      --bg:#f5f9fc; --sand:#e9f1f8; --line:#d8e6f0; --white:#fff;
+      --sans:"Inter",system-ui,-apple-system,sans-serif; --shadow:0 16px 44px -22px rgba(15,34,51,.42);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{line-height:1.12;letter-spacing:-.02em;font-weight:800}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.5rem;border-radius:12px;font-weight:700;font-size:.95rem;cursor:pointer;border:2px solid transparent;transition:.2s;white-space:nowrap}
+    .btn-call{background:var(--heat);color:#fff}.btn-call:hover{background:#bf2e28;transform:translateY(-1px)}
+    .btn-quote{background:var(--blue);color:#fff}.btn-quote:hover{background:var(--blue-d);transform:translateY(-1px)}
+    .btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}.btn-ghost:hover{border-color:var(--blue)}
+    .eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700}
+    .reveal{transition:.6s ease}
+    html.js .reveal{opacity:0;transform:translateY(16px)}
+    html.js .reveal.in{opacity:1;transform:none}
+    .disclaimer{background:#c0392b;color:#fff;font-size:.89rem;text-align:center;padding:.55rem 1rem;line-height:1.45}.disclaimer b{color:#fff;font-weight:700}.disclaimer a{color:#fff;text-decoration:underline;text-underline-offset:2px;white-space:nowrap;opacity:.9}.disclaimer a:hover{opacity:1}
+    #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:.85rem 1.4rem;border-radius:999px;font-weight:600;font-size:.92rem;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.3s;z-index:100}
+    #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+    header{position:sticky;top:0;z-index:50;background:rgba(245,249,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:1rem}
+    .brand{font-weight:800;font-size:1.1rem;letter-spacing:-.02em}.brand span{color:var(--blue)}.brand i{color:var(--heat);font-style:normal}
+    .brand small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--slate)}
+    .nav-links{display:flex;gap:1.25rem;align-items:center}.nav-links a{font-size:.92rem;color:var(--slate);font-weight:500}.nav-links a:hover{color:var(--ink)}.nav-links a.active{color:var(--ink);font-weight:700}
+    .nav-cta{display:flex;gap:.6rem}.call-short{display:none}
+    .menu-btn{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer}
+
+    .card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+    .quotebox{padding:26px}
+    .quotebox h3{font-size:1.2rem;margin-bottom:.3rem}
+    .quotebox p.sub{color:var(--slate);font-size:.9rem;margin-bottom:14px}
+    .field{margin-bottom:12px}label{display:block;font-size:.8rem;font-weight:600;margin-bottom:.3rem}
+    input,select,textarea{width:100%;padding:.7rem .8rem;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.95rem;background:var(--sand)}
+    input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .consent{display:flex;gap:.5rem;align-items:flex-start;font-size:.78rem;color:var(--slate);font-weight:400}.consent input{width:auto;margin-top:.2rem}
+    .ok{display:none;background:#e3f0fb;border:1px solid var(--blue);color:var(--blue-d);border-radius:10px;padding:14px;font-size:.9rem;margin-top:10px}
+
+    .trust{background:var(--ink);color:#cdd8e3}
+    .trust .wrap{display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:center;padding:18px 24px;font-size:.92rem;font-weight:500}
+    .trust b{color:#fff}
+
+    section.pad{padding-top:78px;padding-bottom:78px}
+    .head{max-width:48ch;margin-bottom:38px}.head h2{font-size:clamp(1.8rem,3.5vw,2.4rem);margin:.5rem 0}.head p{color:var(--slate)}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .svc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;transition:.2s;display:block}.svc:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .svc .ic{width:40px;height:40px;border-radius:11px;background:var(--sand);display:grid;place-items:center;color:var(--blue);font-size:1.15rem;margin-bottom:11px}
+    .svc h4{font-size:1rem;font-weight:700;margin-bottom:.25rem;color:var(--ink)}.svc p{font-size:.88rem;color:var(--slate)}
+
+    .pledge{background:#fff;border-left:4px solid var(--heat);border-radius:0 12px 12px 0;padding:16px 20px;margin-top:1.2rem;font-weight:600}
+    .points{list-style:none;margin-top:1.4rem;display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1.4rem}.points li{padding:.4rem 0 .4rem 2rem;position:relative;font-weight:500;font-size:.95rem}
+    .points li::before{content:"✓";position:absolute;left:0;color:#fff;background:var(--blue);width:1.4rem;height:1.4rem;border-radius:50%;display:grid;place-items:center;font-size:.8rem}
+
+    .brands .wrap{padding:30px 24px;text-align:center}.brands .row{display:flex;flex-wrap:wrap;gap:12px 26px;justify-content:center;margin-top:14px}
+    .brands .b{font-weight:700;color:var(--slate);font-size:1.02rem;opacity:.85}
+
+    .finance{background:linear-gradient(120deg,var(--blue),var(--blue-d));color:#fff;text-align:center}.finance .wrap{padding:46px 24px}
+    .finance h2{color:#fff;font-size:clamp(1.6rem,3vw,2.1rem)}.finance p{opacity:.92;max-width:54ch;margin:.7rem auto 1.3rem}
+    .finance .btn-ghost{background:#fff;border-color:#fff}
+
+    .rev{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .rev .c{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+    .rev .c p.q{margin:.5rem 0;color:var(--ink)}.rev .c p.n{font-size:.85rem;color:var(--slate);font-weight:600}
+
+    .area-band{background:var(--ink);color:#fff;text-align:center}.area-band .wrap{padding:34px 24px}
+    .area-band .chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:14px}
+    .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:.4rem .9rem;border-radius:999px;font-size:.85rem}
+
+    .faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+    .faq summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";color:var(--blue);font-weight:700;font-size:1.3rem;transition:.2s}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq .a{padding:0 20px 18px;color:var(--slate);font-size:.95rem}
+
+    .loc{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .loc-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}.loc-card h3{margin-bottom:.5rem}.loc-card p{color:var(--slate);font-size:.95rem}
+
+    /* ---- interior-page utilities ---- */
+    .page-hero{padding:54px 0 42px;background:radial-gradient(1000px 420px at 85% -20%,#d6ecfb,transparent 60%),radial-gradient(680px 320px at 0% 130%,#fde3e1,transparent 55%)}
+    .breadcrumb{font-size:.82rem;color:var(--slate);margin-bottom:.7rem}.breadcrumb a{color:var(--blue);font-weight:600}.breadcrumb i{opacity:.5;margin:0 .4rem;font-style:normal}
+    .page-hero h1{font-size:clamp(1.9rem,4vw,2.8rem);margin:.3rem 0 .8rem}
+    .page-hero p.lead{font-size:1.08rem;color:var(--slate);max-width:62ch}
+    .page-hero .hero-cta{display:flex;gap:12px;margin-top:1.5rem;flex-wrap:wrap}
+    .split{display:grid;grid-template-columns:1.65fr .95fr;gap:40px;align-items:start}
+    .prose{color:var(--ink)}.prose h2{font-size:1.5rem;margin:1.7rem 0 .6rem}.prose h3{font-size:1.15rem;color:var(--blue);margin:1.3rem 0 .5rem}.prose p{margin:.7rem 0;color:var(--slate)}
+    .prose ul{margin:.6rem 0 1rem;list-style:none}.prose ul li{position:relative;padding:.3rem 0 .3rem 1.8rem;color:var(--slate)}.prose ul li::before{content:"✓";position:absolute;left:0;color:var(--blue);font-weight:700}
+    .prose blockquote{border-left:4px solid var(--heat);background:#fff;border-radius:0 12px 12px 0;padding:14px 18px;margin:1.1rem 0;font-weight:600;color:var(--ink)}
+    .sidecard{position:sticky;top:96px}
+    .feat3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feat3 .svc h4{font-size:1.05rem}
+    .cta-band{background:linear-gradient(120deg,var(--blue),var(--blue-d));color:#fff;text-align:center}.cta-band .wrap{padding:48px 24px}.cta-band h2{color:#fff;font-size:clamp(1.6rem,3vw,2.1rem)}.cta-band p{opacity:.92;max-width:56ch;margin:.7rem auto 1.4rem}.cta-band .btn-ghost{background:#fff;border-color:#fff}
+    .area-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .area-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;transition:.2s;display:block}.area-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.area-card h3{font-size:1.08rem;margin-bottom:.3rem;color:var(--ink)}.area-card p{font-size:.9rem;color:var(--slate)}
+    .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .blog-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:.55rem;transition:.2s}.blog-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.blog-card .tag{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);font-weight:700}.blog-card h3{font-size:1.08rem}.blog-card p{font-size:.9rem;color:var(--slate);flex:1}.blog-card .more{color:var(--blue);font-weight:700;font-size:.9rem}
+    .partner-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;box-shadow:var(--shadow);max-width:780px}.partner-card h3{font-size:1.3rem}.partner-card .sub{color:var(--blue);font-weight:700;margin:.2rem 0 .8rem}
+    .steps{display:grid;gap:14px;counter-reset:s}.step{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px}.step .n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:700}.step h4{font-size:1rem;margin-bottom:.2rem}.step p{font-size:.9rem;color:var(--slate)}
+
+    footer{background:#0b1a27;color:#9fb2c2;padding:46px 0 38px;font-size:.88rem}
+    .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+    footer h4{color:#fff;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.8rem}
+    footer a{display:block;color:#9fb2c2;padding:.2rem 0}footer a:hover{color:#fff}
+    .foot-dis{max-width:70ch;font-size:.8rem;margin-top:28px;color:#7891a5;border-top:1px solid #1c2f3f;padding-top:18px}
+
+    @media(max-width:880px){.hero-grid,.why .wrap,.loc,.foot-grid,.split{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.rev,.feat3,.area-grid,.blog-grid{grid-template-columns:1fr}.sidecard{position:static}.nav-links{display:none}.menu-btn{display:block}.nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--bg);padding:18px 24px;border-bottom:1px solid var(--line);gap:.5rem}.call-full{display:none}.call-short{display:inline}.nav-cta .btn{padding:.55rem .85rem;font-size:.9rem}}
+    @media(max-width:560px){.grid,.two,.feat3,.area-grid,.blog-grid,.points{grid-template-columns:1fr}}
+  </style>
+</head>
+<body id="top">
+  <div class="disclaimer"><b>Concept demo</b> — an unaffiliated example site built to show what's possible. Not the official site of Cali Breeze HVAC. <a href="https://simonchia.com" target="_blank" rel="noopener">Built by Simon Chia ↗</a></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html">Cali <span>Breeze</span> <i>HVAC</i><small>Fallbrook · North San Diego County</small></a>
+      <nav class="nav-links" id="nav">
+        <a href="services.html">Services</a>
+        <a href="service-areas.html">Service Areas</a>
+        <a href="financing.html">Financing</a>
+        <a href="partners.html" class="active">Partners</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta"><a class="btn btn-call" href="tel:+17606438184"><span class="call-full">📞 (760) 643-8184</span><span class="call-short">📞 Call</span></a></div>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="breadcrumb"><a href="index.html">Home</a><i>/</i> Partners</div>
+        <h1>Our Partners</h1>
+        <p class="lead">Trusted local partners we work with to keep your whole home comfortable — from your HVAC system to the air flowing through every duct.</p>
+        <div class="hero-cta">
+          <a class="btn btn-call" href="tel:+17606438184">📞 (760) 643-8184</a>
+          <a class="btn btn-ghost" href="contact.html">Request a free quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pad">
+      <div class="wrap">
+        <div class="partner-card reveal">
+          <h3>Nick's Dryer Vent Cleaning Inc.</h3>
+          <p class="sub">Dryer Vent &amp; Air Duct Cleaning · Oceanside, North County</p>
+          <p style="color:var(--slate)">Nick's Dryer Vent Cleaning Inc. is Cali Breeze's trusted partner for professional air duct and dryer vent cleaning services in Oceanside, CA. With a focus on improving indoor air quality and HVAC efficiency, Nick's team delivers thorough and reliable service for both residential and commercial properties.</p>
+          <ul class="points" style="margin-top:1.4rem">
+            <li><strong>Healthier Air</strong> — removes dust, mold spores, pet dander, and allergens from your ducts</li>
+            <li><strong>Energy Savings</strong> — cleaner ducts help your HVAC run more efficiently, saving you money</li>
+            <li><strong>Trusted Expertise</strong> — 10+ years of experience with a commitment to safe, thorough, and honest service</li>
+          </ul>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:1.6rem;align-items:center">
+            <a class="btn btn-quote" href="contact.html">Book an appointment</a>
+            <p style="color:var(--slate);font-size:.88rem;margin:0">Same-day service available if you contact before 2 PM PDT.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band"><div class="wrap reveal">
+      <div class="eyebrow" style="color:#cfe7fb">Get started</div>
+      <h2>Ready for honest, reliable comfort?</h2>
+      <p>Talk to a certified local tech today — fast diagnosis, fair pricing, no scare tactics. Free estimates across Fallbrook &amp; North County.</p>
+      <a class="btn btn-call" href="tel:+17606438184">📞 Call (760) 643-8184</a> <a class="btn btn-ghost" href="contact.html">Request a free quote</a>
+    </div></section>
+  </main>
+
+  <footer><div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="color:#fff">Cali <span style="color:#7ec8f0">Breeze</span> <i style="color:#ff6b63;font-style:normal">HVAC</i></div>
+        <p style="margin-top:.6rem;max-width:34ch">Honest, 5-star air conditioning &amp; heating for Fallbrook and all of North San Diego County.</p>
+        <p style="margin-top:.6rem"><a href="tel:+17606438184" style="display:inline;color:#fff;font-weight:700">(760) 643-8184</a></p>
+        <p style="margin-top:.2rem"><a href="mailto:calibreezehvac@gmail.com" style="display:inline">calibreezehvac@gmail.com</a></p>
+      </div>
+      <div><h4>HVAC Services</h4>
+        <a href="ac-repair.html">AC Repair</a>
+        <a href="ac-installation.html">AC Installation &amp; Replacement</a>
+        <a href="ac-maintenance.html">AC Maintenance</a>
+        <a href="heating-repair.html">Heating &amp; Furnace Repair</a>
+        <a href="heating-replacement.html">Heating Replacement</a>
+        <a href="water-heater.html">Water Heater Services</a>
+      </div>
+      <div><h4>Company</h4>
+        <a href="services.html">All Services</a>
+        <a href="service-areas.html">Service Areas</a>
+        <a href="financing.html">Financing</a>
+        <a href="partners.html">Partners</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <p class="foot-dis"><strong>Concept demo — unaffiliated.</strong> This is an independent example built to show what a modern site could do for Cali Breeze HVAC. It is not affiliated with or operated by the business. Services, hours, and contact details are drawn from public listings; photos are the business's own, from its public Google listing.</p>
+  </div></footer>
+
+  <div id="toast"></div>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://calibreezehvac.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Partners",
+          "item": "https://calibreezehvac.com/partners/"
+        }
+      ]
+    }
+  ]
+}</script>
+  <script>
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
+    document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    const qf=document.getElementById('quoteForm');
+    if(qf){qf.addEventListener('submit',e=>{e.preventDefault();if(!e.target.checkValidity()){e.target.reportValidity();return}document.getElementById('ok').style.display='block';e.target.querySelector('button[type=submit]').style.display='none';document.getElementById('ok').scrollIntoView({behavior:'smooth',block:'center'})});}
+    document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>{const t=document.getElementById('toast');t.textContent='📞 Calling (760) 643-8184 — or tap to dial on your phone';t.classList.add('show');clearTimeout(window._tt);window._tt=setTimeout(()=>t.classList.remove('show'),3500)}));
+  </script>
+</body>
+</html>

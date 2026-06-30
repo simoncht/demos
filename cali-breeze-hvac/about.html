@@ -81,11 +81,12 @@
     .cta .btn-ghost{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}.cta .btn-ghost:hover{border-color:#fff}
 
     footer{background:#0b1a27;color:#9fb2c2;padding:42px 0 36px;font-size:.88rem}
-    .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}.foot .brand{color:#fff}
-    .foot a{color:#9fb2c2}.foot a:hover{color:#fff}
+    .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+    footer h4{color:#fff;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.8rem}
+    footer a{display:block;color:#9fb2c2;padding:.2rem 0}footer a:hover{color:#fff}
     .foot-dis{max-width:70ch;font-size:.8rem;margin-top:22px;color:#7891a5;border-top:1px solid #1c2f3f;padding-top:18px}
 
-    @media(max-width:880px){.hero-grid{grid-template-columns:1fr}.stats .wrap{grid-template-columns:1fr 1fr}.vcards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.rev{grid-template-columns:1fr}.nav-links{display:none}.menu-btn{display:block}.nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--bg);padding:18px 24px;border-bottom:1px solid var(--line)}.call-full{display:none}.call-short{display:inline}.nav-cta .btn{padding:.55rem .85rem;font-size:.9rem}}
+    @media(max-width:880px){.hero-grid,.foot-grid{grid-template-columns:1fr}.stats .wrap{grid-template-columns:1fr 1fr}.vcards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.rev{grid-template-columns:1fr}.nav-links{display:none}.menu-btn{display:block}.nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--bg);padding:18px 24px;border-bottom:1px solid var(--line)}.call-full{display:none}.call-short{display:inline}.nav-cta .btn{padding:.55rem .85rem;font-size:.9rem}}
     @media(max-width:560px){.vcards,.steps{grid-template-columns:1fr}}
   </style>
 </head>
@@ -94,7 +95,15 @@
   <header>
     <div class="wrap nav">
       <a class="brand" href="index.html">Cali <span>Breeze</span> <i>HVAC</i><small>Fallbrook · North San Diego County</small></a>
-      <nav class="nav-links" id="nav"><a href="index.html#services">Services</a><a href="about.html" class="active">About</a><a href="index.html#reviews">Reviews</a><a href="index.html#area">Service area</a><a href="index.html#quote">Get a quote</a></nav>
+      <nav class="nav-links" id="nav">
+        <a href="services.html">Services</a>
+        <a href="service-areas.html">Service Areas</a>
+        <a href="financing.html">Financing</a>
+        <a href="partners.html">Partners</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
       <div class="nav-cta"><a class="btn btn-call" href="tel:+17606438184"><span class="call-full">📞 (760) 643-8184</span><span class="call-short">📞 Call</span></a></div>
       <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
     </div>
@@ -170,8 +179,32 @@
   </main>
 
   <footer><div class="wrap">
-    <div class="foot"><div class="brand">Cali <span style="color:#7ec8f0">Breeze</span> <i style="color:#ff6b63;font-style:normal">HVAC</i></div>
-      <nav style="display:flex;gap:1.4rem"><a href="index.html#services">Services</a><a href="about.html">About</a><a href="index.html#reviews">Reviews</a><a href="index.html#quote">Quote</a><a href="tel:+17606438184">Call</a></nav></div>
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="color:#fff">Cali <span style="color:#7ec8f0">Breeze</span> <i style="color:#ff6b63;font-style:normal">HVAC</i></div>
+        <p style="margin-top:.6rem;max-width:34ch">Honest, 5-star air conditioning &amp; heating for Fallbrook and all of North San Diego County.</p>
+        <p style="margin-top:.6rem"><a href="tel:+17606438184" style="display:inline;color:#fff;font-weight:700">(760) 643-8184</a></p>
+        <p style="margin-top:.2rem"><a href="mailto:calibreezehvac@gmail.com" style="display:inline">calibreezehvac@gmail.com</a></p>
+      </div>
+      <div><h4>HVAC Services</h4>
+        <a href="ac-repair.html">AC Repair</a>
+        <a href="ac-installation.html">AC Installation &amp; Replacement</a>
+        <a href="ac-maintenance.html">AC Maintenance</a>
+        <a href="heating-repair.html">Heating &amp; Furnace Repair</a>
+        <a href="heating-replacement.html">Heating Replacement</a>
+        <a href="water-heater.html">Water Heater Services</a>
+      </div>
+      <div><h4>Company</h4>
+        <a href="services.html">All Services</a>
+        <a href="service-areas.html">Service Areas</a>
+        <a href="financing.html">Financing</a>
+        <a href="partners.html">Partners</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+    </div>
     <p class="foot-dis"><strong>Concept demo — unaffiliated.</strong> An independent example built to show what a modern site could do for Cali Breeze HVAC. Not affiliated with or operated by the business. Content drawn from the business's public website &amp; listings; photo is the business's own.</p>
   </div></footer>
 

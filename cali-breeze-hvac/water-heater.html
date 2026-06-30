@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Water Heater Services | Cali Breeze HVAC</title>
+  <meta name="description" content="Tank and tankless water heater repair, replacement, and installation in Fallbrook and North San Diego County — honest diagnostics, fair pricing, no scare tactics." />
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#0f2233; --slate:#4a5a6a; --blue:#0369a1; --blue-d:#075985; --sky:#0ea5e9; --heat:#d83a34;
+      --bg:#f5f9fc; --sand:#e9f1f8; --line:#d8e6f0; --white:#fff;
+      --sans:"Inter",system-ui,-apple-system,sans-serif; --shadow:0 16px 44px -22px rgba(15,34,51,.42);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{line-height:1.12;letter-spacing:-.02em;font-weight:800}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.5rem;border-radius:12px;font-weight:700;font-size:.95rem;cursor:pointer;border:2px solid transparent;transition:.2s;white-space:nowrap}
+    .btn-call{background:var(--heat);color:#fff}.btn-call:hover{background:#bf2e28;transform:translateY(-1px)}
+    .btn-quote{background:var(--blue);color:#fff}.btn-quote:hover{background:var(--blue-d);transform:translateY(-1px)}
+    .btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}.btn-ghost:hover{border-color:var(--blue)}
+    .eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700}
+    .reveal{transition:.6s ease}
+    html.js .reveal{opacity:0;transform:translateY(16px)}
+    html.js .reveal.in{opacity:1;transform:none}
+    .disclaimer{background:#c0392b;color:#fff;font-size:.89rem;text-align:center;padding:.55rem 1rem;line-height:1.45}.disclaimer b{color:#fff;font-weight:700}.disclaimer a{color:#fff;text-decoration:underline;text-underline-offset:2px;white-space:nowrap;opacity:.9}.disclaimer a:hover{opacity:1}
+    #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:.85rem 1.4rem;border-radius:999px;font-weight:600;font-size:.92rem;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.3s;z-index:100}
+    #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+    header{position:sticky;top:0;z-index:50;background:rgba(245,249,252,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:1rem}
+    .brand{font-weight:800;font-size:1.1rem;letter-spacing:-.02em}.brand span{color:var(--blue)}.brand i{color:var(--heat);font-style:normal}
+    .brand small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--slate)}
+    .nav-links{display:flex;gap:1.25rem;align-items:center}.nav-links a{font-size:.92rem;color:var(--slate);font-weight:500}.nav-links a:hover{color:var(--ink)}.nav-links a.active{color:var(--ink);font-weight:700}
+    .nav-cta{display:flex;gap:.6rem}.call-short{display:none}
+    .menu-btn{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer}
+
+    .card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+    .quotebox{padding:26px}
+    .quotebox h3{font-size:1.2rem;margin-bottom:.3rem}
+    .quotebox p.sub{color:var(--slate);font-size:.9rem;margin-bottom:14px}
+    .field{margin-bottom:12px}label{display:block;font-size:.8rem;font-weight:600;margin-bottom:.3rem}
+    input,select,textarea{width:100%;padding:.7rem .8rem;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.95rem;background:var(--sand)}
+    input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .consent{display:flex;gap:.5rem;align-items:flex-start;font-size:.78rem;color:var(--slate);font-weight:400}.consent input{width:auto;margin-top:.2rem}
+    .ok{display:none;background:#e3f0fb;border:1px solid var(--blue);color:var(--blue-d);border-radius:10px;padding:14px;font-size:.9rem;margin-top:10px}
+
+    .trust{background:var(--ink);color:#cdd8e3}
+    .trust .wrap{display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:center;padding:18px 24px;font-size:.92rem;font-weight:500}
+    .trust b{color:#fff}
+
+    section.pad{padding-top:78px;padding-bottom:78px}
+    .head{max-width:48ch;margin-bottom:38px}.head h2{font-size:clamp(1.8rem,3.5vw,2.4rem);margin:.5rem 0}.head p{color:var(--slate)}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .svc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;transition:.2s;display:block}.svc:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .svc .ic{width:40px;height:40px;border-radius:11px;background:var(--sand);display:grid;place-items:center;color:var(--blue);font-size:1.15rem;margin-bottom:11px}
+    .svc h4{font-size:1rem;font-weight:700;margin-bottom:.25rem;color:var(--ink)}.svc p{font-size:.88rem;color:var(--slate)}
+
+    .pledge{background:#fff;border-left:4px solid var(--heat);border-radius:0 12px 12px 0;padding:16px 20px;margin-top:1.2rem;font-weight:600}
+    .points{list-style:none;margin-top:1.4rem;display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1.4rem}.points li{padding:.4rem 0 .4rem 2rem;position:relative;font-weight:500;font-size:.95rem}
+    .points li::before{content:"✓";position:absolute;left:0;color:#fff;background:var(--blue);width:1.4rem;height:1.4rem;border-radius:50%;display:grid;place-items:center;font-size:.8rem}
+
+    .brands .wrap{padding:30px 24px;text-align:center}.brands .row{display:flex;flex-wrap:wrap;gap:12px 26px;justify-content:center;margin-top:14px}
+    .brands .b{font-weight:700;color:var(--slate);font-size:1.02rem;opacity:.85}
+
+    .finance{background:linear-gradient(120deg,var(--blue),var(--blue-d));color:#fff;text-align:center}.finance .wrap{padding:46px 24px}
+    .finance h2{color:#fff;font-size:clamp(1.6rem,3vw,2.1rem)}.finance p{opacity:.92;max-width:54ch;margin:.7rem auto 1.3rem}
+    .finance .btn-ghost{background:#fff;border-color:#fff}
+
+    .rev{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .rev .c{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+    .rev .c p.q{margin:.5rem 0;color:var(--ink)}.rev .c p.n{font-size:.85rem;color:var(--slate);font-weight:600}
+
+    .area-band{background:var(--ink);color:#fff;text-align:center}.area-band .wrap{padding:34px 24px}
+    .area-band .chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:14px}
+    .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:.4rem .9rem;border-radius:999px;font-size:.85rem}
+
+    .faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+    .faq summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";color:var(--blue);font-weight:700;font-size:1.3rem;transition:.2s}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq .a{padding:0 20px 18px;color:var(--slate);font-size:.95rem}
+
+    .loc{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .loc-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}.loc-card h3{margin-bottom:.5rem}.loc-card p{color:var(--slate);font-size:.95rem}
+
+    /* ---- interior-page utilities ---- */
+    .page-hero{padding:54px 0 42px;background:radial-gradient(1000px 420px at 85% -20%,#d6ecfb,transparent 60%),radial-gradient(680px 320px at 0% 130%,#fde3e1,transparent 55%)}
+    .breadcrumb{font-size:.82rem;color:var(--slate);margin-bottom:.7rem}.breadcrumb a{color:var(--blue);font-weight:600}.breadcrumb i{opacity:.5;margin:0 .4rem;font-style:normal}
+    .page-hero h1{font-size:clamp(1.9rem,4vw,2.8rem);margin:.3rem 0 .8rem}
+    .page-hero p.lead{font-size:1.08rem;color:var(--slate);max-width:62ch}
+    .page-hero .hero-cta{display:flex;gap:12px;margin-top:1.5rem;flex-wrap:wrap}
+    .split{display:grid;grid-template-columns:1.65fr .95fr;gap:40px;align-items:start}
+    .prose{color:var(--ink)}.prose h2{font-size:1.5rem;margin:1.7rem 0 .6rem}.prose h3{font-size:1.15rem;color:var(--blue);margin:1.3rem 0 .5rem}.prose p{margin:.7rem 0;color:var(--slate)}
+    .prose ul{margin:.6rem 0 1rem;list-style:none}.prose ul li{position:relative;padding:.3rem 0 .3rem 1.8rem;color:var(--slate)}.prose ul li::before{content:"✓";position:absolute;left:0;color:var(--blue);font-weight:700}
+    .prose blockquote{border-left:4px solid var(--heat);background:#fff;border-radius:0 12px 12px 0;padding:14px 18px;margin:1.1rem 0;font-weight:600;color:var(--ink)}
+    .sidecard{position:sticky;top:96px}
+    .feat3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feat3 .svc h4{font-size:1.05rem}
+    .cta-band{background:linear-gradient(120deg,var(--blue),var(--blue-d));color:#fff;text-align:center}.cta-band .wrap{padding:48px 24px}.cta-band h2{color:#fff;font-size:clamp(1.6rem,3vw,2.1rem)}.cta-band p{opacity:.92;max-width:56ch;margin:.7rem auto 1.4rem}.cta-band .btn-ghost{background:#fff;border-color:#fff}
+    .area-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .area-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;transition:.2s;display:block}.area-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.area-card h3{font-size:1.08rem;margin-bottom:.3rem;color:var(--ink)}.area-card p{font-size:.9rem;color:var(--slate)}
+    .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .blog-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:.55rem;transition:.2s}.blog-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.blog-card .tag{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);font-weight:700}.blog-card h3{font-size:1.08rem}.blog-card p{font-size:.9rem;color:var(--slate);flex:1}.blog-card .more{color:var(--blue);font-weight:700;font-size:.9rem}
+    .partner-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;box-shadow:var(--shadow);max-width:780px}.partner-card h3{font-size:1.3rem}.partner-card .sub{color:var(--blue);font-weight:700;margin:.2rem 0 .8rem}
+    .steps{display:grid;gap:14px;counter-reset:s}.step{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px}.step .n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:700}.step h4{font-size:1rem;margin-bottom:.2rem}.step p{font-size:.9rem;color:var(--slate)}
+
+    footer{background:#0b1a27;color:#9fb2c2;padding:46px 0 38px;font-size:.88rem}
+    .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+    footer h4{color:#fff;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.8rem}
+    footer a{display:block;color:#9fb2c2;padding:.2rem 0}footer a:hover{color:#fff}
+    .foot-dis{max-width:70ch;font-size:.8rem;margin-top:28px;color:#7891a5;border-top:1px solid #1c2f3f;padding-top:18px}
+
+    @media(max-width:880px){.hero-grid,.why .wrap,.loc,.foot-grid,.split{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.rev,.feat3,.area-grid,.blog-grid{grid-template-columns:1fr}.sidecard{position:static}.nav-links{display:none}.menu-btn{display:block}.nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--bg);padding:18px 24px;border-bottom:1px solid var(--line);gap:.5rem}.call-full{display:none}.call-short{display:inline}.nav-cta .btn{padding:.55rem .85rem;font-size:.9rem}}
+    @media(max-width:560px){.grid,.two,.feat3,.area-grid,.blog-grid,.points{grid-template-columns:1fr}}
+  </style>
+</head>
+<body id="top">
+  <div class="disclaimer"><b>Concept demo</b> — an unaffiliated example site built to show what's possible. Not the official site of Cali Breeze HVAC. <a href="https://simonchia.com" target="_blank" rel="noopener">Built by Simon Chia ↗</a></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html">Cali <span>Breeze</span> <i>HVAC</i><small>Fallbrook · North San Diego County</small></a>
+      <nav class="nav-links" id="nav">
+        <a href="services.html" class="active">Services</a>
+        <a href="service-areas.html">Service Areas</a>
+        <a href="financing.html">Financing</a>
+        <a href="partners.html">Partners</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta"><a class="btn btn-call" href="tel:+17606438184"><span class="call-full">📞 (760) 643-8184</span><span class="call-short">📞 Call</span></a></div>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="breadcrumb"><a href="index.html">Home</a><i>/</i><a href="services.html">Services</a><i>/</i> Water Heater Services</div>
+        <h1>Water Heater Services</h1>
+        <p class="lead">Tank or tankless, repair or full replacement — we give you honest answers and a fair price, not a sales pitch. Serving Fallbrook and all of North San Diego County.</p>
+        <div class="hero-cta">
+          <a class="btn btn-call" href="tel:+17606438184">📞 (760) 643-8184</a>
+          <a class="btn btn-ghost" href="contact.html">Request a free estimate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust">
+      <div class="wrap">
+        <span>⭐ <b>5.0</b> · 190 Google reviews</span>
+        <span>🔧 <b>15+ years</b> experience</span>
+        <span>✅ <b>1,000+</b> jobs completed</span>
+        <span>🛡️ <b>Licensed &amp; insured</b></span>
+        <span>📅 Mon–Sat 8 AM–5 PM</span>
+      </div>
+    </div>
+
+    <!-- MAIN SPLIT LAYOUT -->
+    <section class="pad">
+      <div class="wrap">
+        <div class="split">
+
+          <!-- LEFT: PROSE CONTENT -->
+          <div class="prose reveal">
+
+            <h2>Water Heater Repair</h2>
+            <p>When your hot water disappears — or turns rusty, noisy, or unreliable — something is wrong and it usually gets worse if you wait. Cali Breeze technicians diagnose tank and tankless water heaters fast. We fix heating elements, clear mineral sediment buildup, address pilot light failures, and stop leaks before they cause real damage.</p>
+            <p>We tell you exactly what we found and what it costs to fix. If a repair makes sense, we say repair. If the unit is too far gone, we say so — and we don't push you toward the most expensive replacement option.</p>
+            <ul>
+              <li>Rapid diagnostics — we identify the root cause, not just the symptom</li>
+              <li>Heating element replacement (electric units)</li>
+              <li>Pilot light and igniter repair (gas units)</li>
+              <li>Sediment flush to restore efficiency and reduce noise</li>
+              <li>Leak detection and pressure relief valve service</li>
+              <li>Thermostat calibration for consistent temperatures</li>
+            </ul>
+
+            <blockquote>"We tell you straight — if a repair gets you five more good years, we'll repair it. If it's time for a new unit, we'll tell you that too."</blockquote>
+
+            <h2>Water Heater Installation &amp; Replacement</h2>
+            <p>Whether your current unit is leaking, aging out, or just not keeping up with your household's demand, Cali Breeze handles the full installation. We work with tank and tankless systems and size the unit correctly for your home — no over-selling a unit bigger than you need.</p>
+            <p>Most installations are completed in 2 to 4 hours. Tankless systems may take a bit longer if gas line or electrical work is involved; we walk you through what's needed before we start.</p>
+            <ul>
+              <li>Tank water heater replacement (all major brands)</li>
+              <li>Tankless water heater installation — endless hot water, lower standby energy use</li>
+              <li>Proper sizing for your household's actual usage</li>
+              <li>Safe disposal of the old unit</li>
+              <li>Full system test before we leave</li>
+            </ul>
+
+            <h2>Signs Your Water Heater Needs Attention</h2>
+            <p>Catch problems early and you often avoid a full replacement. Here are the warning signs worth a call:</p>
+            <ul>
+              <li><strong>No hot water or inconsistent temperature</strong> — a failing heating element or thermostat is often the cause</li>
+              <li><strong>Rusty or discolored water</strong> — can mean internal corrosion; the anode rod may need replacement</li>
+              <li><strong>Rumbling or popping sounds</strong> — sediment buildup forcing the burner to work harder</li>
+              <li><strong>Visible leaks around the tank</strong> — don't ignore even a small drip; pressure can cause a sudden failure</li>
+              <li><strong>Unit is 8–12+ years old</strong> — most tank water heaters reach the end of their reliable life around this point</li>
+              <li><strong>Rising energy bills with no other explanation</strong> — an inefficient water heater is often the culprit</li>
+            </ul>
+
+            <h2>Tank vs. Tankless — Honest Guidance</h2>
+            <p>Both have real trade-offs and the right answer depends on your household.</p>
+            <p><strong>Tank water heaters</strong> cost less upfront and work reliably for most homes. The downside: they store and continuously reheat a fixed volume of water, which uses energy around the clock.</p>
+            <p><strong>Tankless (on-demand) water heaters</strong> heat water only when you need it, which lowers standby energy losses. They cost more to purchase and install but can be a good long-term fit for households with high hot water demand.</p>
+            <p>We'll look at your household size, usage patterns, and existing gas or electrical setup, and give you a clear recommendation — no upsell pressure.</p>
+
+            <div class="pledge">We will not sell you a system you don't need. Straight answers, fair pricing — that's how Cali Breeze works.</div>
+
+          </div><!-- /prose -->
+
+          <!-- RIGHT: SIDECARD -->
+          <aside class="sidecard">
+            <div class="card" style="padding:24px">
+              <h3 style="font-size:1.15rem">Free estimate</h3>
+              <p style="color:var(--slate);font-size:.92rem;margin:.4rem 0 1rem">Talk to a certified local tech — straight answers, fair pricing, no scare tactics.</p>
+              <a class="btn btn-call" href="tel:+17606438184" style="width:100%;justify-content:center;margin-bottom:.5rem">📞 (760) 643-8184</a>
+              <a class="btn btn-quote" href="contact.html" style="width:100%;justify-content:center">Request a quote</a>
+              <p style="color:var(--slate);font-size:.82rem;margin-top:.9rem"><span style="color:#f5a623">★★★★★</span> 5.0 · 190 Google reviews<br>Mon–Sat 8–5 · Financing available</p>
+            </div>
+          </aside>
+
+        </div><!-- /split -->
+      </div>
+    </section>
+
+    <!-- SERVICE CARDS -->
+    <section class="pad" style="padding-top:0">
+      <div class="wrap">
+        <div class="head reveal">
+          <div class="eyebrow">What we do</div>
+          <h2>Water Heater Services at a Glance</h2>
+          <p>From a quick repair to a full tankless upgrade — we handle it all for Fallbrook and North County homes.</p>
+        </div>
+        <div class="feat3 reveal">
+          <div class="svc">
+            <div class="ic">🔧</div>
+            <h4>Water Heater Repair</h4>
+            <p>Leaks, no hot water, rusty output, noisy tanks — we diagnose fast and fix it right the first time.</p>
+          </div>
+          <div class="svc">
+            <div class="ic">🚿</div>
+            <h4>Tank Replacement</h4>
+            <p>When your old tank is done, we size a new one correctly and complete most installs in a single visit.</p>
+          </div>
+          <div class="svc">
+            <div class="ic">⚡</div>
+            <h4>Tankless Installation</h4>
+            <p>On-demand hot water with lower standby energy use — we handle the gas line or electrical work too.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="pad" style="background:var(--sand);padding-top:60px;padding-bottom:60px">
+      <div class="wrap">
+        <div class="head reveal">
+          <div class="eyebrow">What customers say</div>
+          <h2>Hear It From Our Clients</h2>
+        </div>
+        <div class="rev reveal">
+          <div class="c">
+            <span style="color:#f5a623">★★★★★</span>
+            <p class="q">"Cali Breeze was quick to respond and make it out here. They were very thorough, professional, and fairly priced. I highly recommend them."</p>
+            <p class="n">Vladimir M. · Fallbrook</p>
+          </div>
+          <div class="c">
+            <span style="color:#f5a623">★★★★★</span>
+            <p class="q">"Great service! Very professional and honest. This is our first home and we are still learning how to maintain it — they did a very good job explaining everything and kept everything tidy while working."</p>
+            <p class="n">Krissy G. · North County</p>
+          </div>
+          <div class="c">
+            <span style="color:#f5a623">★★★★★</span>
+            <p class="q">"They found me an affordable replacement and installed the new unit within 48 hours! I highly recommend using them!"</p>
+            <p class="n">Georgia M. · Vista</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="pad">
+      <div class="wrap">
+        <div class="head reveal">
+          <div class="eyebrow">Common questions</div>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>How do I know if my water heater needs repair or replacement?</summary>
+            <div class="a">If your water heater produces inconsistent hot water, makes unusual noises, leaks, or is over 8–12 years old, it may need repair or replacement. A professional inspection determines whether a targeted fix or a full replacement is the better call — we'll give you our honest read.</div>
+          </details>
+          <details>
+            <summary>How long does a water heater installation take?</summary>
+            <div class="a">Most tank water heater installations take 2 to 4 hours. Tankless systems may take longer if gas line or electrical work is required. We'll tell you upfront what's involved before we begin.</div>
+          </details>
+          <details>
+            <summary>What are the benefits of regular water heater maintenance?</summary>
+            <div class="a">Routine maintenance — flushing sediment, checking the anode rod, testing the pressure relief valve — boosts efficiency, extends the unit's life, and catches small problems before they become expensive ones.</div>
+          </details>
+          <details>
+            <summary>Why is my water heater not producing enough hot water?</summary>
+            <div class="a">Sediment buildup, a failing heating element, thermostat issues, or an undersized unit are the most common causes. We diagnose the specific problem and fix it — we don't just guess and replace parts.</div>
+          </details>
+          <details>
+            <summary>Should I choose a tank or tankless water heater?</summary>
+            <div class="a">Tank water heaters cost less upfront and are reliable for most households. Tankless units heat water on demand, which reduces standby energy losses and provides continuous hot water, but the install cost is higher. The right choice depends on your household size, usage, and budget. We'll walk you through the trade-offs with no pressure.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA BAND -->
+    <section class="cta-band"><div class="wrap reveal">
+      <div class="eyebrow" style="color:#cfe7fb">Get started</div>
+      <h2>Hot water problems don't fix themselves.</h2>
+      <p>Call us for honest diagnostics, a fair price, and same-day service when available. Free estimates across Fallbrook &amp; North County.</p>
+      <a class="btn btn-call" href="tel:+17606438184">📞 Call (760) 643-8184</a> <a class="btn btn-ghost" href="contact.html">Request a free quote</a>
+    </div></section>
+
+  </main>
+
+  <footer><div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="color:#fff">Cali <span style="color:#7ec8f0">Breeze</span> <i style="color:#ff6b63;font-style:normal">HVAC</i></div>
+        <p style="margin-top:.6rem;max-width:34ch">Honest, 5-star air conditioning &amp; heating for Fallbrook and all of North San Diego County.</p>
+        <p style="margin-top:.6rem"><a href="tel:+17606438184" style="display:inline;color:#fff;font-weight:700">(760) 643-8184</a></p>
+        <p style="margin-top:.2rem"><a href="mailto:calibreezehvac@gmail.com" style="display:inline">calibreezehvac@gmail.com</a></p>
+      </div>
+      <div><h4>HVAC Services</h4>
+        <a href="ac-repair.html">AC Repair</a>
+        <a href="ac-installation.html">AC Installation &amp; Replacement</a>
+        <a href="ac-maintenance.html">AC Maintenance</a>
+        <a href="heating-repair.html">Heating &amp; Furnace Repair</a>
+        <a href="heating-replacement.html">Heating Replacement</a>
+        <a href="water-heater.html">Water Heater Services</a>
+      </div>
+      <div><h4>Company</h4>
+        <a href="services.html">All Services</a>
+        <a href="service-areas.html">Service Areas</a>
+        <a href="financing.html">Financing</a>
+        <a href="partners.html">Partners</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <p class="foot-dis"><strong>Concept demo — unaffiliated.</strong> This is an independent example built to show what a modern site could do for Cali Breeze HVAC. It is not affiliated with or operated by the business. Services, hours, and contact details are drawn from public listings; photos are the business's own, from its public Google listing.</p>
+  </div></footer>
+
+  <div id="toast"></div>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://demo.simonchia.com/cali-breeze-hvac/index.html"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://demo.simonchia.com/cali-breeze-hvac/services.html"},
+        {"@type": "ListItem", "position": 3, "name": "Water Heater Services", "item": "https://demo.simonchia.com/cali-breeze-hvac/water-heater.html"}
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Water Heater Services",
+      "description": "Tank and tankless water heater repair, replacement, and installation in Fallbrook and North San Diego County.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Cali Breeze HVAC",
+        "telephone": "+17606438184",
+        "email": "calibreezehvac@gmail.com",
+        "address": {"@type": "PostalAddress", "addressLocality": "Fallbrook", "addressRegion": "CA", "addressCountry": "US"}
+      },
+      "areaServed": ["Fallbrook, CA", "Bonsall, CA", "Vista, CA", "Oceanside, CA", "San Marcos, CA", "Escondido, CA", "Carlsbad, CA", "Encinitas, CA", "Temecula, CA"]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I know if my water heater needs repair or replacement?",
+          "acceptedAnswer": {"@type": "Answer", "text": "If your water heater produces inconsistent hot water, makes unusual noises, leaks, or is over 8–12 years old, it may need repair or replacement. A professional inspection determines whether a targeted fix or a full replacement is the better call."}
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a water heater installation take?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Most tank water heater installations take 2 to 4 hours. Tankless systems may take longer if gas line or electrical work is required."}
+        },
+        {
+          "@type": "Question",
+          "name": "Should I choose a tank or tankless water heater?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Tank water heaters cost less upfront and are reliable for most households. Tankless units heat water on demand, reducing standby energy losses and providing continuous hot water, but the install cost is higher. The right choice depends on your household size, usage, and budget."}
+        }
+      ]
+    }
+  ]
+}</script>
+  <script>
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
+    document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    const qf=document.getElementById('quoteForm');
+    if(qf){qf.addEventListener('submit',e=>{e.preventDefault();if(!e.target.checkValidity()){e.target.reportValidity();return}document.getElementById('ok').style.display='block';e.target.querySelector('button[type=submit]').style.display='none';document.getElementById('ok').scrollIntoView({behavior:'smooth',block:'center'})});}
+    document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>{const t=document.getElementById('toast');t.textContent='📞 Calling (760) 643-8184 — or tap to dial on your phone';t.classList.add('show');clearTimeout(window._tt);window._tt=setTimeout(()=>t.classList.remove('show'),3500)}));
+  </script>
+</body>
+</html>
