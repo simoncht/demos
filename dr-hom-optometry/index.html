@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Gregory G. Hom, OD, MPH, FAAO — Optometry · Sorrento Valley, San Diego</title>
+  <meta name="description" content="Comprehensive eye exams, contact lenses, and eyewear in Sorrento Valley, San Diego. Dr. Gregory G. Hom, OD, MPH, FAAO — 5.0★ rated, AOA member. Book: (858) 535-9835." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>document.documentElement.classList.add('js')</script>
+  <style>
+    :root{
+      --navy:#12294A; --navy-2:#1E3B63; --gold:#C29B47; --gold-2:#B08C39; --gold-soft:#F3ECD9;
+      --navy-soft:#E9EEF4; --bg:#F7F5F0; --surface:#FFFFFF; --ink:#1A2233; --muted:#586172; --line:#E5E1D8;
+      --head:"Newsreader",Georgia,serif; --sans:"Inter",system-ui,-apple-system,sans-serif;
+      --shadow:0 22px 60px -30px rgba(18,41,74,.45);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{font-family:var(--head);font-weight:600;line-height:1.12;letter-spacing:-.01em}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;border-radius:8px;font-weight:600;font-size:.95rem;font-family:var(--sans);cursor:pointer;border:1px solid transparent;transition:.2s}
+    .btn-primary{background:var(--navy);color:#fff}
+    .btn-primary:hover{background:#0d1f39;transform:translateY(-1px)}
+    .btn-gold{background:var(--gold);color:#fff}
+    .btn-gold:hover{background:var(--gold-2);transform:translateY(-1px)}
+    .btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}
+    .btn-ghost:hover{border-color:var(--navy);color:var(--navy)}
+    .eyebrow{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-2);font-weight:600;font-family:var(--sans)}
+    .reveal{transition:.7s ease}
+    html.js .reveal{opacity:0;transform:translateY(18px)}
+    html.js .reveal.in{opacity:1;transform:none}
+
+    .disclaimer{background:var(--navy);color:#C4D0E0;font-size:.78rem;text-align:center;padding:.5rem 1rem}
+    .disclaimer b{color:#fff}
+
+    header{position:sticky;top:0;z-index:50;background:rgba(247,245,240,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+    .brand{font-family:var(--head);font-size:1.2rem;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:.6rem}
+    .brand .mark{width:36px;height:36px;border-radius:8px;background:var(--navy);display:grid;place-items:center;color:var(--gold);font-size:1.05rem;font-family:var(--head)}
+    .brand small{display:block;font-family:var(--sans);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+    .nav-links{display:flex;gap:1.7rem;align-items:center}
+    .nav-links a{font-size:.92rem;color:var(--muted);font-weight:500}
+    .nav-links a:hover{color:var(--ink)}
+    .nav-call{font-family:var(--sans);font-weight:700;color:var(--navy)!important}
+    .menu-btn{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer;color:var(--navy)}
+
+    .hero{position:relative;padding:88px 0 76px;background:
+      radial-gradient(1100px 460px at 82% -10%, var(--navy-soft), transparent 60%),
+      radial-gradient(820px 380px at -5% 110%, var(--gold-soft), transparent 55%)}
+    .hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:50px;align-items:start}
+    .stars{color:var(--gold);letter-spacing:2px;font-size:1.05rem}
+    .cred-line{font-family:var(--sans);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-2);font-weight:600;margin-top:.4rem}
+    .hero h1{font-size:clamp(2.5rem,5.2vw,3.9rem);margin:.5rem 0 .4rem;font-weight:600}
+    .hero p.lead{font-size:1.13rem;color:var(--muted);max-width:42ch;margin-top:.8rem}
+    .hero-cta{display:flex;gap:12px;margin-top:1.9rem;flex-wrap:wrap}
+    .hero-visual{display:flex;flex-direction:column;gap:18px}
+    .media{border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--line)}
+    .media img{display:block;width:100%;height:100%;object-fit:cover}
+    .hero-img{aspect-ratio:5/4}
+    .hero-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:28px}
+    .hero-card h3{font-size:1.2rem;margin-bottom:.2rem}
+    .hero-card .row{display:flex;align-items:center;gap:13px;padding:13px 0;border-bottom:1px solid var(--line)}
+    .hero-card .row:last-child{border-bottom:0}
+    .ico{width:42px;height:42px;flex:0 0 42px;border-radius:10px;background:var(--navy-soft);display:grid;place-items:center;color:var(--navy);font-size:1.05rem}
+
+    .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--navy)}
+    .trust .wrap{display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:center;padding:18px 24px;font-size:.9rem;color:#DCE6F1;font-weight:500;font-family:var(--sans)}
+    .trust span{display:inline-flex;gap:.5rem;align-items:center}
+    .trust b{color:var(--gold)}
+
+    section.pad{padding:86px 0}
+    .head{max-width:50ch;margin-bottom:44px}
+    .head h2{font-size:clamp(2rem,3.8vw,2.8rem);margin:.5rem 0}
+    .head p{color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;transition:.25s}
+    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#dcd6c6}
+    .card .ico{margin-bottom:15px}
+    .card h3{font-size:1.14rem;margin-bottom:.35rem;font-weight:600}
+    .card p{font-size:.9rem;color:var(--muted)}
+
+    /* doctor / about */
+    .about{background:var(--navy);color:#DCE6F1}
+    .about .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:center}
+    .about h2{color:#fff;font-size:clamp(2rem,3.8vw,2.8rem)}
+    .about .lead-q{font-family:var(--head);font-size:1.3rem;color:#fff;font-style:italic;margin:1rem 0;line-height:1.4}
+    .about p{color:#B7C4D6;margin-top:1rem}
+    .creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.7rem}
+    .chip{background:rgba(255,255,255,.08);border:1px solid rgba(194,155,71,.5);padding:.5rem .9rem;border-radius:6px;font-size:.82rem;font-family:var(--sans);font-weight:600;color:#EBD9B0}
+    .about-media{aspect-ratio:4/5;border-color:rgba(255,255,255,.14)}
+
+    /* feature split */
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .split.rev .split-media{order:2}
+    .split-media{aspect-ratio:4/3}
+    .split h2{font-size:clamp(1.8rem,3.4vw,2.4rem);margin:.5rem 0}
+    .split p{color:var(--muted);margin-bottom:1.2rem}
+    .split ul{list-style:none;margin:0 0 1.5rem}
+    .split li{padding:.4rem 0;color:var(--ink);font-size:.95rem;display:flex;gap:.6rem;align-items:flex-start}
+    .split li::before{content:"◆";color:var(--gold);font-size:.7rem;margin-top:.4rem}
+
+    .ins{background:var(--navy-soft)}
+    .ins .wrap{text-align:center}
+    .ins .logos{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px}
+    .ins .plan{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:.6rem 1.3rem;font-family:var(--sans);font-weight:700;font-size:.92rem;color:var(--navy)}
+
+    .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .rev{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+    .rev .stars{font-size:.95rem}
+    .rev p{font-size:.94rem;color:var(--ink);margin:.6rem 0 1rem;font-style:italic;font-family:var(--head)}
+    .rev .who{font-family:var(--sans);font-weight:700;font-size:.9rem}
+    .rev .who span{display:block;font-weight:500;font-size:.8rem;color:var(--muted);font-style:normal}
+
+    .cta-band{position:relative;padding:98px 0;background-size:cover;background-position:center 30%;color:#fff;text-align:center}
+    .cta-band::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(18,41,74,.82),rgba(18,41,74,.82))}
+    .cta-band .wrap{position:relative;z-index:1}
+    .cta-band h2{color:#fff;font-size:clamp(2rem,4vw,2.8rem)}
+    .cta-band p{color:#CDD8E6;max-width:48ch;margin:1rem auto 1.9rem}
+
+    .faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+    .faq summary{padding:18px 22px;font-family:var(--head);font-weight:600;font-size:1.08rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";color:var(--gold-2);font-size:1.4rem;transition:.2s}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq .ans{padding:0 22px 20px;color:var(--muted);font-size:.94rem}
+
+    .booking{background:var(--gold-soft)}
+    .book-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:50px;align-items:center}
+    form{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:32px;box-shadow:var(--shadow)}
+    .field{margin-bottom:14px}
+    label{display:block;font-size:.82rem;font-weight:600;margin-bottom:.35rem;color:var(--ink);font-family:var(--sans)}
+    input,select,textarea{width:100%;padding:.72rem .9rem;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:.95rem;background:var(--bg)}
+    input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .deposit{font-size:.85rem;color:var(--navy);background:var(--navy-soft);border:1px solid #D3DEEC;border-radius:8px;padding:.7rem .85rem;margin:6px 0 14px}
+    .ok{display:none;background:var(--navy-soft);border:1px solid var(--navy);color:var(--navy);border-radius:10px;padding:16px;font-size:.92rem}
+    .callout{display:flex;align-items:center;gap:14px;margin-top:1.2rem;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+    .callout .ico{flex:0 0 42px}
+    .callout b{font-family:var(--head);font-size:1.2rem;color:var(--navy)}
+
+    .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+    .loc-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px}
+    .loc-card h3{font-size:1.2rem;margin-bottom:.6rem}
+    .loc-card p{color:var(--muted);font-size:.95rem}
+    footer{background:var(--bg);border-top:1px solid var(--line);padding:42px 0;font-size:.88rem;color:var(--muted)}
+    .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+    .foot-dis{max-width:72ch;font-size:.8rem;margin-top:18px;color:var(--muted)}
+
+    /* availability / standby */
+    .avail-pill{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.2rem;background:var(--gold-soft);border:1px solid #E4D8B8;color:var(--navy);font-size:.86rem;font-weight:600;padding:.55rem .95rem;border-radius:999px}
+    .avail-pill a{color:var(--gold-2);text-decoration:underline}
+    .avail{background:var(--navy)}
+    .avail .head{margin:0 auto 30px;text-align:center}
+    .avail .head h2{color:#fff}
+    .avail .head p{color:#B7C4D6}
+    .avail-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .avail-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:30px;color:#DCE6F1}
+    .avail-card h3{color:#fff;font-size:1.3rem;margin-bottom:.4rem}
+    .avail-card p{color:#B7C4D6;font-size:.94rem;margin-bottom:1.3rem}
+    .avail-card .big{font-family:var(--head);font-size:1.4rem;color:var(--gold);margin-bottom:.2rem}
+    .avail-card.urgent{border-color:rgba(194,155,71,.45)}
+    .chk{display:flex;gap:.55rem;align-items:flex-start;font-weight:500;font-size:.9rem;margin:2px 0 14px;cursor:pointer;color:var(--ink)}
+    .chk input{width:auto;margin-top:3px}
+    @media(max-width:760px){.avail-cards{grid-template-columns:1fr}}
+
+    @media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:880px){
+      .hero-grid,.about .wrap,.split,.split.rev,.book-grid,.loc-grid{grid-template-columns:1fr}
+      .split.rev .split-media{order:0}
+      .rev-grid{grid-template-columns:1fr}
+      .nav-links{display:none}.menu-btn{display:block}
+      .nav-links.open{display:flex;position:absolute;top:76px;left:0;right:0;flex-direction:column;background:var(--bg);padding:18px 24px;border-bottom:1px solid var(--line);gap:1rem}
+    }
+    @media(max-width:560px){.grid,.two{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="disclaimer"><b>Concept demo</b> — an unaffiliated redesign concept created to show what's possible. Not the official website of Dr. Gregory G. Hom.</div>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><span class="mark">H</span><span>Gregory G. Hom, OD<small>Optometry · Sorrento Valley</small></span></a>
+      <nav class="nav-links" id="nav">
+        <a href="#services">Services</a>
+        <a href="#doctor">The Doctor</a>
+        <a href="#insurance">Insurance</a>
+        <a href="#location">Location</a>
+        <a class="nav-call" href="tel:+18585359835">(858) 535-9835</a>
+        <a class="btn btn-primary" href="#booking">Book exam</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="stars">★★★★★ <span style="color:var(--muted);font-size:.9rem">5.0 on Google · 18 reviews</span></div>
+          <h1>Expert eye care, close to home.</h1>
+          <div class="cred-line">Gregory G. Hom · OD · MPH · FAAO</div>
+          <p class="lead">Comprehensive eye health and vision care in Sorrento Valley — thorough, unhurried exams from a doctor who has spent a career protecting patients' sight.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#booking">Request an appointment →</a>
+            <a class="btn btn-ghost" href="tel:+18585359835">☎ (858) 535-9835</a>
+          </div>
+          <div class="avail-pill">◷ Now booking from <strong>&nbsp;September&nbsp;</strong> — <a href="#availability">join the cancellation list ↓</a></div>
+        </div>
+        <div class="hero-visual">
+          <div class="media hero-img"><img src="assets/exam.jpg?v=2" alt="Optometrist performing a comprehensive eye exam" loading="eager" width="1600" height="2397" /></div>
+          <div class="hero-card">
+            <h3>Why patients trust Dr. Hom</h3>
+            <p style="color:var(--muted);font-size:.9rem;margin-bottom:8px">Credentialed, careful, and here for the long term</p>
+            <div class="row"><div class="ico">★</div><div><strong>Perfect 5.0 rating</strong><br><span style="color:var(--muted);font-size:.88rem">18 five-star Google reviews</span></div></div>
+            <div class="row"><div class="ico">◆</div><div><strong>OD, MPH, FAAO</strong><br><span style="color:var(--muted);font-size:.88rem">Fellow of the American Academy of Optometry</span></div></div>
+            <div class="row"><div class="ico">✚</div><div><strong>Eye health first</strong><br><span style="color:var(--muted);font-size:.88rem">A public-health approach to your vision</span></div></div>
+            <div class="row"><div class="ico">◎</div><div><strong>Unhurried, appointment-only care</strong><br><span style="color:var(--muted);font-size:.88rem">Real time with the doctor, every visit</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <div class="trust"><div class="wrap">
+      <span><b>★ 5.0</b> Google rating (18)</span>
+      <span><b>◆</b> FAAO · AOA member</span>
+      <span><b>◆</b> By the Sorrento Valley Coaster station</span>
+      <span><b>◆</b> BBB accredited · AOA member</span>
+    </div></div>
+
+    <!-- SERVICES -->
+    <section class="pad wrap" id="services">
+      <div class="head reveal"><div class="eyebrow">Services</div><h2>Complete eye and vision care</h2><p>From routine exams to the medical care your eyes may need, delivered with the time and attention every patient deserves.</p></div>
+      <div class="grid">
+        <div class="card reveal"><div class="ico">◉</div><h3>Comprehensive Eye Exams</h3><p>Thorough vision and ocular-health evaluations, with <strong>Optomap</strong> retinal imaging — often without dilation.</p></div>
+        <div class="card reveal"><div class="ico">◍</div><h3>Contact Lens Fittings</h3><p>Daily, bifocal, toric (astigmatism), rigid gas-permeable, and continuous-wear lenses.</p></div>
+        <div class="card reveal"><div class="ico">▦</div><h3>Eyeglasses &amp; Sunglasses</h3><p>Custom frames, advanced lens technology, and prescription &amp; non-prescription sunglasses.</p></div>
+        <div class="card reveal"><div class="ico">⊕</div><h3>Eye Disease Treatment</h3><p>Diagnosis &amp; management of glaucoma, diabetic eye disease, allergies, and infections — CA Board certified.</p></div>
+        <div class="card reveal"><div class="ico">✦</div><h3>Laser Vision Correction</h3><p>Pre- and post-operative co-management with local surgeons. <strong>Complimentary consultations.</strong></p></div>
+        <div class="card reveal"><div class="ico">✈</div><h3>Color Vision Testing</h3><p>Farnsworth Lantern, 100 Hue &amp; D-15 testing for <strong>aviation, military &amp; law-enforcement</strong> candidates.</p></div>
+        <div class="card reveal"><div class="ico">🛡</div><h3>Safety &amp; Industrial Eyewear</h3><p>Affordable prescription safety-eyewear programs for businesses — welding, respirator inserts &amp; more.</p></div>
+        <div class="card reveal"><div class="ico">⚠</div><h3>Urgent Eye Care</h3><p>Prompt help for irritation, injuries, infections, and sudden changes in vision.</p></div>
+      </div>
+    </section>
+
+    <!-- DOCTOR / ABOUT -->
+    <section class="about pad" id="doctor">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="media about-media"><img src="assets/hero.jpg" alt="Eyewear and eye-care at the practice" loading="lazy" width="1600" height="1067" /></div>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow" style="color:var(--gold)">The doctor</div>
+          <h2>Gregory G. Hom, OD, MPH, FAAO</h2>
+          <p class="lead-q">"To provide our patients good value by delivering professional care and quality products, with a focus on promoting eye health and safety."</p>
+          <p>A <strong>third-generation San Diegan</strong>, Dr. Hom studied biology at UC San Diego, earned his Doctor of Optometry from <strong>UC Berkeley (1991)</strong> and a Master of Public Health from <strong>SDSU (1993)</strong>. He is California Board–certified in the treatment and management of eye disease and a Fellow of the American Academy of Optometry.</p>
+          <p>He has served as <strong>Past-President of the San Diego County Optometric Society</strong> and Past-Chair of the Vision Care Section of the American Public Health Association. His public-health background — including work in laboratory safety and office ergonomics — shapes a careful, prevention-minded approach to your vision. Every visit is unhurried, so you get real time with the doctor.</p>
+          <div class="creds">
+            <span class="chip">OD, UC Berkeley '91</span>
+            <span class="chip">MPH, SDSU '93</span>
+            <span class="chip">FAAO — Academy Fellow</span>
+            <span class="chip">CA Board certified</span>
+            <span class="chip">Past-Pres, SD County Optometric Society</span>
+            <span class="chip">AOA · BBB member</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EYEWEAR -->
+    <section class="pad wrap" id="eyewear">
+      <div class="split">
+        <div class="media split-media reveal"><img src="assets/frames.jpg" alt="Eyeglass frames selection at the practice" loading="lazy" width="1600" height="1067" /></div>
+        <div class="reveal">
+          <div class="eyebrow">Eyewear</div>
+          <h2>Glasses, fitted with care</h2>
+          <p>After your exam, choose from quality frames and lenses with guidance from the doctor — the right prescription, the right fit, and lens options explained in plain language.</p>
+          <ul>
+            <li>Single-vision, progressive &amp; specialty lenses</li>
+            <li>Anti-glare, blue-light &amp; high-index options</li>
+            <li>Prescription sunglasses</li>
+            <li>Honest recommendations, never a hard sell</li>
+          </ul>
+          <a class="btn btn-primary" href="#booking">Book an exam →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="pad wrap" id="contacts">
+      <div class="split rev">
+        <div class="media split-media reveal"><img src="assets/contacts.jpg" alt="Contact lens on a fingertip beside a lens case" loading="lazy" width="1600" height="1067" /></div>
+        <div class="reveal">
+          <div class="eyebrow">Contact lenses</div>
+          <h2>Contacts, done right</h2>
+          <p>From your first fitting to easy reorders, the practice keeps your contact-lens wear comfortable, healthy, and simple.</p>
+          <ul>
+            <li>Fittings for astigmatism, multifocal &amp; dry eyes</li>
+            <li>Daily, bi-weekly, monthly &amp; specialty lenses</li>
+            <li>Reorders on your current prescription</li>
+          </ul>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#booking">Reorder or book →</a>
+            <a class="btn btn-ghost" href="tel:+18585359835">☎ Call the office</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSURANCE -->
+    <section class="ins pad" id="insurance">
+      <div class="wrap reveal">
+        <div class="eyebrow">Insurance &amp; payment</div>
+        <h2 style="font-size:clamp(1.9rem,3.6vw,2.5rem);margin:.5rem 0">Most vision plans welcome</h2>
+        <p style="color:var(--muted);max-width:54ch;margin:0 auto">Tell us your provider when you book and the office will verify your benefits before your visit — so you know your coverage up front.</p>
+        <div class="logos">
+          <span class="plan">VSP</span><span class="plan">EyeMed</span><span class="plan">Medicare</span><span class="plan">Spectera</span><span class="plan">+ most major plans</span>
+        </div>
+        <p style="font-size:.8rem;color:var(--muted);margin-top:18px;font-style:italic">Sample plan list for the concept — confirm accepted plans with the office.</p>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="pad wrap" id="reviews">
+      <div class="head reveal"><div class="eyebrow">Patient reviews</div><h2>A perfect 5.0, from patients who stay</h2><p>Eighteen five-star reviews — the kind of loyalty that comes from careful, honest care.</p></div>
+      <div class="rev-grid">
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"Dr. Hom is thorough and takes real time to explain everything. I never feel rushed. Best eye doctor I've had."</p><div class="who">Verified patient<span>Google review</span></div></div>
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"Honest and knowledgeable — he tells you what you actually need, nothing more. My whole family sees him now."</p><div class="who">Verified patient<span>Google review</span></div></div>
+        <div class="rev reveal"><div class="stars">★★★★★</div><p>"Careful, professional, and genuinely caring about eye health. Highly recommend for anyone in Sorrento Valley."</p><div class="who">Verified patient<span>Google review</span></div></div>
+      </div>
+      <p style="font-size:.8rem;color:var(--muted);text-align:center;margin-top:18px;font-style:italic">Representative quotes shown for the concept demo. On the live site these pull from the practice's verified 5.0★ Google reviews.</p>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" style="background-image:url(assets/lifestyle.jpg)">
+      <div class="wrap reveal">
+        <div class="eyebrow" style="color:var(--gold)">Protect your sight</div>
+        <h2>Your eyes deserve a careful eye</h2>
+        <p>Regular exams catch problems early and keep your vision sharp for years to come. Schedule your visit with Dr. Hom.</p>
+        <a class="btn btn-gold" href="#booking">Request an appointment →</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="ins pad" id="faq" style="background:var(--bg)">
+      <div class="wrap" style="max-width:800px">
+        <div class="head reveal" style="margin:0 auto 42px;text-align:center"><div class="eyebrow">Good to know</div><h2>Frequently asked questions</h2></div>
+        <div class="faq reveal">
+          <details><summary>Do you take my vision insurance?</summary><div class="ans">The office accepts VSP, EyeMed, Medicare, and most major vision and medical plans. Share your provider when you book and the team will verify your benefits before your visit.</div></details>
+          <details><summary>How far out are you booking?</summary><div class="ans">The schedule is currently booking from September — a reflection of how many patients trust Dr. Hom with their care. Visits are by appointment so each patient gets unhurried time. To be seen sooner, join the cancellation list and we'll notify you the moment an earlier slot opens. For an urgent eye issue, call the office right away.</div></details>
+          <details><summary>How often should I have an eye exam?</summary><div class="ans">Most adults benefit from a comprehensive exam every 1–2 years, and annually if you wear contacts, have diabetes, or are over 60. Regular exams help catch issues early.</div></details>
+          <details><summary>Can Dr. Hom advise me on LASIK?</summary><div class="ans">Yes. Dr. Hom offers honest, independent guidance on whether laser vision correction is a good option for you and what to expect — with no pressure.</div></details>
+          <details><summary>What should I bring to my visit?</summary><div class="ans">Bring your insurance card (if using), your current glasses or contact boxes, and a list of any medications. Plan for about 30–45 minutes.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVAILABILITY / STANDBY -->
+    <section class="avail pad" id="availability">
+      <div class="wrap">
+        <div class="head reveal">
+          <div class="eyebrow" style="color:var(--gold)">Availability</div>
+          <h2>Currently booking from September</h2>
+          <p>Dr. Hom's careful, unhurried visits mean the schedule fills up — thank you for your patience. Here are two ways to be seen sooner.</p>
+        </div>
+        <div class="avail-cards">
+          <div class="avail-card reveal">
+            <div class="big">◷ Join the cancellation list</div>
+            <h3>Get seen sooner</h3>
+            <p>Openings appear when other patients reschedule. Add yourself to the standby list and we'll text or email you the moment an earlier slot opens — first to reply gets it.</p>
+            <a class="btn btn-gold" href="#booking">Join the cancellation list →</a>
+          </div>
+          <div class="avail-card urgent reveal">
+            <div class="big">＋ Urgent eye issue?</div>
+            <h3>Don't wait for an opening</h3>
+            <p>Sudden vision change, eye pain, injury, flashes, or new redness shouldn't wait for the schedule. Call the office and we'll make time for eye emergencies.</p>
+            <a class="btn btn-ghost" href="tel:+18585359835" style="border-color:rgba(255,255,255,.32);color:#fff;background:transparent">☎ Call (858) 535-9835</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking pad" id="booking">
+      <div class="wrap book-grid">
+        <div class="reveal">
+          <div class="eyebrow">Book a visit</div>
+          <h2 style="font-size:clamp(2rem,3.8vw,2.7rem);margin:.5rem 0">Schedule your eye exam</h2>
+          <p style="color:var(--muted)">We're currently booking from <strong>September</strong>. Request your appointment below — and opt into the cancellation list so we can reach out if an earlier slot opens. Prefer to talk? Call or email the practice directly.</p>
+          <ul style="list-style:none;margin-top:1.4rem;color:var(--muted);font-size:.95rem">
+            <li style="padding:.4rem 0">✓ Unhurried, appointment-only care</li>
+            <li style="padding:.4rem 0">✓ New patients &amp; families welcome</li>
+            <li style="padding:.4rem 0">✓ We'll verify your vision insurance</li>
+          </ul>
+          <a class="callout" href="tel:+18585359835">
+            <span class="ico">☎</span>
+            <span>Call the office<br><b>(858) 535-9835</b></span>
+          </a>
+          <a class="callout" href="mailto:drgghom@gmail.com" style="margin-top:12px">
+            <span class="ico">✉</span>
+            <span>Email the practice<br><b style="font-size:1rem">drgghom@gmail.com</b></span>
+          </a>
+        </div>
+        <form id="bookForm" novalidate>
+          <div class="field"><label>What do you need?</label>
+            <select required><option value="">Choose…</option><option>Comprehensive eye exam</option><option>Contact lens exam / fitting</option><option>Reorder contacts (existing Rx)</option><option>New glasses / eyewear</option><option>Medical / diabetic eye care</option><option>LASIK consultation</option><option>Family / pediatric exam</option><option>Not sure — need guidance</option></select>
+          </div>
+          <div class="two">
+            <div class="field"><label>Preferred date</label><input type="date" required /></div>
+            <div class="field"><label>Time of day</label><select required><option value="">Any</option><option>Morning</option><option>Afternoon</option></select></div>
+          </div>
+          <div class="two">
+            <div class="field"><label>Name</label><input type="text" required placeholder="Your name" /></div>
+            <div class="field"><label>Phone</label><input type="tel" required placeholder="(xxx) xxx-xxxx" /></div>
+          </div>
+          <div class="field"><label>Email</label><input type="email" required placeholder="you@email.com" /></div>
+          <div class="field"><label>Vision insurance (optional)</label><input type="text" placeholder="e.g. VSP, EyeMed — we'll verify it" /></div>
+          <label class="chk"><input type="checkbox" checked /> Add me to the <strong>&nbsp;cancellation list&nbsp;</strong> — notify me if an earlier slot opens before September.</label>
+          <div class="field"><label>Best way to reach you</label><select><option>Text message</option><option>Phone call</option><option>Email</option></select></div>
+          <div class="deposit">🔒 Requests are confirmed by the office. On the live site this would notify the practice by email/text — no payment needed to request.</div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Request appointment</button>
+          <div class="ok" id="ok">Thank you — your request is in. <em>(This is a concept demo, so nothing was actually sent.)</em> On the live site, the office would confirm your appointment by phone or email.</div>
+        </form>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="pad wrap" id="location">
+      <div class="head reveal"><div class="eyebrow">Visit us</div><h2>In the heart of Sorrento Valley</h2></div>
+      <div class="loc-grid">
+        <div class="loc-card reveal">
+          <h3>Location</h3>
+          <p>11230 Sorrento Valley Rd, Suite 145<br>San Diego, CA 92121<br><span style="color:var(--gold-2)">Next to the Sorrento Valley Coaster station</span></p>
+          <p style="margin-top:10px;font-size:.88rem">Convenient to La Jolla, Del Mar, Carmel Valley, Golden Triangle &amp; Mira Mesa.</p>
+          <p style="margin-top:14px"><a class="btn btn-ghost" href="https://maps.google.com/?q=11230+Sorrento+Valley+Rd+Suite+145+San+Diego+CA+92121" target="_blank" rel="noopener">Get directions →</a></p>
+        </div>
+        <div class="loc-card reveal">
+          <h3>Hours</h3>
+          <p>Monday – Tuesday · 9:00am – 5:00pm<br>Wednesday – Thursday · 9:00am – 5:30pm<br>Friday · 9:00am – 4:00pm<br>Saturday – Sunday · closed</p>
+          <p style="margin-top:14px;font-size:.8rem;font-style:italic">By appointment — currently booking from September; join the cancellation list to be seen sooner.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <div class="brand"><span class="mark">H</span><span>Gregory G. Hom, OD<small>Optometry · Sorrento Valley</small></span></div>
+        <nav style="display:flex;gap:1.4rem;flex-wrap:wrap"><a href="#services">Services</a><a href="#doctor">The Doctor</a><a href="#insurance">Insurance</a><a href="#booking">Book</a><a href="tel:+18585359835">(858) 535-9835</a></nav>
+      </div>
+      <p class="foot-dis"><strong>Concept demo — unaffiliated.</strong> This page is an independent redesign concept built to illustrate possibilities. It is not affiliated with, endorsed by, or the official website of Dr. Gregory G. Hom. Photography is licensed royalty-free stock (Pexels), reviews shown are representative, and hours/insurance details are placeholders to be confirmed by the practice.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
+    document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    document.getElementById('bookForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      if(!e.target.checkValidity()){e.target.reportValidity();return;}
+      document.getElementById('ok').style.display='block';
+      e.target.querySelector('button[type=submit]').style.display='none';
+      document.getElementById('ok').scrollIntoView({behavior:'smooth',block:'center'});
+    });
+  </script>
+</body>
+</html>
